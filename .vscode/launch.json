@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(gdb) Launch Game (Final Path)",
+            "type": "cppdbg",
+            "request": "launch",
+            // Program is set to the exact, verified path:
+            "program": "/workspaces/Game/game.out", 
+            
+            // CWD is set to the folder containing the executable:
+            "cwd": "/workspaces/Game",
+            "stopAtEntry": false,
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "/usr/bin/gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
+}

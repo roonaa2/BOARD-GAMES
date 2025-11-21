@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build X-O Game (Final)",
+            "type": "shell",
+            
+            // Navigate to the folder where the source files are located
+            "options": {
+                "cwd": "/workspaces/Game"
+            },
+            
+            // The command must compile ALL source files into the game.out executable
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "*.cpp", 
+                "-o",
+                "game.out"
+            ],
+            
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": "$gcc",
+            "detail": "Compiles all .cpp files in /workspaces/Game into game.out"
+        }
+    ]
+}
