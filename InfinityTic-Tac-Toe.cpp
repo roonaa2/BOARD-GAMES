@@ -1,7 +1,7 @@
 
 #include <iostream>
 #include <iomanip>
-#include <cctype>  // for toupper()
+#include <cctype>  
 #include "InfinityTic-Tac-Toe.h"
 using namespace std;
 
@@ -71,7 +71,7 @@ bool InfinityBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
 
-//--------------------------------------- XO_UI Implementation
+//  XO_UI Implementation
 
 InfinityTicTacToe_UI::InfinityTicTacToe_UI() : UI<char>("Welcome to Infinity TIC TAC TOE", 3) {}
 
