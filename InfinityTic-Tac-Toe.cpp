@@ -36,7 +36,7 @@ bool InfinityBoard::update_board(Move<char>* move) {
  void InfinityBoard::remove_oldest_move() {
         if (moves_history.empty()) return;
         auto oldest = moves_history.front();
-        cout << "Removing oldest move at position (" << oldest.first << ", " << oldest.second << ")\n";
+        cout << "Removing oldest move at position " << oldest.first << ", " << oldest.second << endl;
         moves_history.pop();
         board[oldest.first][oldest.second] = blank_symbol;
     }

@@ -5,10 +5,12 @@
 #include <queue>
 #include <utility>
 
+using namespace std;
+
 class InfinityBoard : public Board<char> {
 private:
     char blank_symbol = '.';
-    std::queue<std::pair<int, int>> moves_history;
+    queue<pair<int, int>> moves_history; //to track the order of moves
 
 public:
     InfinityBoard();
@@ -17,7 +19,7 @@ public:
     bool is_lose(Player<char>* player) override { return false; }
     bool is_draw(Player<char>* player) override;
     bool game_is_over(Player<char>* player) override;
-    void remove_oldest_move();
+    void remove_oldest_move();  
 };
 
 class InfinityTicTacToe_UI : public UI<char> {
