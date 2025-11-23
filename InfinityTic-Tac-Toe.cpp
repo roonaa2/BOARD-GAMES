@@ -5,8 +5,13 @@
 #include "InfinityTic-Tac-Toe.h"
 using namespace std;
 
+ /**
+ we added a helper function to remove the oldest move
+ using the queue where the move history is stored 
+ we also change the draw function because the 
+ board will be full after move 13 not 9 
+ */
  
-
 InfinityBoard::InfinityBoard() : Board(3, 3) {
     // Initialize all cells with blank_symbol
     for (auto& row : board)
@@ -70,8 +75,6 @@ bool InfinityBoard::is_draw(Player<char>* player) {
 bool InfinityBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
-
-//  XO_UI Implementation
 
 InfinityTicTacToe_UI::InfinityTicTacToe_UI() : UI<char>("Welcome to Infinity TIC TAC TOE", 3) {}
 
