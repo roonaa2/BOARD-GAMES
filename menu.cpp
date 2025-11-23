@@ -3,7 +3,7 @@
 #include "BoardGame_Classes.h"
 #include "XO_Classes.h"
 #include "InfinityTic-Tac-Toe.h"
-
+#include "Misere.h"
 using namespace std;
 
 void displayMenu() {
@@ -51,7 +51,10 @@ void runGame(int choice) {
             break;
         }
         case 5:{
-            cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n"; 
+            game_ui = new MisereUI();  //base pointer to derived
+            game_board = new MisereBoard();
+
             break;  
         }
         case 6: {
