@@ -64,7 +64,7 @@ bool InfinityBoard::is_win(Player<char>* player) {
 }
 
 bool InfinityBoard::is_draw(Player<char>* player) {
-    return (n_moves == 9 && !is_win(player));
+    return  (!is_win(player) && n_moves >= 13);
 }
 
 bool InfinityBoard::game_is_over(Player<char>* player) {
