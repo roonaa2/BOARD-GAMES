@@ -10,8 +10,8 @@ using namespace std;
 class InfinityBoard : public Board<char> {
 private:
     char blank_symbol = '.';
-    queue<pair<int, int>> moves_history; //to track the order of moves
-
+    queue<pair<int, int>> moves_history; 
+    
 public:
     InfinityBoard();
     bool update_board(Move<char>* move) override;
