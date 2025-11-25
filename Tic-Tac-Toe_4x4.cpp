@@ -31,15 +31,51 @@ bool X_O_4x4Board::update_board(Move<char>* move) {
     // Check if move is within bounds
     if (tx < 0 || tx >= rows || ty < 0 || ty >= columns) {
         cout << "Move out of bounds. Try again.\n";
-        return false;
+        return false;}
 
     if (board[tx][ty] != blank_symbol) {
         cout << "Cell already occupied. Try again.\n";
         return false;
     }
 
-    
+    // Search for an adjacent piece belonging to the player
+    int dirs[4][2] = {
+        {1,0},  // down
+        {-1,0}, // up
+        {0,1},  // right
+        {0,-1}  // left
+    };
+
+    int old_x = -1, old_y = -1;
+
+    // Look for any adjacent piece to determine if the move is legal
+    for (auto &d : dirs) {
+        int nx = tx + d[0];
+        int ny = ty + d[1];
+
+        if (nx >= 0 && nx < rows && ny >= 0 && ny < columns) {
+            if (board[nx][ny] == mark) {
+                old_x = nx;
+                old_y = ny;
+                break;
+            }
+        }
+    }
+
+    if (old_x == -1) {
+        cout << "You must move next to one of your own pieces.\n";
+        return false;
+    }
+
+    //Remove the old piece 
+    board[old_x][old_y] = blank_symbol;
+
+    //Place the piece in the new location
+    board[tx][ty] = mark;
+
+    return true;
 }
+
 
 
 
