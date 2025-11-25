@@ -47,7 +47,7 @@ Choose player types (Human vs Human, Human vs Computer, etc.)
 Follow game-specific instructions
 
 Return to main menu after each game 
-## 👥 Authors
+## 👥 Team Members
 Asmaa Farouq
 
 Mariam Sherif
