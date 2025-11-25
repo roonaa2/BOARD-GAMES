@@ -4,6 +4,7 @@
 #include "XO_Classes.h"
 #include "InfinityTic-Tac-Toe.h"
 #include "Misere.h"
+#include "WordTic-tac-toe.h"  // Your file with hyphen
 using namespace std;
 
 void displayMenu() {
@@ -28,73 +29,93 @@ void runGame(int choice) {
     //base class pointers
     UI<char>* game_ui = nullptr;
     Board<char>* game_board = nullptr;
+    bool implemented = true;
     
     switch (choice) {
         case 1: {
             cout << "\n>_< Starting SUS Tic-Tac-Toe >_<\n";
-            
+            implemented = false;
             break;
         }
         case 2: {
             cout << "\n>_< Starting Four-in-a-Row Tic-Tac-Toe >_<\n";
-          
+            implemented = false;
             break;
         } 
         case 3: {
             cout << "\n>_< Starting 5x5 Tic-Tac-Toe >_<\n";
-            
+            implemented = false;
             break;
         }
-        case 4: {
-            cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
-            
-            break;
+       case 4: {
+          cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
+          game_ui = new WORDTIC_TAC_TOE_UI();
+          game_board = new WORDTIC_TAC_TOE();
+          break;
         }
         case 5:{
             cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n"; 
-            game_ui = new MisereUI();  //base pointer to derived
+            game_ui = new MisereUI();
             game_board = new MisereBoard();
-
             break;  
         }
         case 6: {
-            cout << "\n>_< Starting Diamond Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Diamond Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;
         }
         case 7: {
-            cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;
         }   
         case 8: {
-            cout << "\n>_< Starting Pyramid Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Pyramid Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;
         }     
         case 9: {
-            cout << "\n>_< Starting Numerical Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Numerical Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;
         }
         case 10: {
-            cout << "\n>_< Starting Obstacles Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Obstacles Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;                                          
         }   
         case 11:{
             cout << "\n>_< Starting Infinity Tic-Tac-Toe >_<\n";   
-            game_ui = new InfinityTicTacToe_UI();  //base pointer to derived
+            game_ui = new InfinityTicTacToe_UI();
             game_board = new InfinityBoard();
             break;          
         }
         case 12: {
-            cout << "\n>_< Starting Ultimate Tic Tac Toe >_<\n";             
+            cout << "\n>_< Starting Ultimate Tic Tac Toe >_<\n"; 
+            implemented = false;            
             break;      
         }   
         case 13: {      
-            cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n"; 
+            implemented = false;            
             break;      
+        }
+        default:
+            cout << "Invalid choice!\n";
+            return;
     }
-    default:
-        cout << "Invalid choice!\n";
+
+    // Check if game was actually implemented
+    if (!implemented) {
+        cout << "This game mode is not yet implemented!\n";
         return;
-}
+    }
+    
+    if (game_ui == nullptr || game_board == nullptr) {
+        cout << "Error: Game not properly initialized!\n";
+        return;
+    }
+    
     // ~ ~ polymorphism ~ ~ 
     Player<char>** players = game_ui->setup_players();
     GameManager<char> game_manager(game_board, players, game_ui);
@@ -113,10 +134,13 @@ int main() {
     int choice;
     do {
         displayMenu();
+        cout << "Enter your choice: ";
         cin >> choice;
         if (choice != 0) {
             runGame(choice);
         }
     } while (choice != 0);
+    
+    cout << "Thanks for playing!\n";
     return 0;
 }
