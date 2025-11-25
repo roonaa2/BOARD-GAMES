@@ -4,6 +4,7 @@
 #include "XO_Classes.h"
 #include "InfinityTic-Tac-Toe.h"
 #include "Misere.h"
+#include "Tic-Tac-Toe_4x4.h"
 using namespace std;
 
 void displayMenu() {
@@ -62,7 +63,9 @@ void runGame(int choice) {
             break;
         }
         case 7: {
-            cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";             
+            cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";     
+            game_ui = new X_O_4x4_UI();  //base pointer to derived
+            game_board = new X_O_4x4Board();
             break;
         }   
         case 8: {
