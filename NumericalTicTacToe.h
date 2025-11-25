@@ -1,12 +1,10 @@
-
-/**  
 #ifndef _NUMERICAL_TIC_TAC_TOE_H
 #define _NUMERICAL_TIC_TAC_TOE_H
 
 #include "BoardGame_Classes.h"
 #include <iostream>
 #include <vector>
-
+#include <string>
 using namespace std;
 
 class NumericalTicTacToe : public Board<int> {
@@ -145,4 +143,3 @@ public:
 };
 
 #endif // _NUMERICAL_TIC_TAC_TOE_H
-*/
