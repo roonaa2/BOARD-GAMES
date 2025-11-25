@@ -1,148 +1,142 @@
-
-/**  
-#ifndef _NUMERICAL_TIC_TAC_TOE_H
-#define _NUMERICAL_TIC_TAC_TOE_H
+/**
+ * @file NumericalTicTacToe.h
+ * @brief Defines the Numerical Tic-Tac-Toe game classes.
+ *
+ * This file provides:
+ * - `NumericalBoard`: A specialized board class for the Numerical Tic-Tac-Toe game.
+ * - `NumericalUI`: A user interface class tailored to Numerical game setup and player interaction.
+ */
+#ifndef NUMERICAL_TIC_TAC_TOE_H
+#define NUMERICAL_TIC_TAC_TOE_H
 
 #include "BoardGame_Classes.h"
-#include <iostream>
 #include <vector>
+#include <iostream>
+#include <cctype>
 
 using namespace std;
 
-class NumericalTicTacToe : public Board<int> {
+/**
+ * @class NumericalBoard
+ * @brief Represents the Numerical Tic-Tac-Toe game board.
+ *
+ * This class inherits from the generic `Board<char>` class and implements
+ * the specific logic required for the Numerical Tic-Tac-Toe game.
+ * Player 1 uses odd numbers (1,3,5,7,9), Player 2 uses even numbers (2,4,6,8).
+ * The goal is to make a row, column, or diagonal sum to exactly 15.
+ *
+ * @see Board
+ */
+class NumericalBoard : public Board<char> {
 private:
-    static const int GRID_SIZE = 3;
+    char blank_symbol = '.'; ///< Character used to represent an empty cell.
+    vector<int> used_numbers; ///< Track which numbers have been used.
 
 public:
-    NumericalTicTacToe() {
-        rows = GRID_SIZE;
-        columns = GRID_SIZE;
-        board = new int*[GRID_SIZE];
-        for (int i = 0; i < GRID_SIZE; i++) {
-            board[i] = new int[GRID_SIZE]{0};
-        }
-        n_moves = 0;
-    }
+    /**
+     * @brief Default constructor that initializes a 3x3 Numerical board.
+     */
+    NumericalBoard();
 
-    ~NumericalTicTacToe() {
-        for (int i = 0; i < GRID_SIZE; i++) {
-            delete[] board[i];
-        }
-        delete[] board;
-    }
+    /**
+     * @brief Updates the board with a player's move.
+     * @param move Pointer to a Move<char> object containing move coordinates and number symbol.
+     * @return true if the move is valid and successfully applied, false otherwise.
+     */
+    bool update_board(Move<char>* move);
 
-    bool update_board(int row, int col, int value) override {
-        if (row < 0 || row >= GRID_SIZE || col < 0 || col >= GRID_SIZE || board[row][col] != 0) {
-            return false;
-        }
-        board[row][col] = value;
-        n_moves++;
-        return true;
-    }
+    /**
+     * @brief Checks if the given player has won the game (made a line sum to 15).
+     * @param player Pointer to the player being checked.
+     * @return true if the player has a winning line, false otherwise.
+     */
+    bool is_win(Player<char>* player);
 
-    void display_board() override {
-        for (int i = 0; i < GRID_SIZE; i++) {
-            for (int j = 0; j < GRID_SIZE; j++) {
-                cout << board[i][j] << " ";
-            }
-            cout << endl;
-        }
-        cout << endl;
-    }
+    /**
+     * @brief Checks if the given player has lost the game.
+     * @param player Pointer to the player being checked.
+     * @return Always returns false (not used in Numerical logic).
+     */
+    bool is_lose(Player<char>*) { return false; }
 
-    bool is_win() override {
-        for (int i = 0; i < GRID_SIZE; i++) {
-            int rowSum = 0, colSum = 0;
-            for (int j = 0; j < GRID_SIZE; j++) {
-                rowSum += board[i][j];
-                colSum += board[j][i];
-            }
-            if (rowSum == 15 || colSum == 15) {
-                return true;
-            }
-        }
+    /**
+     * @brief Checks if the game has ended in a draw.
+     * @param player Pointer to the player being checked.
+     * @return true if all cells are filled and no player has won, false otherwise.
+     */
+    bool is_draw(Player<char>* player);
 
-        int mainDiagonalSum = 0, antiDiagonalSum = 0;
-        for (int i = 0; i < GRID_SIZE; i++) {
-            mainDiagonalSum += board[i][i];
-            antiDiagonalSum += board[i][GRID_SIZE - i - 1];
-        }
+    /**
+     * @brief Determines if the game is over (win or draw).
+     * @param player Pointer to the player to evaluate.
+     * @return true if the game has ended, false otherwise.
+     */
+    bool game_is_over(Player<char>* player);
 
-        return mainDiagonalSum == 15 || antiDiagonalSum == 15;
-    }
-
-    bool is_draw() override {
-        return n_moves == GRID_SIZE * GRID_SIZE && !is_win();
-    }
-
-    bool game_is_over() override {
-        return is_win() || is_draw();
-    }
+    /**
+     * @brief Checks if a number has already been used.
+     * @param number The number to check.
+     * @return true if the number has been used, false otherwise.
+     */
+    bool is_number_used(int number);
+    
+    /**
+     * @brief Gets the character at a specific board position.
+     * @param x Row index.
+     * @param y Column index.
+     * @return Character at the position.
+     */
+    char get_cell(int x, int y) const;
 };
 
-class NumericalTicTacToePlayer : public Player<int> {
+/**
+ * @class NumericalUI
+ * @brief User Interface class for the Numerical Tic-Tac-Toe game.
+ *
+ * Inherits from the generic `UI<char>` base class and provides
+ * Numerical-specific functionality for player setup and move input.
+ *
+ * @see UI
+ */
+class NumericalUI : public UI<char> {
 public:
-    NumericalTicTacToePlayer(string playerName, int playerSymbol) : Player<int>(playerName, playerSymbol) {}
+    /**
+     * @brief Constructs a NumericalUI object.
+     *
+     * Initializes the base `UI<char>` class with the welcome message.
+     */
+    NumericalUI();
 
-    void getmove(int& row, int& col) override {
-        int number;
-        cout << getname() << ": Enter your move (row column number): ";
-        cin >> row >> col >> number;
+    /**
+     * @brief Destructor for NumericalUI.
+     */
+    ~NumericalUI() {}
 
-        while (!is_valid_move(number) || !boardPtr->update_board(row, col, number)) {
-            cout << "Invalid move. Try again: ";
-            cin >> row >> col >> number;
-        }
-    }
+    /**
+     * @brief Creates a player of the specified type.
+     * @param name Name of the player.
+     * @param symbol Character symbol ('X' for odd numbers, 'O' for even numbers).
+     * @param type The type of the player (Human or Computer).
+     * @return Pointer to the newly created Player<char> instance.
+     */
+    Player<char>* create_player(string& name, char symbol, PlayerType type);
+
+    /**
+     * @brief Retrieves the next move from a player.
+     * @param player Pointer to the player whose move is being requested.
+     * @return A pointer to a new `Move<char>` object representing the player's action.
+     */
+    Move<char>* get_move(Player<char>* player);
 
 private:
-    bool is_valid_move(int number) {
-        if (symbol % 2 == 1 && number % 2 == 0) {
-            cout << "You must enter an odd number!\n";
-            return false;
-        }
-        if (symbol % 2 == 0 && number % 2 != 0) {
-            cout << "You must enter an even number!\n";
-            return false;
-        }
-        return true;
-    }
+    /**
+     * @brief Validates if a number choice is valid for the given player.
+     * @param number The number chosen.
+     * @param player The player making the move.
+     * @param board The game board.
+     * @return true if valid, false otherwise.
+     */
+    bool is_valid_number(int number, Player<char>* player, NumericalBoard* board);
 };
 
-class NumericalTicTacToeManager {
-private:
-    NumericalTicTacToe* gameBoardPtr;
-    NumericalTicTacToePlayer* players[2];
-
-public:
-    NumericalTicTacToeManager(NumericalTicTacToe* board, NumericalTicTacToePlayer* player1, NumericalTicTacToePlayer* player2) {
-        gameBoardPtr = board;
-        players[0] = player1;
-        players[1] = player2;
-        players[0]->setBoard(board);
-        players[1]->setBoard(board);
-    }
-
-    void run() {
-        int row, col;
-        gameBoardPtr->display_board();
-
-        while (!gameBoardPtr->game_is_over()) {
-            for (int i = 0; i < 2; i++) {
-                players[i]->getmove(row, col);
-                gameBoardPtr->display_board();
-                if (gameBoardPtr->is_win()) {
-                    cout << players[i]->getname() << " wins!\n";
-                    return;
-                }
-                if (gameBoardPtr->is_draw()) {
-                    cout << "It's a draw!\n";
-                    return;
-                }
-            }
-        }
-    }
-};
-
-#endif // _NUMERICAL_TIC_TAC_TOE_H
-*/
+#endif // NUMERICAL_TIC_TAC_TOE_H
