@@ -6,6 +6,7 @@
 #include "Misere.h"
 #include "Tic-Tac-Toe_4x4.h"
 #include "NumericalTicTacToe.h"
+#include "SUS.h"
 
 using namespace std;
 
@@ -39,8 +40,9 @@ void runGame(int choice) {
     switch (choice) {
         case 1: {
             cout << "\n>_< Starting SUS Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui = new SUS_UI();
+            game_board = new SUSBoard();
+            break;
         }
         case 2: {
             cout << "\n>_< Starting Four-in-a-Row Tic-Tac-Toe >_<\n";
