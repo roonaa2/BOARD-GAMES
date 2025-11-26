@@ -7,6 +7,8 @@
 #include "Tic-Tac-Toe_4x4.h"
 #include "NumericalTicTacToe.h"
 #include "SUS.h"
+#include "WordTic-tac-toe.h"
+
 
 using namespace std;
 
@@ -56,8 +58,9 @@ void runGame(int choice) {
         }
         case 4: {
             cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui = new WORDTIC_TAC_TOE_UI();
+            game_board = new WORDTIC_TAC_TOE();
+            break;;
         }
         case 5: {
             cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n"; 
@@ -68,7 +71,7 @@ void runGame(int choice) {
         case 6: {
             cout << "\n>_< Starting Diamond Tic-Tac-Toe >_<\n";
             cout << "This game is not yet implemented.\n";
-            return;
+            break;
         }
         case 7: {
             cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";     
