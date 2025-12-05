@@ -8,6 +8,7 @@
 #include "NumericalTicTacToe.h"
 #include "SUS.h"
 #include "WordTic-tac-toe.h"
+#include "Pyramid.h"
 
 
 using namespace std;
@@ -81,8 +82,9 @@ void runGame(int choice) {
         }   
         case 8: {
             cout << "\n>_< Starting Pyramid Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui = new PyramidUI();
+            game_board = new PyramidBoard();
+            break;
         }     
         case 9: {
             cout << "\n>_< Starting Numerical Tic-Tac-Toe >_<\n";
