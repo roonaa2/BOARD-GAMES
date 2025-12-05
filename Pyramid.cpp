@@ -123,7 +123,11 @@ void PyramidBoard::decrement_moves()
 
 // ==================== UI ====================
 
-PyramidUI::PyramidUI() : UI(3) {}
+PyramidUI::PyramidUI() : UI(3) {
+    cout << "Welcome to Pyramid Tic-Tac-Toe!\n";
+    cout << "Players take turns placing their symbols on a pyramid-shaped board.\n";
+    cout << "First to align 3 symbols in a straight line wins!\n\n";
+}
 
 Move<char>* PyramidUI::get_move(Player<char>* player)
 {
