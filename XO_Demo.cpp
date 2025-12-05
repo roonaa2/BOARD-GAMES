@@ -6,7 +6,7 @@
  * It then launches the game loop via the GameManager class.
  * All dynamically allocated objects are properly deleted at the end.
  */
-
+/*
 #include <iostream> // Required for input/output operations (cout, cin)
 #include <string>   // Required for string
 #include <vector>   // Required for vector
@@ -27,7 +27,9 @@ using namespace std;
  * - Performing cleanup of dynamically allocated memory
  *
  * @return int Returns 0 on successful execution.
- */
+ * 
+ * 
+ 
 int main() {
 
     srand(static_cast<unsigned int>(time(0)));  // Seed the random number generator
@@ -60,6 +62,6 @@ int main() {
     delete[] players;
 
     return 0; // Exit successfully
-}
+}**/
 
 // =====================================================================
