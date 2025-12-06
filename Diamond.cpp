@@ -39,19 +39,12 @@ bool DiamondBoard::update_board(Move<char>* move) {
 
     if (x < 0 || x >= rows || y < 0 || y >= columns) {
         return false;
-    }
-     
-    if (valid_cells[x][y] && (board[x][y] == blank_symbol  || mark == 0)) {
-        if (mark == 0) { // Undo move
-            n_moves--;
-            board[x][y] = blank_symbol;
-        }
-        else {         // Apply move
+    } 
+    if (valid_cells[x][y] && (board[x][y] == blank_symbol)) {
         n_moves++;
         board[x][y] = toupper(mark);
         return true;
     }
-}
     return false;
 }
 
@@ -170,7 +163,16 @@ bool DiamondBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
 
-Diamond_UI::Diamond_UI() : UI<char>("Welcome to Diamond TIC TAC TOE", 3) {}
+Diamond_UI::Diamond_UI() : UI<char>("Welcome to Diamond TIC TAC TOE", 3) {
+    cout << "\nGame Rules:\n";
+    cout << "- A 7x7 grid arranged in a diamond shape yo make it look like a rotated 5x5 grid\n";
+    cout << "- Each turn, you can place your mark in a valid cell only\n";
+    cout << "- invalid cells are marked invisible and valid cells are marked with '.'\n";
+    cout << "- player can win by completing a line of three marks and a line of four marks\n";
+    cout << "- lines must be in different directions but can share 1 common mark.\n";
+    cout << "- Game ends when the board is full\n";
+    cout << "- U can always undo a move by entering the mark 0\n";
+}
 
 Player<char>* Diamond_UI::create_player(string& name, char symbol, PlayerType type) {
    
@@ -184,13 +186,17 @@ Move<char>* Diamond_UI::get_move(Player<char>* player) {
     int x, y;
     
     if (player->get_type() == PlayerType::HUMAN) {
-        cout << "\nPlease enter your move x and y (0 to 6): but only valid diamond cells.\n";
+        cout << "\nPlease enter your move x and y (0 to 6): but only valid diamond and emty cells(marked with .\n";
         cin >> x >> y;
-        if (!valid_cells[x][y]) {
-            cout << "Invalid cell for Diamond board. Try again.\n";
+        if (x < 0 || x >= 7 || y < 0 || y >= 7) {
+            cout << "Move out of bounds. Try again.\n";
             return get_move(player);
         }
+        if (!valid_cells[x][y] || player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
+            cout << "Cell not valid or already occupied. Try again.\n";
+            return get_move(player);
     }
+ }
     else if (player->get_type() == PlayerType::COMPUTER) {
         while (true) {
             x = rand() % player->get_board_ptr()->get_rows();

@@ -6,7 +6,7 @@
 using namespace std;
 
  /**
- we added a helper function to remove the oldest move
+  added a helper function to remove the oldest move
  using the queue where the move history is stored 
  we also change the draw function because the 
  board will be full after move 13 not 9 
@@ -76,7 +76,15 @@ bool InfinityBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
 
-InfinityTicTacToe_UI::InfinityTicTacToe_UI() : UI<char>("Welcome to Infinity TIC TAC TOE", 3) {}
+InfinityTicTacToe_UI::InfinityTicTacToe_UI() : UI<char>("Welcome to Infinity TIC TAC TOE", 3) {
+
+    cout << "\nGame Rules:\n";
+    cout << "- Players take turns placing their marks (X or O) on the 3x3 grid.\n";
+    cout << "- The objective is to create a line of three of your marks.\n";
+    cout << "- A line can be horizontal, vertical, or diagonal.\n";
+    cout << "- After every 3 moves, the oldest move on the board is removed to make space for new moves.\n";
+    cout << "- The game ends when a player creates a line of three marks or when the board is full without any player winning (draw).\n\n";
+}
 
 Player<char>* InfinityTicTacToe_UI::create_player(string& name, char symbol, PlayerType type) {
     // Create player based on type
@@ -92,7 +100,14 @@ Move<char>* InfinityTicTacToe_UI::get_move(Player<char>* player) {
     if (player->get_type() == PlayerType::HUMAN) {
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
+        if (x < 0 || x >= 3 || y < 0 || y >= 3) {
+            cout << "Move out of bounds. Try again.\n";
+            return get_move(player);
     }
+    if (player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
+            cout << "Cell already occupied. Try again.\n";
+            return get_move(player);
+    } }
     else if (player->get_type() == PlayerType::COMPUTER) {
         x = rand() % player->get_board_ptr()->get_rows();
         y = rand() % player->get_board_ptr()->get_columns();

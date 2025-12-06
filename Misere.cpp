@@ -49,14 +49,13 @@ bool MisereBoard::update_board(Move<char>* move) {
     char mark = move->get_symbol();
 
     // Validate move and apply if valid
-    if (!(x < 0 || x >= rows || y < 0 || y >= columns) &&
-        (board[x][y] == blank_symbol || mark == 0)) {
-             // Apply move
+  if (!(x < 0 || x >= rows || y < 0 || y >= columns) &&
+        (board[x][y] == blank_symbol)) {
             n_moves++;
             board[x][y] = toupper(mark);
+            return true;
+        }
         
-        return true;
-    }
     return false;
 }
 
@@ -82,7 +81,14 @@ bool MisereBoard::game_is_over(Player<char>* player) {
 
  
 
-MisereUI::MisereUI() : UI<char>("Welcome to Misere Tic Tac Toe", 3) {}
+MisereUI::MisereUI() : UI<char>("Welcome to Misere Tic Tac Toe", 3) {
+    cout << "\nGame Rules:\n";
+    cout << "- Players take turns placing their marks (X or O) on the 3x3 grid.\n";
+    cout << "- The objective is to avoid creating a line of three of your own marks.\n";
+    cout << "- A line can be horizontal, vertical, or diagonal.\n";
+    cout << "- If you create a line of three of your marks, you lose the game.\n";
+    cout << "- If the board is filled without any player creating such a line, the game ends in a draw.\n\n";   
+}
 
 Player<char>* MisereUI::create_player(string& name, char symbol, PlayerType type) {
     // Create player based on type
@@ -98,7 +104,14 @@ Move<char>* MisereUI::get_move(Player<char>* player) {
     if (player->get_type() == PlayerType::HUMAN) {
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
+           if (x < 0 || x >= 3 || y < 0 || y >= 3) {
+            cout << "Move out of bounds. Try again.\n";
+            return get_move(player);
     }
+    if (player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
+            cout << "Cell already occupied. Try again.\n";
+            return get_move(player);
+    } }
     else if (player->get_type() == PlayerType::COMPUTER) {
         x = rand() % player->get_board_ptr()->get_rows();
         y = rand() % player->get_board_ptr()->get_columns();
