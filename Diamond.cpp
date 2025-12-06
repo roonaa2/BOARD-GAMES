@@ -182,29 +182,48 @@ Player<char>* Diamond_UI::create_player(string& name, char symbol, PlayerType ty
     return new Player<char>(name, symbol, type);
 }
 
-Move<char>* Diamond_UI::get_move(Player<char>* player) {
+ Move<char>* Diamond_UI::get_move(Player<char>* player) {
     int x, y;
-    
+
     if (player->get_type() == PlayerType::HUMAN) {
-        cout << "\nPlease enter your move x and y (0 to 6): but only valid diamond and emty cells(marked with .\n";
-        cin >> x >> y;
-        if (x < 0 || x >= 7 || y < 0 || y >= 7) {
-            cout << "Move out of bounds. Try again.\n";
-            return get_move(player);
+        
+/* here I used a simple loop instead of recursion like the other games because with recursion
+  it might cause stack overflow after multiple invalid inputs
+ */
+        while (true) {  
+            cout << "\nPlease enter your move x and y (0 to 6): "
+                    "(only valid diamond + empty cells marked '.')\n";
+            cin >> x >> y;
+
+       
+            if (x < 0 || x >= 7 || y < 0 || y >= 7) {
+                cout << "Move out of bounds. Try again.\n";
+                continue;
+            }
+
+            if (!valid_cells[x][y] ||
+                player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
+                cout << "Cell not valid or already occupied. Try again.\n";
+                continue;
+            }
+
+            break;
         }
-        if (!valid_cells[x][y] || player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
-            cout << "Cell not valid or already occupied. Try again.\n";
-            return get_move(player);
     }
- }
+
+
+
     else if (player->get_type() == PlayerType::COMPUTER) {
         while (true) {
             x = rand() % player->get_board_ptr()->get_rows();
             y = rand() % player->get_board_ptr()->get_columns();
-            if (valid_cells[x][y] && player->get_board_ptr()->get_board_matrix()[x][y] == '.') {
-                break; 
+
+            if (valid_cells[x][y] &&
+                player->get_board_ptr()->get_board_matrix()[x][y] == '.') {
+                break;
             }
         }
     }
+
     return new Move<char>(x, y, player->get_symbol());
 }
