@@ -10,6 +10,7 @@
 #include "WordTic-tac-toe.h"
 #include "Pyramid.h"
 #include "Diamond.h"
+#include "Memory.h"
 
 
 
@@ -113,8 +114,9 @@ void runGame(int choice) {
         }   
         case 13: {      
             cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;      
+            game_ui = new Memory_UI();
+            game_board = new MemoryBoard();
+            break; 
         }
         default:
             cout << "Invalid choice!\n";
