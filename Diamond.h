@@ -10,7 +10,7 @@ using namespace std;
 class DiamondBoard : public Board<char> {
 private:
     char blank_symbol = '.';
-    
+public:
     DiamondBoard();
     bool update_board(Move<char>* move) override;
     bool is_win(Player<char>* player) override;
