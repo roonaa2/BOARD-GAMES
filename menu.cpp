@@ -11,6 +11,7 @@
 #include "Pyramid.h"
 #include "Diamond.h"
 #include "Memory.h"
+#include "FiveFiveTicTacToe.h"
 
 
 
@@ -57,8 +58,9 @@ void runGame(int choice) {
         } 
         case 3: {
             cout << "\n>_< Starting 5x5 Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui = new FiveFiveTicTacToe_UI();
+            game_board = new FiveFiveTicTacToe();
+            break;
         }
         case 4: {
             cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
