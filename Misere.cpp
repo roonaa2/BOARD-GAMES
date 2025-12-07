@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cctype>   
+#include <functional>
 #include "Misere.h"
 
 using namespace std;
@@ -14,7 +15,7 @@ using namespace std;
  a ptr to the current player not the other player
  */
 
-
+ 
 MisereBoard::MisereBoard() : Board(3, 3) {
     // Initialize all cells with blank_symbol
     for (auto& row : board)
@@ -90,6 +91,7 @@ MisereUI::MisereUI() : UI<char>("Welcome to Misere Tic Tac Toe", 3) {
     cout << "- If the board is filled without any player creating such a line, the game ends in a draw.\n\n";   
 }
 
+
 Player<char>* MisereUI::create_player(string& name, char symbol, PlayerType type) {
     // Create player based on type
     cout << "Creating " << (type == PlayerType::HUMAN ? "human" : "computer")
@@ -99,22 +101,85 @@ Player<char>* MisereUI::create_player(string& name, char symbol, PlayerType type
 }
 
 Move<char>* MisereUI::get_move(Player<char>* player) {
-    int x, y;
-    
     if (player->get_type() == PlayerType::HUMAN) {
+        int x, y;
         cout << "\nPlease enter your move x and y (0 to 2): ";
         cin >> x >> y;
-           if (x < 0 || x >= 3 || y < 0 || y >= 3) {
+
+        if (x < 0 || x >= 3 || y < 0 || y >= 3) {
             cout << "Move out of bounds. Try again.\n";
             return get_move(player);
-    }
-    if (player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
+        }
+
+        if (player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
             cout << "Cell already occupied. Try again.\n";
             return get_move(player);
-    } }
-    else if (player->get_type() == PlayerType::COMPUTER) {
-        x = rand() % player->get_board_ptr()->get_rows();
-        y = rand() % player->get_board_ptr()->get_columns();
+        }
+
+        return new Move<char>(x, y, player->get_symbol());
     }
-    return new Move<char>(x, y, player->get_symbol());
+
+    // ---------------- Minimax AI ----------------
+    Board<char>* board = player->get_board_ptr();
+    char mySymbol = player->get_symbol();
+    char oppSymbol = (mySymbol == 'X') ? 'O' : 'X';
+
+    vector<vector<char>> currentBoard = board->get_board_matrix();
+
+    // Minimax function
+    function<int(vector<vector<char>>&, char, char)> minimax = [&](vector<vector<char>>& b, char turn, char other) {
+        // Base cases
+        auto all_equal = [&](char a, char b, char c) { return a==b && b==c && a != '.'; };
+        auto has_three = [&](vector<vector<char>>& brd, char sym) {
+            for (int i=0;i<3;i++)
+                if ((all_equal(brd[i][0],brd[i][1],brd[i][2]) && brd[i][0]==sym) ||
+                    (all_equal(brd[0][i],brd[1][i],brd[2][i]) && brd[0][i]==sym))
+                    return true;
+            if ((all_equal(brd[0][0],brd[1][1],brd[2][2]) && brd[1][1]==sym) ||
+                (all_equal(brd[0][2],brd[1][1],brd[2][0]) && brd[1][1]==sym))
+                return true;
+            return false;
+        };
+
+        if (has_three(b, turn)) return -1;  // turn loses
+        if (has_three(b, other)) return +1; // opponent loses
+
+        // Draw
+        bool full = true;
+        for (int r=0;r<3;r++) for (int c=0;c<3;c++) if (b[r][c]=='.') full=false;
+        if (full) return 0;
+
+        int bestScore = -2;
+        for (int r=0;r<3;r++) {
+            for (int c=0;c<3;c++) {
+                if (b[r][c]=='.') {
+                    b[r][c] = turn;
+                    int score = -minimax(b, other, turn); // switch players
+                    b[r][c] = '.';
+                    if (score > bestScore) bestScore = score;
+                }
+            }
+        }
+        return bestScore;
+    };
+
+    // Find best move
+    int bestX=-1, bestY=-1, bestScore=-2;
+    for (int r=0;r<3;r++) {
+        for (int c=0;c<3;c++) {
+            if (currentBoard[r][c]=='.') {
+                currentBoard[r][c] = mySymbol;
+                int score = -minimax(currentBoard, oppSymbol, mySymbol);
+                currentBoard[r][c] = '.';
+                if (score > bestScore) {
+                    bestScore = score;
+                    bestX = r;
+                    bestY = c;
+                }
+            }
+        }
+    }
+
+    cout << "Computer chooses (" << bestX << ", " << bestY << ") [AI move]\n";
+    return new Move<char>(bestX, bestY, mySymbol);
 }

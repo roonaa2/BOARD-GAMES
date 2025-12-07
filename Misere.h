@@ -6,7 +6,7 @@ using namespace std;
 class MisereBoard : public Board<char> {
 private:
     char blank_symbol = '.';  
-    bool has_three(char symbol);
+    
  
 public:
      
@@ -21,6 +21,8 @@ public:
     bool is_draw(Player<char>* player);
  
     bool game_is_over(Player<char>* player);
+
+     bool has_three(char symbol);
 
     
 };
