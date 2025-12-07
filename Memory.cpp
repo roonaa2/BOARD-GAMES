@@ -14,7 +14,11 @@ using namespace std;
   is_win will check the hiddenBoard for matches
 
  */
- 
+  char hiddenBoard[3][3]= {
+        {'.', '.', '.'},
+        {'.', '.', '.'},
+        {'.', '.', '.'}
+    };
 MemoryBoard::MemoryBoard() : Board(3, 3) {
   
     for (auto& row : board)

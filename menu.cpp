@@ -12,6 +12,8 @@
 #include "Diamond.h"
 #include "Memory.h"
 #include "FiveFiveTicTacToe.h"
+#include "Ultimate.h"
+
 
 
 
@@ -111,9 +113,10 @@ void runGame(int choice) {
         }
         case 12: {
             cout << "\n>_< Starting Ultimate Tic Tac Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;      
-        }   
+            game_ui = new Ultimate_UI();
+            game_board = new Ultimate_Board();
+            break;
+        }
         case 13: {      
             cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n";
             game_ui = new Memory_UI();

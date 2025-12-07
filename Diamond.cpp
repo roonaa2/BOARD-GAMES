@@ -9,7 +9,7 @@ I made the board 7x7 to make a 5x5 diamond shape by making the invalid cells inv
 also added a boolean array to track valid cells (easier than a vector and a helper function)
  */
 
- bool valid_cells[7][7] = {
+  bool valid_cells[7][7] = {
     {false, false, false, true,  false, false, false},
     {false, false, true,  true,  true,  false, false},
     {false, true,  true,  true,  true,  true,  false},

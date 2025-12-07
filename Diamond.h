@@ -7,10 +7,15 @@
 
 using namespace std;
 
+ extern bool valid_cells[7][7];
+
+
 class DiamondBoard : public Board<char> {
 private:
     char blank_symbol = '.';
 public:
+
+    bool valid_cells[7][7];
     DiamondBoard();
     bool update_board(Move<char>* move) override;
     bool is_win(Player<char>* player) override;

@@ -6,16 +6,15 @@
 #include <utility>
 #include <string>
 
+extern char hiddenBoard[3][3];
+
 using namespace std;
 
 class MemoryBoard : public Board<char> {
 private:
     char blank_symbol = '.',hide_symbol = '?';
-    char hiddenBoard[3][3]= {
-        {'.', '.', '.'},
-        {'.', '.', '.'},
-        {'.', '.', '.'}
-    };
+   
+   
 public:
     MemoryBoard();
     bool update_board(Move<char>* move) override;
