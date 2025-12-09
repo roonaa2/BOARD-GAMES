@@ -1,6 +1,10 @@
 #include <iostream>
 #include <iomanip>
 #include <cctype>  
+#include <vector>
+#include <utility>
+#include <cstdlib>
+#include <ctime>
 #include "Diamond.h"
 using namespace std;
 
@@ -209,46 +213,135 @@ Player<char>* Diamond_UI::create_player(string& name, char symbol, PlayerType ty
 
  Move<char>* Diamond_UI::get_move(Player<char>* player) {
     int x, y;
-
+    
     if (player->get_type() == PlayerType::HUMAN) {
-        
-/* here I used a simple loop instead of recursion like the other games because with recursion
-  it might cause stack overflow after multiple invalid inputs
- */
         while (true) {  
             cout << "\nPlease enter your move x and y (0 to 6): "
                     "(only valid diamond + empty cells marked '.')\n";
             cin >> x >> y;
-
-       
+            
             if (x < 0 || x >= 7 || y < 0 || y >= 7) {
                 cout << "Move out of bounds. Try again.\n";
                 continue;
             }
-
+            
             if (!valid_cells[x][y] ||
                 player->get_board_ptr()->get_board_matrix()[x][y] != '.') {
                 cout << "Cell not valid or already occupied. Try again.\n";
                 continue;
             }
-
             break;
         }
     }
-
-
-
     else if (player->get_type() == PlayerType::COMPUTER) {
+        // Get current board state
+        DiamondBoard* boardPtr = dynamic_cast<DiamondBoard*>(player->get_board_ptr());
+        char computer_symbol = player->get_symbol();
+        char opponent_symbol = (computer_symbol == 'X') ? 'O' : 'X';
+        
+        // Create temporary players for win checking
+        Player<char> temp_computer("Temp Computer", computer_symbol, PlayerType::COMPUTER);
+        Player<char> temp_opponent("Temp Opponent", opponent_symbol, PlayerType::COMPUTER);
+        
+        // Strategy: Try to find best move
+        vector<pair<int, int>> best_moves;
+        
+        // 1. Try to win immediately
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (valid_cells[i][j] && boardPtr->get_cell(i, j) == '.') {
+                    // Create a copy of the board to test
+                    DiamondBoard test_board = *boardPtr;
+                    
+                    // Make the test move
+                    Move<char> test_move(i, j, computer_symbol);
+                    test_board.update_board(&test_move);
+                    
+                    // Check if this move wins
+                    temp_computer.set_board_ptr(&test_board);
+                    if (test_board.is_win(&temp_computer)) {
+                        x = i; y = j;
+                        return new Move<char>(x, y, computer_symbol);
+                    }
+                }
+            }
+        }
+        
+        // 2. Block opponent's winning move
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (valid_cells[i][j] && boardPtr->get_cell(i, j) == '.') {
+                    // Create a copy of the board to test
+                    DiamondBoard test_board = *boardPtr;
+                    
+                    // Make the test move for opponent
+                    Move<char> test_move(i, j, opponent_symbol);
+                    test_board.update_board(&test_move);
+                    
+                    // Check if opponent would win here
+                    temp_opponent.set_board_ptr(&test_board);
+                    if (test_board.is_win(&temp_opponent)) {
+                        x = i; y = j;
+                        return new Move<char>(x, y, computer_symbol);
+                    }
+                }
+            }
+        }
+        
+        // 3. Take center position if available (most valuable)
+        vector<pair<int, int>> centers = {{3,3}, {2,3}, {3,2}, {3,4}, {4,3}};
+        for (auto& pos : centers) {
+            if (valid_cells[pos.first][pos.second] && boardPtr->get_cell(pos.first, pos.second) == '.') {
+                x = pos.first; y = pos.second;
+                return new Move<char>(x, y, computer_symbol);
+            }
+        }
+        
+        // 4. Take corners (good strategic positions)
+        vector<pair<int, int>> corners = {{0,3}, {3,0}, {3,6}, {6,3}};
+        for (auto& pos : corners) {
+            if (valid_cells[pos.first][pos.second] && boardPtr->get_cell(pos.first, pos.second) == '.') {
+                best_moves.push_back(pos);
+            }
+        }
+        
+        if (!best_moves.empty()) {
+            int idx = rand() % best_moves.size();
+            x = best_moves[idx].first;
+            y = best_moves[idx].second;
+            return new Move<char>(x, y, computer_symbol);
+        }
+        
+        // 5. Take any edge positions
+        for (int i = 0; i < 7; i++) {
+            for (int j = 0; j < 7; j++) {
+                if (valid_cells[i][j] && boardPtr->get_cell(i, j) == '.') {
+                    // Check if it's an edge (not center or corner)
+                    if ((i == 1 && j == 3) || (i == 2 && j == 2) || (i == 2 && j == 4) ||
+                        (i == 3 && j == 1) || (i == 3 && j == 5) ||
+                        (i == 4 && j == 2) || (i == 4 && j == 4) || (i == 5 && j == 3)) {
+                        best_moves.push_back({i, j});
+                    }
+                }
+            }
+        }
+        
+        if (!best_moves.empty()) {
+            int idx = rand() % best_moves.size();
+            x = best_moves[idx].first;
+            y = best_moves[idx].second;
+            return new Move<char>(x, y, computer_symbol);
+        }
+        
+        // 6. Fallback: random valid move
         while (true) {
-            x = rand() % player->get_board_ptr()->get_rows();
-            y = rand() % player->get_board_ptr()->get_columns();
-
-            if (valid_cells[x][y] &&
-                player->get_board_ptr()->get_board_matrix()[x][y] == '.') {
+            x = rand() % 7;
+            y = rand() % 7;
+            if (valid_cells[x][y] && boardPtr->get_cell(x, y) == '.') {
                 break;
             }
         }
     }
-
+    
     return new Move<char>(x, y, player->get_symbol());
 }
