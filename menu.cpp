@@ -7,15 +7,7 @@
 #include "Tic-Tac-Toe_4x4.h"
 #include "NumericalTicTacToe.h"
 #include "SUS.h"
-#include "WordTic-tac-toe.h"
-#include "Pyramid.h"
-#include "Diamond.h"
-#include "Memory.h"
-#include "FiveFiveTicTacToe.h"
-#include "Ultimate.h"
-
-
-
+#include "ObstaclesTicTacToe.h"
 
 using namespace std;
 
@@ -60,15 +52,13 @@ void runGame(int choice) {
         } 
         case 3: {
             cout << "\n>_< Starting 5x5 Tic-Tac-Toe >_<\n";
-            game_ui = new FiveFiveTicTacToe_UI();
-            game_board = new FiveFiveTicTacToe();
-            break;
+            cout << "This game is not yet implemented.\n";
+            return;
         }
         case 4: {
             cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
-            game_ui = new WORDTIC_TAC_TOE_UI();
-            game_board = new WORDTIC_TAC_TOE();
-            break;;
+            cout << "This game is not yet implemented.\n";
+            return;
         }
         case 5: {
             cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n"; 
@@ -78,9 +68,8 @@ void runGame(int choice) {
         }
         case 6: {
             cout << "\n>_< Starting Diamond Tic-Tac-Toe >_<\n";
-            game_ui = new Diamond_UI();
-            game_board = new DiamondBoard();
-            break;
+            cout << "This game is not yet implemented.\n";
+            return;
         }
         case 7: {
             cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";     
@@ -90,9 +79,8 @@ void runGame(int choice) {
         }   
         case 8: {
             cout << "\n>_< Starting Pyramid Tic-Tac-Toe >_<\n";
-            game_ui = new PyramidUI();
-            game_board = new PyramidBoard();
-            break;
+            cout << "This game is not yet implemented.\n";
+            return;
         }     
         case 9: {
             cout << "\n>_< Starting Numerical Tic-Tac-Toe >_<\n";
@@ -102,8 +90,9 @@ void runGame(int choice) {
         }
         case 10: {
             cout << "\n>_< Starting Obstacles Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;                                          
+            game_ui = new ObstaclesUI();
+            game_board = new ObstaclesBoard();
+            break;                                          
         }   
         case 11: {
             cout << "\n>_< Starting Infinity Tic-Tac-Toe >_<\n";   
@@ -113,15 +102,13 @@ void runGame(int choice) {
         }
         case 12: {
             cout << "\n>_< Starting Ultimate Tic Tac Toe >_<\n";
-            game_ui = new Ultimate_UI();
-            game_board = new Ultimate_Board();
-            break;
-        }
+            cout << "This game is not yet implemented.\n";
+            return;      
+        }   
         case 13: {      
             cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n";
-            game_ui = new Memory_UI();
-            game_board = new MemoryBoard();
-            break; 
+            cout << "This game is not yet implemented.\n";
+            return;      
         }
         default:
             cout << "Invalid choice!\n";
