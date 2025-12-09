@@ -8,6 +8,7 @@
 #include "NumericalTicTacToe.h"
 #include "SUS.h"
 #include "ObstaclesTicTacToe.h"
+#include "Diamond.h"
 
 using namespace std;
 
@@ -68,8 +69,9 @@ void runGame(int choice) {
         }
         case 6: {
             cout << "\n>_< Starting Diamond Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui= new Diamond_UI();
+            game_board = new DiamondBoard();
+            break;
         }
         case 7: {
             cout << "\n>_< Starting 4x4 Tic-Tac-Toe >_<\n";     
