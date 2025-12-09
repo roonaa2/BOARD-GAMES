@@ -7,9 +7,10 @@ using namespace std;
 /**
 I made the board 7x7 to make a 5x5 diamond shape by making the invalid cells invisible
 also added a boolean array to track valid cells (easier than a vector and a helper function)
+ also edited the display function
  */
 
-  bool valid_cells[7][7] = {
+bool valid_cells[7][7] = {
     {false, false, false, true,  false, false, false},
     {false, false, true,  true,  true,  false, false},
     {false, true,  true,  true,  true,  true,  false},
@@ -172,6 +173,30 @@ Diamond_UI::Diamond_UI() : UI<char>("Welcome to Diamond TIC TAC TOE", 3) {
     cout << "- lines must be in different directions but can share 1 common mark.\n";
     cout << "- Game ends when the board is full\n";
     cout << "- U can always undo a move by entering the mark 0\n";
+}
+void Diamond_UI::display_board_matrix(const vector<vector<char>>& matrix) const {
+    if (matrix.empty() || matrix[0].empty()) return;
+
+    cout << "\n    0 1 2 3 4 5 6\n";
+
+    for (int i = 0; i < 7; i++) {
+        cout << i << "   ";
+
+        for (int j = 0; j < 7; j++) {
+
+            if (!valid_cells[i][j]) {
+                cout << "  ";    // invisible invalid cells
+            }
+            else if (matrix[i][j] == '.') {
+                cout << ". ";    // empty valid cell
+            }
+            else {
+                cout << matrix[i][j] << " "; // X or O
+            }
+        }
+        cout << endl;
+    }
+    cout << endl;
 }
 
 Player<char>* Diamond_UI::create_player(string& name, char symbol, PlayerType type) {

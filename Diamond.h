@@ -7,15 +7,12 @@
 
 using namespace std;
 
- extern bool valid_cells[7][7];
-
-
 class DiamondBoard : public Board<char> {
 private:
     char blank_symbol = '.';
-public:
 
-    bool valid_cells[7][7];
+public:
+ 
     DiamondBoard();
     bool update_board(Move<char>* move) override;
     bool is_win(Player<char>* player) override;
@@ -29,6 +26,7 @@ public:
     Diamond_UI();
     ~Diamond_UI() override = default;
     
+    void display_board_matrix(const vector<vector<char>>& matrix) const override;
     Move<char>* get_move(Player<char>* player) override;
     Player<char>* create_player(std::string& name, char symbol, PlayerType type) override;
 };
