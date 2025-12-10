@@ -9,6 +9,11 @@
 #include "SUS.h"
 #include "ObstaclesTicTacToe.h"
 #include "Diamond.h"
+#include "Pyramid.h"
+#include "FiveFiveTicTacToe.h"
+#include "Ultimate.h"
+#include "WordTic-tac-toe.h"
+#include "Memory.h"
 
 using namespace std;
 
@@ -49,17 +54,19 @@ void runGame(int choice) {
         case 2: {
             cout << "\n>_< Starting Four-in-a-Row Tic-Tac-Toe >_<\n";
             cout << "This game is not yet implemented.\n";
-            return;
+            break;
         } 
         case 3: {
             cout << "\n>_< Starting 5x5 Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui=new FiveFiveTicTacToe_UI();
+            game_board=new FiveFiveTicTacToe();
+            break;
         }
         case 4: {
             cout << "\n>_< Starting Word Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui=new WORDTIC_TAC_TOE_UI();
+            game_board=new WORDTIC_TAC_TOE();
+            break;
         }
         case 5: {
             cout << "\n>_< Starting Misère Tic-Tac-Toe >_<\n"; 
@@ -81,8 +88,9 @@ void runGame(int choice) {
         }   
         case 8: {
             cout << "\n>_< Starting Pyramid Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;
+            game_ui=new PyramidUI();
+            game_board=new PyramidBoard();
+            break;
         }     
         case 9: {
             cout << "\n>_< Starting Numerical Tic-Tac-Toe >_<\n";
@@ -104,13 +112,15 @@ void runGame(int choice) {
         }
         case 12: {
             cout << "\n>_< Starting Ultimate Tic Tac Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;      
+            game_ui=new Ultimate_UI();
+            game_board=new Ultimate_Board();
+            break;    
         }   
         case 13: {      
             cout << "\n>_< Starting Memory Tic-Tac-Toe >_<\n";
-            cout << "This game is not yet implemented.\n";
-            return;      
+            game_ui=new Memory_UI();
+            game_board=new MemoryBoard();
+            break;
         }
         default:
             cout << "Invalid choice!\n";
