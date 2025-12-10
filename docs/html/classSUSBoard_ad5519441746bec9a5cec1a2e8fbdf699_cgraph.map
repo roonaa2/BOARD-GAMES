@@ -1,0 +1,5 @@
+<map id="SUSBoard::is_win" name="SUSBoard::is_win">
+<area shape="rect" id="Node000001" title="Checks if the given player has won the game." alt="" coords="5,5,140,31"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="188,5,335,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,15,174,15,174,21,140,21"/>
+</map>

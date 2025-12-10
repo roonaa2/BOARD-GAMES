@@ -1,0 +1,7 @@
+<map id="WORDTIC_TAC_TOE::update_board" name="WORDTIC_TAC_TOE::update_board">
+<area shape="rect" id="Node000001" title="Update the board with a new move." alt="" coords="5,35,208,75"/>
+<area shape="rect" id="Node000002" href="$classWORDTIC__TAC__TOE.html#ac110f55b6dad4c168d4ff911144272ce" title=" " alt="" coords="256,5,461,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,40,242,36,243,41,209,46"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="285,70,432,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="209,63,272,70,271,76,208,69"/>
+</map>

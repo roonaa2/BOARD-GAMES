@@ -1,0 +1,9 @@
+<map id="Memory_UI::get_move" name="Memory_UI::get_move">
+<area shape="rect" id="Node000001" title="Ask the user (or AI) to make a move." alt="" coords="5,55,176,80"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="224,5,385,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,52,235,31,236,36,147,57"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="231,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="176,65,218,65,218,70,176,70"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="241,104,369,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,77,236,98,235,103,146,83"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="XO_Classes.h" name="XO_Classes.h">
+<area shape="rect" id="Node000001" title="Defines the X&#45;O (Tic&#45;Tac&#45;Toe) specific classes that extend the generic board game framework." alt="" coords="113,5,223,31"/>
+<area shape="rect" id="Node000002" href="$BoardGame__Classes_8h.html" title=" " alt="" coords="84,79,252,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,31,171,65,165,65,165,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,152,64,177"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="148,106,70,148,67,143,145,102"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="89,152,151,177"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="162,106,138,142,133,139,158,103"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="176,152,256,177"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="178,103,203,139,198,142,174,106"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="280,152,355,177"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="193,102,282,144,279,148,191,106"/>
+</map>

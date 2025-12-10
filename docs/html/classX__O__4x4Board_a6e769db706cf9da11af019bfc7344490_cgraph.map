@@ -1,0 +1,7 @@
+<map id="X_O_4x4Board::is_win" name="X_O_4x4Board::is_win">
+<area shape="rect" id="Node000001" title="Check if a player has won." alt="" coords="5,42,172,67"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4Board.html#aa2bb740b2ea9cb11d7dcccad69aa785d" title=" " alt="" coords="220,5,383,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,41,206,36,207,41,173,46"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="228,70,375,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,63,214,69,214,74,172,68"/>
+</map>

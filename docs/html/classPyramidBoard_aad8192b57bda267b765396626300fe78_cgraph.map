@@ -1,0 +1,9 @@
+<map id="PyramidBoard::game_is_over" name="PyramidBoard::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,23,164,63"/>
+<area shape="rect" id="Node000002" href="$classPyramidBoard.html#a9612db6196560d868d4f66c440ba1acf" title="Check if the game ended in a draw." alt="" coords="212,5,384,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,31,198,27,199,32,165,37"/>
+<area shape="rect" id="Node000003" href="$classPyramidBoard.html#a565780abfdb0afbfb81332afbc8e6b64" title="Check if a player has won." alt="" coords="217,55,379,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,50,203,54,203,59,164,55"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="432,55,579,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="380,65,418,65,418,70,380,70"/>
+</map>

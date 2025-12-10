@@ -1,0 +1,44 @@
+\doxysection{Word\+Tic-\/tac-\/toe.h}
+\hypertarget{WordTic-tac-toe_8h_source}{}\label{WordTic-tac-toe_8h_source}\mbox{\hyperlink{WordTic-tac-toe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ WORDTIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ WORDTIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00007}00007\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00008}00008\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00009}00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00010}00010\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00011}\mbox{\hyperlink{classWORDTIC__TAC__TOE}{00011}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWORDTIC__TAC__TOE}{WORDTIC\_TAC\_TOE}}:\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00012}00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00013}\mbox{\hyperlink{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}{00013}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00014}\mbox{\hyperlink{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}{00014}}\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<string>}}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}{words}};}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00015}00015\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00016}00016\ \ \ \ \ \textcolor{comment}{//\ Helper\ function\ declarations}}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\_valid\_word}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \mbox{\hyperlink{classPlayer}{word}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<string>}}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324}{check\_board\_words}}();}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00019}00019\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00020}00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a324ccb1827b4755166955d29982dcb71}{WORDTIC\_TAC\_TOE}}();}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_ab1c85d8f899931900b596b9cd88a1376}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00024}\mbox{\hyperlink{classWORDTIC__TAC__TOE_a3c9ac5dd622a59f19ac346676be80781}{00024}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a3c9ac5dd622a59f19ac346676be80781}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \};}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00025}00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00026}00026\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_ae1ac4e0b2ce133dcf661544d0f401d61}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00027}00027\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce}{display\_board}}();\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00028}00028\ \};}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00030}\mbox{\hyperlink{classWORDTIC__TAC__TOE__UI}{00030}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classWORDTIC__TAC__TOE__UI}{WORDTIC\_TAC\_TOE\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00031}00031\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{classWORDTIC__TAC__TOE__UI_aad9739de6479fbd7acc311b02f924130}{WORDTIC\_TAC\_TOE\_UI}}();}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00033}\mbox{\hyperlink{classWORDTIC__TAC__TOE__UI_a466e513a173c9f716e4dd2cdbdf03f53}{00033}}\ \ \ \ \ \mbox{\hyperlink{classWORDTIC__TAC__TOE__UI_a466e513a173c9f716e4dd2cdbdf03f53}{\string~WORDTIC\_TAC\_TOE\_UI}}()\ \{\};}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classWORDTIC__TAC__TOE__UI_aced03e3957cb0befbd8c8861b82dbf94}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type);}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00036}00036\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classWORDTIC__TAC__TOE__UI_af678453c1749f35e1404bb698d08e912}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00037}00037\ \};}
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00038}00038\ }
+\DoxyCodeLine{\Hypertarget{WordTic-tac-toe_8h_source_l00039}00039\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

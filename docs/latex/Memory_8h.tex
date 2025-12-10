@@ -1,0 +1,54 @@
+\doxysection{Memory.\+h File Reference}
+\hypertarget{Memory_8h}{}\label{Memory_8h}\index{Memory.h@{Memory.h}}
+{\ttfamily \#include "{}Board\+Game\+\_\+\+Classes.\+h"{}}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Memory.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Memory_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{Memory_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMemoryBoard}{Memory\+Board}}
+\item 
+class \mbox{\hyperlink{classMemory__UI}{Memory\+\_\+\+UI}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{Memory_8h_a941ac57b8d1e79e4cc6b57f8c7aad25d}{hidden\+Board}} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{Memory_8h_a941ac57b8d1e79e4cc6b57f8c7aad25d}\label{Memory_8h_a941ac57b8d1e79e4cc6b57f8c7aad25d} 
+\index{Memory.h@{Memory.h}!hiddenBoard@{hiddenBoard}}
+\index{hiddenBoard@{hiddenBoard}!Memory.h@{Memory.h}}
+\doxysubsubsection{\texorpdfstring{hiddenBoard}{hiddenBoard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} hidden\+Board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+I added a 3x3 hidden\+Board to store the actual symbols also added hide symbol and modified update\+\_\+board accordingly ui will deal with the normal board which has hide symbol and is\+\_\+win will check the hidden\+Board for matches 
+
+Definition at line \mbox{\hyperlink{Memory_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Memory_8cpp_source}{Memory.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\}}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+
+\end{DoxyCode}

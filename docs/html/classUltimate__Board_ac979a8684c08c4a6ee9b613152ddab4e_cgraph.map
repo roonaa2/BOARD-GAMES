@@ -1,0 +1,5 @@
+<map id="Ultimate_Board::update_board" name="Ultimate_Board::update_board">
+<area shape="rect" id="Node000001" title="Update the board with a new move." alt="" coords="5,5,183,45"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="231,13,377,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="183,23,217,23,217,28,183,28"/>
+</map>

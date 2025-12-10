@@ -1,0 +1,10 @@
+<map id="MemoryBoard::game_is_over" name="MemoryBoard::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,31,219,56"/>
+<area shape="rect" id="Node000002" href="$classMemoryBoard.html#a9f31d94801313d1c82cbbd1e10a27526" title="Check if the game ended in a draw." alt="" coords="267,5,439,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="218,29,253,26,253,31,219,35"/>
+<area shape="rect" id="Node000003" href="$classMemoryBoard.html#a97ca50087ca4b0c89e08e570ded2abb1" title="Check if a player has won." alt="" coords="487,31,649,56"/>
+<area shape="poly" id="edge4_Node000001_Node000003" title=" " alt="" coords="219,41,473,41,473,46,219,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="440,26,473,30,473,35,439,31"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="697,31,844,56"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="650,41,683,41,683,46,650,46"/>
+</map>

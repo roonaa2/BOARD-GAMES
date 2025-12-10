@@ -1,0 +1,481 @@
+\doxysection{WORDTIC\+\_\+\+TAC\+\_\+\+TOE Class Reference}
+\hypertarget{classWORDTIC__TAC__TOE}{}\label{classWORDTIC__TAC__TOE}\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+
+
+{\ttfamily \#include $<$Word\+Tic-\/tac-\/toe.\+h$>$}
+
+
+
+Inheritance diagram for WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classWORDTIC__TAC__TOE__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classWORDTIC__TAC__TOE__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWORDTIC__TAC__TOE_a324ccb1827b4755166955d29982dcb71}{WORDTIC\+\_\+\+TAC\+\_\+\+TOE}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_ab1c85d8f899931900b596b9cd88a1376}{update\+\_\+board}} (\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{move}})
+\begin{DoxyCompactList}\small\item\em Update the board with a new move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4}{is\+\_\+win}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if a player has won. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_a3c9ac5dd622a59f19ac346676be80781}{is\+\_\+lose}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Check if a player has lost. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01}{is\+\_\+draw}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if the game ended in a draw. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_ae1ac4e0b2ce133dcf661544d0f401d61}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if the game is over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce}{display\+\_\+board}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classBoard_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a512d0bd8c282985c410d677c82eb3b78}{get\+\_\+n\+\_\+moves}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of moves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classBoard_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\+\_\+valid\+\_\+word}} (\mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{string}} \&\mbox{\hyperlink{classPlayer}{word}})
+\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{string}} $>$ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324}{check\+\_\+board\+\_\+words}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}{blank\+\_\+symbol}} = \textquotesingle{}.\textquotesingle{}
+\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{string}} $>$ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}{words}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8h_source_l00011}{11}} of file \mbox{\hyperlink{WordTic-tac-toe_8h_source}{Word\+Tic-\/tac-\/toe.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWORDTIC__TAC__TOE_a324ccb1827b4755166955d29982dcb71}\label{classWORDTIC__TAC__TOE_a324ccb1827b4755166955d29982dcb71} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{WORDTIC\_TAC\_TOE()}{WORDTIC\_TAC\_TOE()}}
+{\footnotesize\ttfamily WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::\+WORDTIC\+\_\+\+TAC\+\_\+\+TOE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classBoard}{Board}}(3,\ 3)\ \{}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{row}}\ :\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}})}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{for}}\ (\mbox{\hyperlink{classPlayer}{auto}}\&\ \mbox{\hyperlink{classPlayer}{cell}}\ :\ \mbox{\hyperlink{classPlayer}{row}})}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cell}}\ =\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}{blank\_symbol}};}
+\DoxyCodeLine{00014\ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classPlayer}{ifstream}}\ \mbox{\hyperlink{classPlayer}{file}}(\textcolor{stringliteral}{"{}dic.txt"{}});}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPlayer}{word}};}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classPlayer}{getline}}(\mbox{\hyperlink{classPlayer}{file}},\ \mbox{\hyperlink{classPlayer}{word}}))\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{word}}.erase(\mbox{\hyperlink{classPlayer}{remove}}(\mbox{\hyperlink{classPlayer}{word}}.begin(),\ \mbox{\hyperlink{classPlayer}{word}}.end(),\ \textcolor{charliteral}{'\(\backslash\)r'}),\ \mbox{\hyperlink{classPlayer}{word}}.end());}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{word}}.erase(\mbox{\hyperlink{classPlayer}{remove}}(\mbox{\hyperlink{classPlayer}{word}}.begin(),\ \mbox{\hyperlink{classPlayer}{word}}.end(),\ \textcolor{charliteral}{'\(\backslash\)n'}),\ \mbox{\hyperlink{classPlayer}{word}}.end());}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classPlayer}{word}}.empty())\ \{}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}{words}}.push\_back(\mbox{\hyperlink{classPlayer}{word}});}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00023\ \ \ \ \ \}}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classPlayer}{file}}.close();}
+\DoxyCodeLine{00025\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324}\label{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!check\_board\_words@{check\_board\_words}}
+\index{check\_board\_words@{check\_board\_words}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{check\_board\_words()}{check\_board\_words()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{string}} $>$ WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::check\+\_\+board\+\_\+words (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00067}{67}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<string>}}\ \mbox{\hyperlink{classPlayer}{found\_words}};}
+\DoxyCodeLine{00069\ \ \ \ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPlayer}{row\_word}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{j}}++)\ \{}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{row\_word}}\ +=\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}];}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{row\_word}}.find(\textcolor{charliteral}{'.'})\ ==\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{string::npos}}\ \&\&\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\_valid\_word}}(\mbox{\hyperlink{classPlayer}{row\_word}}))\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{found\_words}}.push\_back(\mbox{\hyperlink{classPlayer}{row\_word}});}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{j}}++)\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPlayer}{col\_word}};}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{col\_word}}\ +=\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}];}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{col\_word}}.find(\textcolor{charliteral}{'.'})\ ==\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{string::npos}}\ \&\&\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\_valid\_word}}(\mbox{\hyperlink{classPlayer}{col\_word}}))\ \{}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{found\_words}}.push\_back(\mbox{\hyperlink{classPlayer}{col\_word}});}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00088\ \ \ \ \ \}}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPlayer}{diag1}},\ \mbox{\hyperlink{classPlayer}{diag2}};}
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{diag1}}\ +=\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{i}}];}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{diag2}}\ +=\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][2-\/\mbox{\hyperlink{classPlayer}{i}}];}
+\DoxyCodeLine{00094\ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{diag1}}.find(\textcolor{charliteral}{'.'})\ ==\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{string::npos}}\ \&\&\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\_valid\_word}}(\mbox{\hyperlink{classPlayer}{diag1}}))\ \{}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{found\_words}}.push\_back(\mbox{\hyperlink{classPlayer}{diag1}});}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{diag2}}.find(\textcolor{charliteral}{'.'})\ ==\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{string::npos}}\ \&\&\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}{is\_valid\_word}}(\mbox{\hyperlink{classPlayer}{diag2}}))\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{found\_words}}.push\_back(\mbox{\hyperlink{classPlayer}{diag2}});}
+\DoxyCodeLine{00101\ \ \ \ \ \}}
+\DoxyCodeLine{00102\ \ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{found\_words}};}
+\DoxyCodeLine{00104\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce}\label{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!display\_board@{display\_board}}
+\index{display\_board@{display\_board}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{display\_board()}{display\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::display\+\_\+board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nCurrent\ Board:\(\backslash\)n"{}};}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ 0\ 1\ 2\(\backslash\)n"{}};}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{i}}\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{j}}++)\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{endl}};}
+\DoxyCodeLine{00054\ \ \ \ \ \}}
+\DoxyCodeLine{00055\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{endl}};}
+\DoxyCodeLine{00056\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_ae1ac4e0b2ce133dcf661544d0f401d61}\label{classWORDTIC__TAC__TOE_ae1ac4e0b2ce133dcf661544d0f401d61} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the game is over. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}})\ ||\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01}{is\_draw}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00126\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_ae1ac4e0b2ce133dcf661544d0f401d61_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01}\label{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the game ended in a draw. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00120}{120}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 9\ \&\&\ !\mbox{\hyperlink{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}}));}
+\DoxyCodeLine{00122\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a56fe5d14c10500ae248b8989d1f56f01_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_a3c9ac5dd622a59f19ac346676be80781}\label{classWORDTIC__TAC__TOE_a3c9ac5dd622a59f19ac346676be80781} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Check if a player has lost. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8h_source_l00024}{24}} of file \mbox{\hyperlink{WordTic-tac-toe_8h_source}{Word\+Tic-\/tac-\/toe.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00024\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \};}
+
+\end{DoxyCode}
+\Hypertarget{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f}\label{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!is\_valid\_word@{is\_valid\_word}}
+\index{is\_valid\_word@{is\_valid\_word}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_word()}{is\_valid\_word()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::is\+\_\+valid\+\_\+word (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{string}} \&}]{word }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \mbox{\hyperlink{classPlayer}{dict\_word}}\ :\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}{words}})\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{dict\_word}}\ ==\ \mbox{\hyperlink{classPlayer}{word}})\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00065\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a56d4a274f10d686305531733fa78356f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4}\label{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if a player has won. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00106}{106}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00107\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<string>}}\ \mbox{\hyperlink{classPlayer}{found\_words}}\ =\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a4e991c492fc4d46cdcedc78f57ef7324}{check\_board\_words}}();}
+\DoxyCodeLine{00108\ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classPlayer}{found\_words}}.empty())\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n***\ WINNER!\ Player\ "{}}\ <<\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_aed2af19790ba73190e3ebeea589518e1}{get\_name}}()\ <<\ \textcolor{stringliteral}{"{}\ formed:\ "{}};}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\&\ \mbox{\hyperlink{classPlayer}{word}}\ :\ \mbox{\hyperlink{classPlayer}{found\_words}})\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{word}}\ <<\ \textcolor{stringliteral}{"{}\ "{}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}***\(\backslash\)n"{}};}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00116\ \ \ \ \ \}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00118\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_a2b8d91720d2e12d7808bd4485d8e68c4_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classWORDTIC__TAC__TOE_ab1c85d8f899931900b596b9cd88a1376}\label{classWORDTIC__TAC__TOE_ab1c85d8f899931900b596b9cd88a1376} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the board with a new move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move object containing position and symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid and applied, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{WordTic-tac-toe_8cpp_source}{Word\+Tic-\/tac-\/toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_x();}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_y();}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{mark}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{classPlayer}{x\ <\ 0\ ||\ x\ >}}=\ \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}\ ||\ \mbox{\hyperlink{classPlayer}{y\ <\ 0\ ||\ y\ >}}=\ \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})\ \&\&}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ ==\ \mbox{\hyperlink{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}{blank\_symbol}}))\ \{}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ =\ \mbox{\hyperlink{classPlayer}{toupper}}(\mbox{\hyperlink{classPlayer}{mark}});}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Display\ the\ board}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classWORDTIC__TAC__TOE_ac110f55b6dad4c168d4ff911144272ce}{display\_board}}();}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00043\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classWORDTIC__TAC__TOE_ab1c85d8f899931900b596b9cd88a1376_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb}\label{classWORDTIC__TAC__TOE_a9ae2eb44736c28f980657bc72ad3aacb} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!blank\_symbol@{blank\_symbol}}
+\index{blank\_symbol@{blank\_symbol}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{blank\_symbol}{blank\_symbol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::blank\+\_\+symbol = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8h_source_l00013}{13}} of file \mbox{\hyperlink{WordTic-tac-toe_8h_source}{Word\+Tic-\/tac-\/toe.\+h}}.
+
+\Hypertarget{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6}\label{classWORDTIC__TAC__TOE_a83e20fd37183aa821573b19ba8ebf7e6} 
+\index{WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}!words@{words}}
+\index{words@{words}!WORDTIC\_TAC\_TOE@{WORDTIC\_TAC\_TOE}}
+\doxysubsubsection{\texorpdfstring{words}{words}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{vector}}$<$\mbox{\hyperlink{classPlayer}{string}}$>$ WORDTIC\+\_\+\+TAC\+\_\+\+TOE\+::words\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{WordTic-tac-toe_8h_source_l00014}{14}} of file \mbox{\hyperlink{WordTic-tac-toe_8h_source}{Word\+Tic-\/tac-\/toe.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{WordTic-tac-toe_8h}{Word\+Tic-\/tac-\/toe.\+h}}\item 
+\mbox{\hyperlink{WordTic-tac-toe_8cpp}{Word\+Tic-\/tac-\/toe.\+cpp}}\end{DoxyCompactItemize}

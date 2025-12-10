@@ -1,0 +1,244 @@
+\doxysection{Pyramid\+UI Class Reference}
+\hypertarget{classPyramidUI}{}\label{classPyramidUI}\index{PyramidUI@{PyramidUI}}
+
+
+{\ttfamily \#include $<$Pyramid.\+h$>$}
+
+
+
+Inheritance diagram for Pyramid\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPyramidUI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pyramid\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPyramidUI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPyramidUI_ad97a5afd300e4b34f1d4b09402d9a212}{Pyramid\+UI}} ()
+\item 
+\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d}{get\+\_\+move}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Ask the user (or AI) to make a move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c}{setup\+\_\+players}} () \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Set up players for the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\+\_\+player}} (\mbox{\hyperlink{classPlayer}{string}} \&name, \mbox{\hyperlink{classPlayer}{char}} symbol, \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} type) \mbox{\hyperlink{classPlayer}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUI_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{cell\+\_\+display\+\_\+width}}=3)
+\begin{DoxyCompactList}\small\item\em Construct the \doxylink{classUI}{UI} and display a welcome message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUI_ae50eed41905ca2f8dc103d9bef427fe6}{UI}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{message}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{cell\+\_\+display\+\_\+width}})
+\begin{DoxyCompactList}\small\item\em Construct the \doxylink{classUI}{UI} and display a welcome message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classUI_a1012e508ff7df030714c62ddf6b261a7}{\texorpdfstring{$\sim$}{\string~}\+UI}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classUI_aaad19c26b8e4c49ba7ada54abd83e23c}{display\+\_\+message}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{message}})
+\begin{DoxyCompactList}\small\item\em Display any message to the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUI_a94561e0bb4bbcbe5ff71ca6d751922df}{create\+\_\+player}} (\mbox{\hyperlink{classPlayer}{string}} \&name, \mbox{\hyperlink{classPlayer}{char}} symbol, \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Create a player object based on input name, symbol, and type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classUI_aa3775124efaeac59935ae0afb354708d}{display\+\_\+board\+\_\+matrix}} (\mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \&\mbox{\hyperlink{classPlayer}{matrix}}) \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Display the current board matrix in formatted form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classUI_a7b1603de1f73fbb4006e4f00a27c44da}{get\+\_\+player\+\_\+name}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{player\+\_\+label}})
+\begin{DoxyCompactList}\small\item\em Ask the user for the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} \mbox{\hyperlink{classUI_ac3d45fea2bbcaa0372d8e5101e116ca1}{get\+\_\+player\+\_\+type\+\_\+choice}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{player\+\_\+label}}, \mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{string}} $>$ \&\mbox{\hyperlink{classPlayer}{options}})
+\begin{DoxyCompactList}\small\item\em Ask the user to choose the player type from a list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classUI_a6c79c489ae9aa3a7860fb58e5a14ddfe}{cell\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em Width of each displayed board cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8h_source_l00033}{33}} of file \mbox{\hyperlink{Pyramid_8h_source}{Pyramid.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPyramidUI_ad97a5afd300e4b34f1d4b09402d9a212}\label{classPyramidUI_ad97a5afd300e4b34f1d4b09402d9a212} 
+\index{PyramidUI@{PyramidUI}!PyramidUI@{PyramidUI}}
+\index{PyramidUI@{PyramidUI}!PyramidUI@{PyramidUI}}
+\doxysubsubsection{\texorpdfstring{PyramidUI()}{PyramidUI()}}
+{\footnotesize\ttfamily Pyramid\+UI\+::\+Pyramid\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00126}{126}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00126\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classUI}{UI}}(3)\ \{}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Welcome\ to\ Pyramid\ Tic-\/Tac-\/Toe!\(\backslash\)n"{}};}
+\DoxyCodeLine{00128\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Players\ take\ turns\ placing\ their\ symbols\ on\ a\ pyramid-\/shaped\ board.\(\backslash\)n"{}};}
+\DoxyCodeLine{00129\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}First\ to\ align\ 3\ symbols\ in\ a\ straight\ line\ wins!\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00130\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}\label{classPyramidUI_a6295f5664515c05e1d7052aa83937a05} 
+\index{PyramidUI@{PyramidUI}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!PyramidUI@{PyramidUI}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} Pyramid\+UI\+::create\+\_\+player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{string}} \&}]{name,  }\item[{\mbox{\hyperlink{classPlayer}{char}}}]{symbol,  }\item[{\mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00193}{193}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00194\ \{}
+\DoxyCodeLine{00195\ \ \ \ \ \textcolor{keywordflow}{if}(type\ ==\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}})\ \{}
+\DoxyCodeLine{00196\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}(name,\ symbol);}
+\DoxyCodeLine{00197\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00198\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Player<char>}}(name,\ symbol,\ type);}
+\DoxyCodeLine{00199\ \ \ \ \ \}}
+\DoxyCodeLine{00200\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidUI_a6295f5664515c05e1d7052aa83937a05_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d}\label{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d} 
+\index{PyramidUI@{PyramidUI}!get\_move@{get\_move}}
+\index{get\_move@{get\_move}!PyramidUI@{PyramidUI}}
+\doxysubsubsection{\texorpdfstring{get\_move()}{get\_move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} Pyramid\+UI\+::get\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Ask the user (or AI) to make a move. 
+
+
+
+Implements \mbox{\hyperlink{classUI_a8befa259c38c57e6ae2e8ed81c476337}{UI$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00132}{132}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00133\ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ it's\ an\ AI\ player}}
+\DoxyCodeLine{00135\ \ \ \ \ \mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}*\ \mbox{\hyperlink{classPlayer}{ai}}\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}*\textcolor{keyword}{>}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00136\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{ai}})\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{ai}}-\/>get\_best\_move();}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \ \ \ \ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{comment}{//\ Human\ player}}
+\DoxyCodeLine{00141\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}};}
+\DoxyCodeLine{00142\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_aed2af19790ba73190e3ebeea589518e1}{get\_name}}()\ }
+\DoxyCodeLine{00143\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}()\ <<\ \textcolor{stringliteral}{"{})\ -\/\ Enter\ row\ and\ col:\ "{}};}
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{r}}\ >>\ \mbox{\hyperlink{classPlayer}{c}};}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Move<char>}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}());}
+\DoxyCodeLine{00147\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c}\label{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c} 
+\index{PyramidUI@{PyramidUI}!setup\_players@{setup\_players}}
+\index{setup\_players@{setup\_players}!PyramidUI@{PyramidUI}}
+\doxysubsubsection{\texorpdfstring{setup\_players()}{setup\_players()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} Pyramid\+UI\+::setup\+\_\+players (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set up players for the game. 
+
+Default implementation of setting up two players. 
+
+Reimplemented from \mbox{\hyperlink{classUI_a6966a040c995b2292e5edddaa94f889a}{UI$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00149}{149}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150\ \{}
+\DoxyCodeLine{00151\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}**\ players\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Player<char>}}*[2];}
+\DoxyCodeLine{00152\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00155\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}===\ PYRAMID\ TIC-\/TAC-\/TOE\ ===\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00156\ \ \ \ \ }
+\DoxyCodeLine{00157\ \ \ \ \ \textcolor{comment}{//\ Player\ 1\ (X)}}
+\DoxyCodeLine{00158\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Player\ 1\ (X)\ -\/\ Choose\ type:\(\backslash\)n"{}};}
+\DoxyCodeLine{00159\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ Human\(\backslash\)n"{}};}
+\DoxyCodeLine{00160\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ AI\(\backslash\)n"{}};}
+\DoxyCodeLine{00161\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ choice:\ "{}};}
+\DoxyCodeLine{00162\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{00163\ \ \ \ \ }
+\DoxyCodeLine{00164\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{choice}}\ ==\ 2)\ \{}
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ players[0]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name\ =\ \textcolor{stringliteral}{"{}AI-\/X"{}},\ \textcolor{charliteral}{'X'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}});}
+\DoxyCodeLine{00166\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ name:\ "{}};}
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore();}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{getline}}(\mbox{\hyperlink{classPlayer}{cin}},\ name);}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ players[0]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name,\ \textcolor{charliteral}{'X'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}});}
+\DoxyCodeLine{00171\ \ \ \ \ \}}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00173\ \ \ \ \ \textcolor{comment}{//\ Player\ 2\ (O)}}
+\DoxyCodeLine{00174\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPlayer\ 2\ (O)\ -\/\ Choose\ type:\(\backslash\)n"{}};}
+\DoxyCodeLine{00175\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ Human\(\backslash\)n"{}};}
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ AI\(\backslash\)n"{}};}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ choice:\ "{}};}
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{00179\ \ \ \ \ }
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{choice}}\ ==\ 2)\ \{}
+\DoxyCodeLine{00181\ \ \ \ \ \ \ \ \ players[1]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name\ =\ \textcolor{stringliteral}{"{}AI-\/O"{}},\ \textcolor{charliteral}{'O'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}});}
+\DoxyCodeLine{00182\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00183\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ name:\ "{}};}
+\DoxyCodeLine{00184\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore();}
+\DoxyCodeLine{00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{getline}}(\mbox{\hyperlink{classPlayer}{cin}},\ name);}
+\DoxyCodeLine{00186\ \ \ \ \ \ \ \ \ players[1]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name,\ \textcolor{charliteral}{'O'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}});}
+\DoxyCodeLine{00187\ \ \ \ \ \}}
+\DoxyCodeLine{00188\ }
+\DoxyCodeLine{00189\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00190\ \ \ \ \ \textcolor{keywordflow}{return}\ players;}
+\DoxyCodeLine{00191\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Pyramid_8h}{Pyramid.\+h}}\item 
+\mbox{\hyperlink{Pyramid_8cpp}{Pyramid.\+cpp}}\end{DoxyCompactItemize}

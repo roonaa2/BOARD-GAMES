@@ -1,0 +1,49 @@
+\doxysection{Memory.\+cpp File Reference}
+\hypertarget{Memory_8cpp}{}\label{Memory_8cpp}\index{Memory.cpp@{Memory.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include "{}Memory.\+h"{}}\newline
+Include dependency graph for Memory.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Memory_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{Memory_8cpp_a941ac57b8d1e79e4cc6b57f8c7aad25d}{hidden\+Board}} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{Memory_8cpp_a941ac57b8d1e79e4cc6b57f8c7aad25d}\label{Memory_8cpp_a941ac57b8d1e79e4cc6b57f8c7aad25d} 
+\index{Memory.cpp@{Memory.cpp}!hiddenBoard@{hiddenBoard}}
+\index{hiddenBoard@{hiddenBoard}!Memory.cpp@{Memory.cpp}}
+\doxysubsubsection{\texorpdfstring{hiddenBoard}{hiddenBoard}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} hidden\+Board\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\}}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+I added a 3x3 hidden\+Board to store the actual symbols also added hide symbol and modified update\+\_\+board accordingly ui will deal with the normal board which has hide symbol and is\+\_\+win will check the hidden\+Board for matches 
+
+Definition at line \mbox{\hyperlink{Memory_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Memory_8cpp_source}{Memory.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \{\textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'},\ \textcolor{charliteral}{'.'}\}}
+\DoxyCodeLine{00021\ \ \ \ \ \};}
+
+\end{DoxyCode}

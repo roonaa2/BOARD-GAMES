@@ -1,0 +1,21 @@
+<map id="Misere.cpp" name="Misere.cpp">
+<area shape="rect" id="Node000001" title=" " alt="" coords="263,5,356,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,225,85,251"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="266,33,214,52,160,81,126,111,97,147,58,214,54,212,92,144,122,108,157,76,211,47,265,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="280,225,355,251"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,31,319,211,314,211,307,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="347,79,413,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="323,29,361,67,357,71,319,33"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="437,79,523,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="338,28,441,71,439,76,336,33"/>
+<area shape="rect" id="Node000006" href="$Misere_8h.html" title=" " alt="" coords="171,79,250,104"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="295,33,239,73,236,68,292,29"/>
+<area shape="rect" id="Node000007" href="$BoardGame__Classes_8h.html" title=" " alt="" coords="104,152,272,177"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="209,105,198,140,193,138,204,104"/>
+<area shape="poly" id="edge9_Node000007_Node000002" title=" " alt="" coords="166,180,82,221,80,217,164,175"/>
+<area shape="poly" id="edge10_Node000007_Node000003" title=" " alt="" coords="210,175,285,216,283,221,208,180"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="109,225,168,251"/>
+<area shape="poly" id="edge7_Node000007_Node000008" title=" " alt="" coords="182,179,157,216,152,213,178,176"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="193,225,255,251"/>
+<area shape="poly" id="edge8_Node000007_Node000009" title=" " alt="" coords="196,176,214,212,210,214,192,179"/>
+</map>

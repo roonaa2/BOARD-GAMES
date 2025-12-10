@@ -1,0 +1,5 @@
+<map id="SUSBoard::get_score" name="SUSBoard::get_score">
+<area shape="rect" id="Node000001" title="Gets the score for a specific player." alt="" coords="5,5,163,31"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="211,5,357,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="163,15,197,15,197,21,163,21"/>
+</map>

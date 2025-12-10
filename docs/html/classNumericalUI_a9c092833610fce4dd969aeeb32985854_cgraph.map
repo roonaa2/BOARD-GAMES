@@ -1,0 +1,7 @@
+<map id="NumericalUI::is_valid_number" name="NumericalUI::is_valid_number">
+<area shape="rect" id="Node000001" title="Validates if a number choice is valid for the given player." alt="" coords="5,27,167,67"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="215,5,361,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="166,33,200,28,201,33,167,38"/>
+<area shape="rect" id="Node000003" href="$classNumericalBoard.html#ac8b09d88b7e4b4e3a8ba726daba21635" title="Checks if a number has already been used." alt="" coords="215,55,361,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="167,56,201,61,200,66,166,61"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PyramidUI::setup_players" name="PyramidUI::setup_players">
+<area shape="rect" id="Node000001" title="Set up players for the game." alt="" coords="5,5,195,31"/>
+<area shape="rect" id="Node000002" href="$classPyramidUI.html#a6295f5664515c05e1d7052aa83937a05" title=" " alt="" coords="243,5,429,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="195,15,229,15,229,21,195,21"/>
+</map>

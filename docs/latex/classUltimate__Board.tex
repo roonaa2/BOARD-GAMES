@@ -1,0 +1,371 @@
+\doxysection{Ultimate\+\_\+\+Board Class Reference}
+\hypertarget{classUltimate__Board}{}\label{classUltimate__Board}\index{Ultimate\_Board@{Ultimate\_Board}}
+
+
+{\ttfamily \#include $<$Ultimate.\+h$>$}
+
+
+
+Inheritance diagram for Ultimate\+\_\+\+Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classUltimate__Board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ultimate\+\_\+\+Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=173pt]{classUltimate__Board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUltimate__Board_a7217969045637563ae6d47d492a31fa9}{Ultimate\+\_\+\+Board}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classUltimate__Board_ac979a8684c08c4a6ee9b613152ddab4e}{update\+\_\+board}} (\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{move}})
+\begin{DoxyCompactList}\small\item\em Update the board with a new move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c}{is\+\_\+win}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if a player has won. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classUltimate__Board_a11f3f01e0fe32c71094181b7403d4983}{is\+\_\+lose}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Check if a player has lost. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classUltimate__Board_aa12b59e269124609281508ee77c2f32f}{is\+\_\+draw}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if the game ended in a draw. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classUltimate__Board_a7b70a46092ded87de428f18b6e5a10a3}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Check if the game is over. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classBoard_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a512d0bd8c282985c410d677c82eb3b78}{get\+\_\+n\+\_\+moves}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of moves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classBoard_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\+\_\+symbol}} = \textquotesingle{}.\textquotesingle{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8h_source_l00009}{9}} of file \mbox{\hyperlink{Ultimate_8h_source}{Ultimate.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classUltimate__Board_a7217969045637563ae6d47d492a31fa9}\label{classUltimate__Board_a7217969045637563ae6d47d492a31fa9} 
+\index{Ultimate\_Board@{Ultimate\_Board}!Ultimate\_Board@{Ultimate\_Board}}
+\index{Ultimate\_Board@{Ultimate\_Board}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{Ultimate\_Board()}{Ultimate\_Board()}}
+{\footnotesize\ttfamily Ultimate\+\_\+\+Board\+::\+Ultimate\+\_\+\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Ultimate_8cpp_source}{Ultimate.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classBoard}{Board}}(9,\ 9)\ \{}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{i}})\ \ \ \ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{j}})\ \ \ \ \ \ }
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Ultimate_8cpp_a1101bd9f749e167e8d6e276d97e4612d}{subboard}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ =\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}};\ \textcolor{comment}{//\ for\ the\ final\ win\ check}}
+\DoxyCodeLine{00021\ \ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{row}}\ :\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}})\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{cell}}\ :\ \mbox{\hyperlink{classPlayer}{row}})}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cell}}\ =\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}};\ \ \textcolor{comment}{//whole\ board}}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classUltimate__Board_a7b70a46092ded87de428f18b6e5a10a3}\label{classUltimate__Board_a7b70a46092ded87de428f18b6e5a10a3} 
+\index{Ultimate\_Board@{Ultimate\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Ultimate\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the game is over. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8cpp_source_l00111}{111}} of file \mbox{\hyperlink{Ultimate_8cpp_source}{Ultimate.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}})\ ||\ \mbox{\hyperlink{classUltimate__Board_aa12b59e269124609281508ee77c2f32f}{is\_draw}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00113\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_a7b70a46092ded87de428f18b6e5a10a3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUltimate__Board_aa12b59e269124609281508ee77c2f32f}\label{classUltimate__Board_aa12b59e269124609281508ee77c2f32f} 
+\index{Ultimate\_Board@{Ultimate\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Ultimate\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if the game ended in a draw. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8cpp_source_l00107}{107}} of file \mbox{\hyperlink{Ultimate_8cpp_source}{Ultimate.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 81\ \&\&\ !\mbox{\hyperlink{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}}));}
+\DoxyCodeLine{00109\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_aa12b59e269124609281508ee77c2f32f_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_aa12b59e269124609281508ee77c2f32f_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUltimate__Board_a11f3f01e0fe32c71094181b7403d4983}\label{classUltimate__Board_a11f3f01e0fe32c71094181b7403d4983} 
+\index{Ultimate\_Board@{Ultimate\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Ultimate\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Check if a player has lost. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8h_source_l00023}{23}} of file \mbox{\hyperlink{Ultimate_8h_source}{Ultimate.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00023\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \};}
+
+\end{DoxyCode}
+\Hypertarget{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c}\label{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c} 
+\index{Ultimate\_Board@{Ultimate\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Ultimate\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Check if a player has won. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{Ultimate_8cpp_source}{Ultimate.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{sym}}\ =\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00056\ \ \ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classPlayer}{all\_equal}}\ =\ [\&](\textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{a}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{b}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{c}})\ \{}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{a}}\ ==\ \mbox{\hyperlink{classPlayer}{b}}\ \&\&\ \mbox{\hyperlink{classPlayer}{b}}\ ==\ \mbox{\hyperlink{classPlayer}{c}}\ \&\&\ \mbox{\hyperlink{classPlayer}{a}}\ !=\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}};}
+\DoxyCodeLine{00059\ \ \ \ \ \};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{comment}{//\ Lambda\ to\ check\ if\ a\ 3x3\ board\ is\ won\ by\ symbol\ s\ to\ avoid\ repeating\ the\ code}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{auto}\ \mbox{\hyperlink{classPlayer}{has\_won}}\ =\ [\&](\textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{b}}[3][3],\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}\&\ \mbox{\hyperlink{classPlayer}{s}})\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Rows\ \&\ columns}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{i}})\ \{}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{all\_equal}}(\mbox{\hyperlink{classPlayer}{b}}[\mbox{\hyperlink{classPlayer}{i}}][0],\ \mbox{\hyperlink{classPlayer}{b}}[\mbox{\hyperlink{classPlayer}{i}}][1],\ \mbox{\hyperlink{classPlayer}{b}}[\mbox{\hyperlink{classPlayer}{i}}][2])\ \&\&\ \mbox{\hyperlink{classPlayer}{b}}[\mbox{\hyperlink{classPlayer}{i}}][0]\ ==\ \mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{all\_equal}}(\mbox{\hyperlink{classPlayer}{b}}[0][\mbox{\hyperlink{classPlayer}{i}}],\ \mbox{\hyperlink{classPlayer}{b}}[1][\mbox{\hyperlink{classPlayer}{i}}],\ \mbox{\hyperlink{classPlayer}{b}}[2][\mbox{\hyperlink{classPlayer}{i}}])\ \&\&\ \mbox{\hyperlink{classPlayer}{b}}[0][\mbox{\hyperlink{classPlayer}{i}}]\ ==\ \mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//check\ Diagonals}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{all\_equal}}(\mbox{\hyperlink{classPlayer}{b}}[0][0],\ \mbox{\hyperlink{classPlayer}{b}}[1][1],\ \mbox{\hyperlink{classPlayer}{b}}[2][2])\ \&\&\ \mbox{\hyperlink{classPlayer}{b}}[0][0]\ ==\ \mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{all\_equal}}(\mbox{\hyperlink{classPlayer}{b}}[0][2],\ \mbox{\hyperlink{classPlayer}{b}}[1][1],\ \mbox{\hyperlink{classPlayer}{b}}[2][0])\ \&\&\ \mbox{\hyperlink{classPlayer}{b}}[0][2]\ ==\ \mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00073\ \ \ \ \ \};}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{comment}{//\ Check\ each\ sub-\/board\ and\ if\ it\ is\ won,\ mark\ it\ in\ subboard}}
+\DoxyCodeLine{00077\ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{sr}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{sr}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{sr}})\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{sc}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{sc}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{sc}})\ \{}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//if\ \ Already\ won\ -\/\ skip\ it}}
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{Ultimate_8cpp_a1101bd9f749e167e8d6e276d97e4612d}{subboard}}[\mbox{\hyperlink{classPlayer}{sr}}][\mbox{\hyperlink{classPlayer}{sc}}]\ !=\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}})}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Extract\ the\ 3×3\ sub-\/board}}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{small}}[3][3];}
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{i}})\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 3;\ ++\mbox{\hyperlink{classPlayer}{j}})\ \{}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{small}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ =\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{sr}}\ *\ 3\ +\ \mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{sc}}*\ 3\ +\ \mbox{\hyperlink{classPlayer}{j}}];}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ player\ wins\ this\ sub-\/board\ →\ record\ winner}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{has\_won}}(\mbox{\hyperlink{classPlayer}{small}},\ \mbox{\hyperlink{classPlayer}{sym}}))\ \{}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{Ultimate_8cpp_a1101bd9f749e167e8d6e276d97e4612d}{subboard}}[\mbox{\hyperlink{classPlayer}{sr}}][\mbox{\hyperlink{classPlayer}{sc}}]\ =\ \mbox{\hyperlink{classPlayer}{sym}};}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00098\ \ \ \ \ \}}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{comment}{//\ Check\ the\ 3×3\ subboard\ for\ the\ final\ winner}}
+\DoxyCodeLine{00102\ \ \ \ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{has\_won}}(\mbox{\hyperlink{Ultimate_8cpp_a1101bd9f749e167e8d6e276d97e4612d}{subboard}},\ \mbox{\hyperlink{classPlayer}{sym}});}
+\DoxyCodeLine{00104\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_ad70f6f5531fd587e7c5742798fcc887c_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classUltimate__Board_ac979a8684c08c4a6ee9b613152ddab4e}\label{classUltimate__Board_ac979a8684c08c4a6ee9b613152ddab4e} 
+\index{Ultimate\_Board@{Ultimate\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Ultimate\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the board with a new move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move object containing position and symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid and applied, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Ultimate_8cpp_source}{Ultimate.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_x();\ \textcolor{comment}{//user\ enters\ 0..8}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_y();}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{mark}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Validate\ move\ and\ apply\ if\ valid}}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{classPlayer}{x\ <\ 0\ ||\ x\ >}}=\ 9\ ||\ \mbox{\hyperlink{classPlayer}{y\ <\ 0\ ||\ y\ >}}=\ 9)\ \&\&}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ ==\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}}\ ||\ \mbox{\hyperlink{classPlayer}{mark}}\ ==\ 0))\ \{}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{mark}}\ ==\ 0)\ \{\ \textcolor{comment}{//\ Undo\ move}}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}-\/-\/;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ =\ \mbox{\hyperlink{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}{blank\_symbol}};}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Apply\ move}}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]=\mbox{\hyperlink{classPlayer}{toupper}}(\mbox{\hyperlink{classPlayer}{mark}});}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00048\ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00050\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUltimate__Board_ac979a8684c08c4a6ee9b613152ddab4e_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classUltimate__Board_a83665653eaf977aa8b43eb031b801442}\label{classUltimate__Board_a83665653eaf977aa8b43eb031b801442} 
+\index{Ultimate\_Board@{Ultimate\_Board}!blank\_symbol@{blank\_symbol}}
+\index{blank\_symbol@{blank\_symbol}!Ultimate\_Board@{Ultimate\_Board}}
+\doxysubsubsection{\texorpdfstring{blank\_symbol}{blank\_symbol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} Ultimate\+\_\+\+Board\+::blank\+\_\+symbol = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{Ultimate_8h_source_l00011}{11}} of file \mbox{\hyperlink{Ultimate_8h_source}{Ultimate.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Ultimate_8h}{Ultimate.\+h}}\item 
+\mbox{\hyperlink{Ultimate_8cpp}{Ultimate.\+cpp}}\end{DoxyCompactItemize}

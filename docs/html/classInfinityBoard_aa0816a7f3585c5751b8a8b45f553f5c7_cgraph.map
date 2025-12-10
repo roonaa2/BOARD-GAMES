@@ -1,0 +1,7 @@
+<map id="InfinityBoard::update_board" name="InfinityBoard::update_board">
+<area shape="rect" id="Node000001" title="Update the board with a new move." alt="" coords="5,27,164,67"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="220,5,367,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="164,34,206,28,207,33,165,39"/>
+<area shape="rect" id="Node000003" href="$classInfinityBoard.html#a98b31a46538a2d9dbf424c845c18710e" title=" " alt="" coords="212,55,375,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,55,199,60,198,65,164,61"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ObstaclesTicTacToe.h" name="ObstaclesTicTacToe.h">
+<area shape="rect" id="Node000001" title="Defines the Obstacles Tic&#45;Tac&#45;Toe game classes." alt="" coords="90,5,250,31"/>
+<area shape="rect" id="Node000002" href="$ObstaclesTicTacToe_8cpp.html" title="Implementation of the Obstacles Tic&#45;Tac&#45;Toe game classes." alt="" coords="5,79,180,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,42,107,80,104,76,146,38"/>
+<area shape="rect" id="Node000003" href="$menu_8cpp.html" title=" " alt="" coords="204,79,291,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,38,236,76,233,80,191,42"/>
+</map>

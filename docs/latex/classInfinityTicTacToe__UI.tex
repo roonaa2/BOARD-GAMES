@@ -1,0 +1,190 @@
+\doxysection{Infinity\+Tic\+Tac\+Toe\+\_\+\+UI Class Reference}
+\hypertarget{classInfinityTicTacToe__UI}{}\label{classInfinityTicTacToe__UI}\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+
+
+{\ttfamily \#include $<$Infinity\+Tic-\/\+Tac-\/\+Toe.\+h$>$}
+
+
+
+Inheritance diagram for Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classInfinityTicTacToe__UI__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classInfinityTicTacToe__UI__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInfinityTicTacToe__UI_ad2a80ccdf954ac2d6e3d86e42e86bc64}{Infinity\+Tic\+Tac\+Toe\+\_\+\+UI}} ()
+\item 
+\mbox{\hyperlink{classInfinityTicTacToe__UI_ac921481265932ef33be6af26ecd5c58a}{\texorpdfstring{$\sim$}{\string~}\+Infinity\+Tic\+Tac\+Toe\+\_\+\+UI}} () \mbox{\hyperlink{classPlayer}{override}}=\mbox{\hyperlink{classPlayer}{default}}
+\item 
+\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece}{get\+\_\+move}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Ask the user (or AI) to make a move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classInfinityTicTacToe__UI_ac1622dd5168349b03ee7bbcd728ecfa4}{create\+\_\+player}} (std\+::string \&name, \mbox{\hyperlink{classPlayer}{char}} symbol, \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} type) \mbox{\hyperlink{classPlayer}{override}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUI_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{cell\+\_\+display\+\_\+width}}=3)
+\begin{DoxyCompactList}\small\item\em Construct the \doxylink{classUI}{UI} and display a welcome message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUI_ae50eed41905ca2f8dc103d9bef427fe6}{UI}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{message}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{cell\+\_\+display\+\_\+width}})
+\begin{DoxyCompactList}\small\item\em Construct the \doxylink{classUI}{UI} and display a welcome message. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classUI_a1012e508ff7df030714c62ddf6b261a7}{\texorpdfstring{$\sim$}{\string~}\+UI}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classUI_aaad19c26b8e4c49ba7ada54abd83e23c}{display\+\_\+message}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{message}})
+\begin{DoxyCompactList}\small\item\em Display any message to the user. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUI_a6966a040c995b2292e5edddaa94f889a}{setup\+\_\+players}} ()
+\begin{DoxyCompactList}\small\item\em Set up players for the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classUI_a94561e0bb4bbcbe5ff71ca6d751922df}{create\+\_\+player}} (\mbox{\hyperlink{classPlayer}{string}} \&name, \mbox{\hyperlink{classPlayer}{char}} symbol, \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} type)
+\begin{DoxyCompactList}\small\item\em Create a player object based on input name, symbol, and type. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classUI_aa3775124efaeac59935ae0afb354708d}{display\+\_\+board\+\_\+matrix}} (\mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \&\mbox{\hyperlink{classPlayer}{matrix}}) \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Display the current board matrix in formatted form. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classUI_a7b1603de1f73fbb4006e4f00a27c44da}{get\+\_\+player\+\_\+name}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{player\+\_\+label}})
+\begin{DoxyCompactList}\small\item\em Ask the user for the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} \mbox{\hyperlink{classUI_ac3d45fea2bbcaa0372d8e5101e116ca1}{get\+\_\+player\+\_\+type\+\_\+choice}} (\mbox{\hyperlink{classPlayer}{string}} \mbox{\hyperlink{classPlayer}{player\+\_\+label}}, \mbox{\hyperlink{classPlayer}{const}} \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{string}} $>$ \&\mbox{\hyperlink{classPlayer}{options}})
+\begin{DoxyCompactList}\small\item\em Ask the user to choose the player type from a list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classUI}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classUI_a6c79c489ae9aa3a7860fb58e5a14ddfe}{cell\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em Width of each displayed board cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{InfinityTic-Tac-Toe_8h_source_l00025}{25}} of file \mbox{\hyperlink{InfinityTic-Tac-Toe_8h_source}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classInfinityTicTacToe__UI_ad2a80ccdf954ac2d6e3d86e42e86bc64}\label{classInfinityTicTacToe__UI_ad2a80ccdf954ac2d6e3d86e42e86bc64} 
+\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}!InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}!InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{InfinityTicTacToe\_UI()}{InfinityTicTacToe\_UI()}}
+{\footnotesize\ttfamily Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+::\+Infinity\+Tic\+Tac\+Toe\+\_\+\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classPlayer}{UI<char>}}(\textcolor{stringliteral}{"{}Welcome\ to\ Infinity\ TIC\ TAC\ TOE"{}},\ 3)\ \{}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nGame\ Rules:\(\backslash\)n"{}};}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/\ Players\ take\ turns\ placing\ their\ marks\ (X\ or\ O)\ on\ the\ 3x3\ grid.\(\backslash\)n"{}};}
+\DoxyCodeLine{00083\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/\ The\ objective\ is\ to\ create\ a\ line\ of\ three\ of\ your\ marks.\(\backslash\)n"{}};}
+\DoxyCodeLine{00084\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/\ A\ line\ can\ be\ horizontal,\ vertical,\ or\ diagonal.\(\backslash\)n"{}};}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/\ After\ every\ 3\ moves,\ the\ oldest\ move\ on\ the\ board\ is\ removed\ to\ make\ space\ for\ new\ moves.\(\backslash\)n"{}};}
+\DoxyCodeLine{00086\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}-\/\ The\ game\ ends\ when\ a\ player\ creates\ a\ line\ of\ three\ marks\ or\ when\ the\ board\ is\ full\ without\ any\ player\ winning\ (draw).\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00087\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classInfinityTicTacToe__UI_ac921481265932ef33be6af26ecd5c58a}\label{classInfinityTicTacToe__UI_ac921481265932ef33be6af26ecd5c58a} 
+\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}!````~InfinityTicTacToe\_UI@{\texorpdfstring{$\sim$}{\string~}InfinityTicTacToe\_UI}}
+\index{````~InfinityTicTacToe\_UI@{\texorpdfstring{$\sim$}{\string~}InfinityTicTacToe\_UI}!InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}InfinityTicTacToe\_UI()}{\string~InfinityTicTacToe\_UI()}}
+{\footnotesize\ttfamily Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+::\texorpdfstring{$\sim$}{\string~}\+Infinity\+Tic\+Tac\+Toe\+\_\+\+UI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classInfinityTicTacToe__UI_ac1622dd5168349b03ee7bbcd728ecfa4}\label{classInfinityTicTacToe__UI_ac1622dd5168349b03ee7bbcd728ecfa4} 
+\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+::create\+\_\+player (\begin{DoxyParamCaption}\item[{std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classPlayer}{char}}}]{symbol,  }\item[{\mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Definition at line \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \textcolor{comment}{//\ Create\ player\ based\ on\ type}}
+\DoxyCodeLine{00091\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Creating\ "{}}\ <<\ (type\ ==\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}}\ ?\ \textcolor{stringliteral}{"{}human"{}}\ :\ \textcolor{stringliteral}{"{}computer"{}})}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ player:\ "{}}\ <<\ name\ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ symbol\ <<\ \textcolor{stringliteral}{"{})\(\backslash\)n"{}};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Player<char>}}(name,\ symbol,\ type);}
+\DoxyCodeLine{00095\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece}\label{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece} 
+\index{InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}!get\_move@{get\_move}}
+\index{get\_move@{get\_move}!InfinityTicTacToe\_UI@{InfinityTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{get\_move()}{get\_move()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*} Infinity\+Tic\+Tac\+Toe\+\_\+\+UI\+::get\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Ask the user (or AI) to make a move. 
+
+
+
+Implements \mbox{\hyperlink{classUI_a8befa259c38c57e6ae2e8ed81c476337}{UI$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source_l00097}{97}} of file \mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp_source}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{keywordtype}{int}\ x,\ y;}
+\DoxyCodeLine{00099\ \ \ \ \ }
+\DoxyCodeLine{00100\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_a2df3bd299bf7aecfa2275ec6902a60f8}{get\_type}}()\ ==\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}})\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPlease\ enter\ your\ move\ x\ and\ y\ (0\ to\ 2):\ "{}};}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ x\ >>\ y;}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{x\ <\ 0\ ||\ x\ >}}=\ 3\ ||\ \mbox{\hyperlink{classPlayer}{y\ <\ 0\ ||\ y\ >}}=\ 3)\ \{}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Move\ out\ of\ bounds.\ Try\ again.\(\backslash\)n"{}};}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece}{get\_move}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00106\ \ \ \ \ \}}
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_a508617eddfae8915d098102d480fc888}{get\_board\_ptr}}()-\/>get\_board\_matrix()[x][y]\ !=\ \textcolor{charliteral}{'.'})\ \{}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Cell\ already\ occupied.\ Try\ again.\(\backslash\)n"{}};}
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece}{get\_move}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00110\ \ \ \ \ \}\ \}}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_a2df3bd299bf7aecfa2275ec6902a60f8}{get\_type}}()\ ==\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfad19cbc472227d1e3d1d276c2cbc0e513}{PlayerType::COMPUTER}})\ \{}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ x\ =\ \mbox{\hyperlink{classPlayer}{rand}}()\ \%\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_a508617eddfae8915d098102d480fc888}{get\_board\_ptr}}()-\/>get\_rows();}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ y\ =\ \mbox{\hyperlink{classPlayer}{rand}}()\ \%\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_a508617eddfae8915d098102d480fc888}{get\_board\_ptr}}()-\/>get\_columns();}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Move<char>}}(x,\ y,\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}());}
+\DoxyCodeLine{00116\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=193pt]{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{InfinityTic-Tac-Toe_8h}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+h}}\item 
+\mbox{\hyperlink{InfinityTic-Tac-Toe_8cpp}{Infinity\+Tic-\/\+Tac-\/\+Toe.\+cpp}}\end{DoxyCompactItemize}

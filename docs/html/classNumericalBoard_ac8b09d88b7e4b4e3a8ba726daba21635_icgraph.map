@@ -1,0 +1,7 @@
+<map id="NumericalBoard::is_number_used" name="NumericalBoard::is_number_used">
+<area shape="rect" id="Node000001" title="Checks if a number has already been used." alt="" coords="439,5,585,45"/>
+<area shape="rect" id="Node000002" href="$classNumericalUI.html#a9c092833610fce4dd969aeeb32985854" title="Validates if a number choice is valid for the given player." alt="" coords="229,5,391,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="425,28,391,28,391,23,425,23"/>
+<area shape="rect" id="Node000003" href="$classNumericalUI.html#a28d2c55ab2481d72b7b58899efed3e59" title="Retrieves the next move from a player." alt="" coords="5,13,181,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="215,28,182,28,182,23,215,23"/>
+</map>

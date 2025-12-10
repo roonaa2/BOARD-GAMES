@@ -1,0 +1,48 @@
+\doxysection{Misere.\+h}
+\hypertarget{Misere_8h_source}{}\label{Misere_8h_source}\mbox{\hyperlink{Misere_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ MISERE\_H}}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ MISERE\_H}}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00004}00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00005}00005\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00006}\mbox{\hyperlink{classMisereBoard}{00006}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMisereBoard}{MisereBoard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00007}00007\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00008}\mbox{\hyperlink{classMisereBoard_a77a1979b8d6a8145742f5b02e260f3e3}{00008}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classMisereBoard_a77a1979b8d6a8145742f5b02e260f3e3}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00009}00009\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00010}00010\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00011}00011\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00012}00012\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{classMisereBoard_a69a649f4cc894c0c26a9da8d5c2323d1}{MisereBoard}}();}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00015}00015\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_a53da302e4b5f805d8ebcf47c19602b39}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_a47770ec919b9c4564e34a14f5125f7da}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_af87934016b5310283194c776c98cc81c}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)\ ;}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00020}00020\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_ad1ed002f543c54723dcfa21766eaf993}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00022}00022\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_afdb55883bd71e86b99e9154c1cc2f53b}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00025}00025\ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classMisereBoard_aac42387ce2ef7991dd058e044ba89dc8}{has\_three}}(\textcolor{keywordtype}{char}\ symbol);}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00026}00026\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00027}00027\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00028}00028\ \};}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00030}00030\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00031}\mbox{\hyperlink{classMisereUI}{00031}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classMisereUI}{MisereUI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00032}00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00033}00033\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{classMisereUI_a3e2d90e60df6f735dee7fdee01064171}{MisereUI}}();}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00035}00035\ \ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00036}\mbox{\hyperlink{classMisereUI_aa633151502aacf1d9a72cc6fd5a66950}{00036}}\ \ \ \ \ \mbox{\hyperlink{classMisereUI_aa633151502aacf1d9a72cc6fd5a66950}{\string~MisereUI}}()\ \{\};}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00037}00037\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classMisereUI_a1ca9ecc19a479c922cf348bf83d9a699}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type);}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classMisereUI_a07a2330f88941e3cf2eecc84f698cb45}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00041}00041\ \};}
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{Misere_8h_source_l00043}00043\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

@@ -1,0 +1,7 @@
+<map id="InfinityBoard::is_draw" name="InfinityBoard::is_draw">
+<area shape="rect" id="Node000001" title="Check if the game ended in a draw." alt="" coords="5,5,168,31"/>
+<area shape="rect" id="Node000002" href="$classInfinityBoard.html#ad2482747c6256e6ea8323dbaa38d57e2" title="Check if a player has won." alt="" coords="216,5,371,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,15,202,15,202,21,168,21"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="419,5,565,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="371,15,405,15,405,21,371,21"/>
+</map>

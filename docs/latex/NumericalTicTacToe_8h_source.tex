@@ -1,0 +1,54 @@
+\doxysection{Numerical\+Tic\+Tac\+Toe.\+h}
+\hypertarget{NumericalTicTacToe_8h_source}{}\label{NumericalTicTacToe_8h_source}\mbox{\hyperlink{NumericalTicTacToe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00009}00009\ \textcolor{preprocessor}{\#ifndef\ NUMERICAL\_TIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00010}00010\ \textcolor{preprocessor}{\#define\ NUMERICAL\_TIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00012}00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00014}00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00015}00015\ \textcolor{preprocessor}{\#include\ <cctype>}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00016}00016\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00017}00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00030}\mbox{\hyperlink{classNumericalBoard}{00030}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNumericalBoard}{NumericalBoard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00031}00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00032}\mbox{\hyperlink{classNumericalBoard_ab275d6fafdab7b744e61d56dcb70e18e}{00032}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classNumericalBoard_ab275d6fafdab7b744e61d56dcb70e18e}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00033}\mbox{\hyperlink{classNumericalBoard_ad6d3b7c8a28f3be58f03a296b45b2f0b}{00033}}\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<int>}}\ \mbox{\hyperlink{classNumericalBoard_ad6d3b7c8a28f3be58f03a296b45b2f0b}{used\_numbers}};\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00035}00035\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{classNumericalBoard_a2bdb6a8f24c083a44b787956397ad1b6}{NumericalBoard}}();}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00040}00040\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00046}00046\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_ad300e8f113b3f5363f99c3cb90a103c7}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00053}00053\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_a5cc516dd4b6d4bb46ba3e57ebe223495}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00054}00054\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00060}\mbox{\hyperlink{classNumericalBoard_a0d35d25de95cc6ed1b99766b9cba4a4b}{00060}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_a0d35d25de95cc6ed1b99766b9cba4a4b}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00067}00067\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_af6515c859ef29e9b999143271fceaf32}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00068}00068\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00074}00074\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_a99ad9f64de5d5c4fec333f0797df9e8f}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00075}00075\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00081}00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalBoard_ac8b09d88b7e4b4e3a8ba726daba21635}{is\_number\_used}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{number}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00082}00082\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00089}00089\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classNumericalBoard_a1b7dad2d29d20ee82fca54736535c9a9}{get\_cell}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00090}00090\ \};}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00091}00091\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00101}\mbox{\hyperlink{classNumericalUI}{00101}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classNumericalUI}{NumericalUI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00102}00102\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00108}00108\ \ \ \ \ \mbox{\hyperlink{classNumericalUI_a8787c388acb903a0bdca2d6526ae1513}{NumericalUI}}();}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00109}00109\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00113}\mbox{\hyperlink{classNumericalUI_af8b997b550afbe2d105714adc66d5c95}{00113}}\ \ \ \ \ \mbox{\hyperlink{classNumericalUI_af8b997b550afbe2d105714adc66d5c95}{\string~NumericalUI}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00122}00122\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classNumericalUI_a9f33c423141e2e069a5a97ad874eb9c7}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type);}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00129}00129\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classNumericalUI_a28d2c55ab2481d72b7b58899efed3e59}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00130}00130\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00131}00131\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00139}00139\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classNumericalUI_a9c092833610fce4dd969aeeb32985854}{is\_valid\_number}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{number}},\ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}},\ \mbox{\hyperlink{classNumericalBoard}{NumericalBoard}}*\ board);}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00140}00140\ \};}
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00141}00141\ }
+\DoxyCodeLine{\Hypertarget{NumericalTicTacToe_8h_source_l00142}00142\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ NUMERICAL\_TIC\_TAC\_TOE\_H}}
+
+\end{DoxyCode}

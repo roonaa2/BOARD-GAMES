@@ -1,0 +1,5 @@
+<map id="SUSBoard::count_new_sus_sequences" name="SUSBoard::count_new_sus_sequences">
+<area shape="rect" id="Node000001" title="Counts new &quot;S&#45;U&#45;S&quot; sequences formed by the last move." alt="" coords="236,5,400,45"/>
+<area shape="rect" id="Node000002" href="$classSUSBoard.html#a66526aef691ea9537c7712a86ef78fc9" title="Updates the board with a player&#39;s move." alt="" coords="5,13,188,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="222,28,188,28,188,23,222,23"/>
+</map>

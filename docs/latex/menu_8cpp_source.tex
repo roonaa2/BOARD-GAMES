@@ -1,0 +1,186 @@
+\doxysection{menu.\+cpp}
+\hypertarget{menu_8cpp_source}{}\label{menu_8cpp_source}\mbox{\hyperlink{menu_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{XO__Classes_8h}{XO\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00005}00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{InfinityTic-Tac-Toe_8h}{InfinityTic-\/Tac-\/Toe.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00006}00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Misere_8h}{Misere.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00007}00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Tic-Tac-Toe__4x4_8h}{Tic-\/Tac-\/Toe\_4x4.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00008}00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{NumericalTicTacToe_8h}{NumericalTicTacToe.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00009}00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{SUS_8h}{SUS.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00010}00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{ObstaclesTicTacToe_8h}{ObstaclesTicTacToe.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00011}00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Diamond_8h}{Diamond.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00013}00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00015}\mbox{\hyperlink{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}{00015}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}{displayMenu}}()\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ TIC\ TAC\ TOE\ GAME\ MENU\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00019}00019\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ \ SUS\ game\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00020}00020\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ \ Four-\/in-\/a-\/Row\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00021}00021\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}3.\ \ 5x5\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00022}00022\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}4.\ \ Word\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00023}00023\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}5.\ \ Misère\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00024}00024\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}6.\ \ Diamond\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00025}00025\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}7.\ \ 4x4\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}8.\ \ Pyramid\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}9.\ \ Numerical\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00028}00028\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}10.\ Obstacles\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00029}00029\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}11.\ Infinity\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}12.\ Ultimate\ Tic\ Tac\ Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}13.\ Memory\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00032}00032\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}0.\ \ Exit\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00033}00033\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ your\ choice\ (0-\/13):\ "{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00035}00035\ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00036}00036\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00037}\mbox{\hyperlink{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}{00037}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}{runGame}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{choice}})\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00038}00038\ \ \ \ \ \textcolor{comment}{//\ Base\ class\ pointers\ for\ polymorphism}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{classPlayer}{UI<char>}}*\ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00040}00040\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Board<char>}}*\ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00041}00041\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classPlayer}{choice}})\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00043}00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00044}00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ SUS\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00045}00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSUS__UI}{SUS\_UI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00046}00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSUSBoard}{SUSBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00047}00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00048}00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00049}00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Four-\/in-\/a-\/Row\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00051}00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00052}00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00053}00053\ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00054}00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ 5x5\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00056}00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00057}00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00058}00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00059}00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00060}00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Word\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00061}00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00062}00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00063}00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00064}00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Misère\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMisereUI}{MisereUI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMisereBoard}{MisereBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00069}00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00070}00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 6:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Diamond\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00072}00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classDiamond__UI}{Diamond\_UI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00073}00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classDiamondBoard}{DiamondBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00074}00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00075}00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00076}00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 7:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ 4x4\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00078}00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classX__O__4x4__UI}{X\_O\_4x4\_UI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00079}00079\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classX__O__4x4Board}{X\_O\_4x4Board}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00080}00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00081}00081\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00082}00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 8:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Pyramid\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00086}00086\ \ \ \ \ \ \ \ \ \}\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00087}00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 9:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Numerical\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classNumericalUI}{NumericalUI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classNumericalBoard}{NumericalBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 10:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Obstacles\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00095}00095\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classObstaclesUI}{ObstaclesUI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00096}00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classObstaclesBoard}{ObstaclesBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00097}00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00098}00098\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00099}00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 11:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Infinity\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classInfinityTicTacToe__UI}{InfinityTicTacToe\_UI}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classInfinityBoard}{InfinityBoard}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00104}00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00105}00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 12:\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Ultimate\ Tic\ Tac\ Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00109}00109\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 13:\ \{\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Memory\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00114}00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00115}00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice!\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00118}00118\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00119}00119\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00120}00120\ \ \ \ \ \textcolor{comment}{//\ Setup\ players\ using\ polymorphism}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00121}00121\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}**\ players\ =\ \mbox{\hyperlink{classPlayer}{game\_ui}}-\/>setup\_players();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00122}00122\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00123}00123\ \ \ \ \ \textcolor{comment}{//\ Create\ game\ manager\ with\ polymorphic\ objects}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00124}00124\ \ \ \ \ \mbox{\hyperlink{classPlayer}{GameManager<char>}}\ \mbox{\hyperlink{classPlayer}{game\_manager}}(\mbox{\hyperlink{classPlayer}{game\_board}},\ players,\ \mbox{\hyperlink{classPlayer}{game\_ui}});}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00125}00125\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00126}00126\ \ \ \ \ \textcolor{comment}{//\ Run\ the\ game\ using\ virtual\ methods}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00127}00127\ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_manager}}.run();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00128}00128\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00129}00129\ \ \ \ \ \textcolor{comment}{//\ Cleanup\ dynamically\ allocated\ memory}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00130}00130\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classPlayer}{game\_board}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00131}00131\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classPlayer}{game\_ui}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00132}00132\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 2;\ ++\mbox{\hyperlink{classPlayer}{i}})\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00133}00133\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ players[\mbox{\hyperlink{classPlayer}{i}}];}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00134}00134\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00135}00135\ \ \ \ \ \textcolor{keyword}{delete}[]\ players;}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00136}00136\ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00138}\mbox{\hyperlink{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{00138}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}}()\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00139}00139\ \ \ \ \ \textcolor{comment}{//\ Seed\ random\ number\ generator}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00140}00140\ \ \ \ \ \mbox{\hyperlink{classPlayer}{srand}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{classPlayer}{time}}(\textcolor{keyword}{nullptr})));}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00141}00141\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00142}00142\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00143}00143\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00144}00144\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00145}00145\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00146}00146\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ WELCOME\ TO\ TIC\ TAC\ TOE\ COLLECTION\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00147}00147\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00148}00148\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00149}00149\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00150}00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}{displayMenu}}();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00151}00151\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00152}00152\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input\ validation}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00153}00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}}))\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.clear();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore(\mbox{\hyperlink{classPlayer}{numeric\_limits<streamsize>::max}}(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00156}00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ input!\ Please\ enter\ a\ number.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00158}00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00159}00159\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00160}00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{choice\ <\ 0\ ||\ choice\ >}}\ 13)\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice!\ Please\ enter\ a\ number\ between\ 0\ and\ 13.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00163}00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00164}00164\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{choice}}\ !=\ 0)\ \{}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}{runGame}}(\mbox{\hyperlink{classPlayer}{choice}});}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pause\ before\ returning\ to\ menu}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00169}00169\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPress\ Enter\ to\ return\ to\ the\ menu..."{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00170}00170\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore(\mbox{\hyperlink{classPlayer}{numeric\_limits<streamsize>::max}}(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00171}00171\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.get();}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00172}00172\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00173}00173\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00174}00174\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classPlayer}{choice}}\ !=\ 0);}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00175}00175\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00176}00176\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00177}00177\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ Thanks\ for\ playing!\ Goodbye!\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00178}00178\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00179}00179\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00180}00180\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{menu_8cpp_source_l00181}00181\ \}}
+
+\end{DoxyCode}

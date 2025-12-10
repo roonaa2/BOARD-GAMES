@@ -1,0 +1,5 @@
+<map id="FiveFiveTicTacToe::update_board" name="FiveFiveTicTacToe::update_board">
+<area shape="rect" id="Node000001" title="Update the board with a new move." alt="" coords="5,5,152,45"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="200,13,347,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,23,186,23,186,28,152,28"/>
+</map>

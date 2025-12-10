@@ -1,0 +1,13 @@
+<map id="PyramidBoard::is_valid_position" name="PyramidBoard::is_valid_position">
+<area shape="rect" id="Node000001" title=" " alt="" coords="485,69,657,109"/>
+<area shape="rect" id="Node000002" href="$classPyramidBoard.html#a2864fc2b0376e9b3c2ce8307be04e5a7" title=" " alt="" coords="264,5,437,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="488,68,419,48,421,43,489,63"/>
+<area shape="rect" id="Node000003" href="$classPyramidBoard.html#a54778a0e173c3d01da84d6eb039c5235" title=" " alt="" coords="269,69,432,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="471,92,432,92,432,87,471,87"/>
+<area shape="rect" id="Node000006" href="$classPyramidBoard.html#ab66714074d44a25fc082dc0370cc0ed3" title=" " alt="" coords="265,133,437,173"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="489,116,421,136,419,131,488,111"/>
+<area shape="rect" id="Node000004" href="$classPyramidBoard.html#a05e9e519d8fefd845fc50fafdc16189b" title=" " alt="" coords="5,37,216,77"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="255,79,216,74,217,69,256,74"/>
+<area shape="rect" id="Node000005" href="$classPyramidBoard.html#a64346ffd4e8645617e1067b3a07133b7" title="Update the board with a new move." alt="" coords="27,101,194,141"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="256,105,195,113,194,108,255,99"/>
+</map>

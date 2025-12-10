@@ -1,0 +1,39 @@
+\doxysection{Diamond.\+h}
+\hypertarget{Diamond_8h_source}{}\label{Diamond_8h_source}\mbox{\hyperlink{Diamond_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ DIAMOND\_H}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ DIAMOND\_H}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00008}00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00010}\mbox{\hyperlink{classDiamondBoard}{00010}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDiamondBoard}{DiamondBoard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00011}00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00012}\mbox{\hyperlink{classDiamondBoard_a2cd5b229062233504a1934058f40a871}{00012}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classDiamondBoard_a2cd5b229062233504a1934058f40a871}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00013}00013\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00014}00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00015}00015\ \ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classDiamondBoard_a717e4ed89b24131c9eec836c50f8372d}{DiamondBoard}}();}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDiamondBoard_ac99663918be4334b0d08e4a5838ba610}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDiamondBoard_a404c3a93e61cdb1780d8188c8513743c}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00019}\mbox{\hyperlink{classDiamondBoard_ac1d4938e2fe7e82506533ca674b888b7}{00019}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDiamondBoard_ac1d4938e2fe7e82506533ca674b888b7}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDiamondBoard_a8702608200e198ae97c898109635cacf}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classDiamondBoard_a479d121a2204e2a909f5f9eca7375ac3}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00022}00022\ \};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00024}\mbox{\hyperlink{classDiamond__UI}{00024}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classDiamond__UI}{Diamond\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00025}00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{classDiamond__UI_ab324b9b8948308b1480ded25a7081e7a}{Diamond\_UI}}();}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00027}\mbox{\hyperlink{classDiamond__UI_a75468e5fa5bb1e31649fa7c05d98b779}{00027}}\ \ \ \ \ \mbox{\hyperlink{classDiamond__UI_a75468e5fa5bb1e31649fa7c05d98b779}{\string~Diamond\_UI}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00028}00028\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classDiamond__UI_a0414dd0e3c72fa0379ca6c40ade0c01a}{display\_board\_matrix}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{classPlayer}{vector}}<\mbox{\hyperlink{classPlayer}{vector<char>}}>\&\ \mbox{\hyperlink{classPlayer}{matrix}})\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classDiamond__UI_aff9b6acc0c3cc49a4877d33139d1776a}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classDiamond__UI_a8036e1996c58e4dd7c8542f4beb9277a}{create\_player}}(std::string\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{Diamond_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif\ }}
+
+\end{DoxyCode}

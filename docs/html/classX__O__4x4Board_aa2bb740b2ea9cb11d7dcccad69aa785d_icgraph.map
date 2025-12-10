@@ -1,0 +1,12 @@
+<map id="X_O_4x4Board::check_win_for_symbol" name="X_O_4x4Board::check_win_for_symbol">
+<area shape="rect" id="Node000001" title=" " alt="" coords="431,47,593,87"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4Board.html#a6e769db706cf9da11af019bfc7344490" title="Check if a player has won." alt="" coords="216,13,383,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="416,51,365,41,366,35,417,46"/>
+<area shape="rect" id="Node000004" href="$classX__O__4x4__AI__Player.html#aa954c7769e767a0a623e7850707e7d44" title=" " alt="" coords="222,87,377,127"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="417,87,377,95,376,90,416,82"/>
+<area shape="rect" id="Node000003" href="$classX__O__4x4Board.html#a49cc1d06d6a93a3216406cbe3c56ad61" title="Check if the game is over." alt="" coords="5,5,168,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+<area shape="poly" id="edge5_Node000004_Node000004" title=" " alt="" coords="335,75,322,68,299,65,279,67,267,72,263,78,265,86,260,87,257,77,264,68,278,62,299,60,324,63,337,70"/>
+<area shape="rect" id="Node000005" href="$classX__O__4x4__AI__Player.html#af75a8d981d450467b285e3e988c3662d" title=" " alt="" coords="9,87,164,127"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="208,109,164,109,164,104,208,104"/>
+</map>

@@ -1,0 +1,61 @@
+\doxysection{Diamond.\+cpp File Reference}
+\hypertarget{Diamond_8cpp}{}\label{Diamond_8cpp}\index{Diamond.cpp@{Diamond.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include "{}Diamond.\+h"{}}\newline
+Include dependency graph for Diamond.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Diamond_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{Diamond_8cpp_ae4f7c07fd3dee04970d1440cfa61aef4}{valid\+\_\+cells}} \mbox{[}7\mbox{]}\mbox{[}7\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{Diamond_8cpp_ae4f7c07fd3dee04970d1440cfa61aef4}\label{Diamond_8cpp_ae4f7c07fd3dee04970d1440cfa61aef4} 
+\index{Diamond.cpp@{Diamond.cpp}!valid\_cells@{valid\_cells}}
+\index{valid\_cells@{valid\_cells}!Diamond.cpp@{Diamond.cpp}}
+\doxysubsubsection{\texorpdfstring{valid\_cells}{valid\_cells}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} valid\+\_\+cells\mbox{[}7\mbox{]}\mbox{[}7\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{\ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+I made the board 7x7 to make a 5x5 diamond shape by making the invalid cells invisible also added a boolean array to track valid cells (easier than a vector and a helper function) also edited the display function 
+
+Definition at line \mbox{\hyperlink{Diamond_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Diamond_8cpp_source}{Diamond.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{00019\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{00020\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{00021\ \ \ \ \ \{\textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true}\ \},}
+\DoxyCodeLine{00022\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{00023\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\},}
+\DoxyCodeLine{00024\ \ \ \ \ \{\textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{true},\ \ \textcolor{keyword}{false},\ \textcolor{keyword}{false},\ \textcolor{keyword}{false}\}}
+\DoxyCodeLine{00025\ \};}
+
+\end{DoxyCode}

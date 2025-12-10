@@ -1,0 +1,9 @@
+<map id="PyramidBoard::increment_moves" name="PyramidBoard::increment_moves">
+<area shape="rect" id="Node000001" title=" " alt="" coords="456,5,644,45"/>
+<area shape="rect" id="Node000002" href="$classPyramidAIPlayer.html#a54c4eb5f673c6adab4ed31dddc36b58d" title=" " alt="" coords="5,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="442,18,408,16,310,13,212,16,164,19,164,14,212,11,310,8,408,11,442,13"/>
+<area shape="rect" id="Node000003" href="$classPyramidAIPlayer.html#a92535729d0250473980d92a4acf2ef09" title=" " alt="" coords="212,50,408,75"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="443,45,393,53,392,47,442,39"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="219,50,164,41,165,36,219,45"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="350,41,340,32,310,29,286,31,273,36,271,41,278,48,273,52,266,42,270,32,285,26,310,23,342,27,354,37"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="PyramidBoard::is_win" name="PyramidBoard::is_win">
+<area shape="rect" id="Node000001" title="Check if a player has won." alt="" coords="212,13,375,38"/>
+<area shape="rect" id="Node000002" href="$classPyramidBoard.html#aad8192b57bda267b765396626300fe78" title="Check if the game is over." alt="" coords="5,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,28,164,28,164,23,198,23"/>
+</map>

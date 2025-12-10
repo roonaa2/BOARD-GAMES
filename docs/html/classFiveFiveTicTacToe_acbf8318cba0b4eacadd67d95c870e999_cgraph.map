@@ -1,0 +1,15 @@
+<map id="FiveFiveTicTacToe::game_is_over" name="FiveFiveTicTacToe::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,37,152,77"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe.html#aa226191f87b7b847b9d324dd644616b9" title="Check if the game ended in a draw." alt="" coords="200,5,347,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,43,186,37,187,42,152,48"/>
+<area shape="rect" id="Node000005" href="$classFiveFiveTicTacToe.html#a3a85bdf72642bed3d8ee00f03c6d84ae" title="Check if a player has won." alt="" coords="200,69,347,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="152,67,187,72,186,78,152,72"/>
+<area shape="rect" id="Node000003" href="$classFiveFiveTicTacToe.html#a6df08d066b0e0a219a030e59457e742d" title=" " alt="" coords="395,63,551,103"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="344,43,390,56,388,61,343,48"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="399,13,546,38"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="347,23,386,23,386,28,347,28"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="347,84,381,83,381,88,347,90"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="336,67,419,40,420,45,337,72"/>
+<area shape="rect" id="Node000006" href="$classPlayer.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="405,127,541,153"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="347,105,409,121,408,126,346,110"/>
+</map>

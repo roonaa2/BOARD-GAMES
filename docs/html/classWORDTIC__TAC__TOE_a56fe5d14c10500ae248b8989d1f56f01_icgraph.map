@@ -1,0 +1,5 @@
+<map id="WORDTIC_TAC_TOE::is_draw" name="WORDTIC_TAC_TOE::is_draw">
+<area shape="rect" id="Node000001" title="Check if the game ended in a draw." alt="" coords="248,13,456,38"/>
+<area shape="rect" id="Node000002" href="$classWORDTIC__TAC__TOE.html#ae1ac4e0b2ce133dcf661544d0f401d61" title="Check if the game is over." alt="" coords="5,5,200,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="234,28,200,28,200,23,234,23"/>
+</map>

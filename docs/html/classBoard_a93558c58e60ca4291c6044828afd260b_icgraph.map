@@ -1,0 +1,5 @@
+<map id="Board::get_cell" name="Board::get_cell">
+<area shape="rect" id="Node000001" title="Return content of cell x, y in current board." alt="" coords="228,5,347,31"/>
+<area shape="rect" id="Node000002" href="$classDiamond__UI.html#aff9b6acc0c3cc49a4877d33139d1776a" title="Ask the user (or AI) to make a move." alt="" coords="5,5,180,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,21,180,21,180,15,215,15"/>
+</map>

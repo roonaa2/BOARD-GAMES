@@ -1,0 +1,54 @@
+\doxysection{Obstacles\+Tic\+Tac\+Toe.\+h File Reference}
+\hypertarget{ObstaclesTicTacToe_8h}{}\label{ObstaclesTicTacToe_8h}\index{ObstaclesTicTacToe.h@{ObstaclesTicTacToe.h}}
+
+
+Defines the Obstacles Tic-\/\+Tac-\/\+Toe game classes.  
+
+
+{\ttfamily \#include "{}Board\+Game\+\_\+\+Classes.\+h"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+Include dependency graph for Obstacles\+Tic\+Tac\+Toe.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ObstaclesTicTacToe_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{ObstaclesTicTacToe_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classObstaclesBoard}{Obstacles\+Board}}
+\begin{DoxyCompactList}\small\item\em Represents the Obstacles Tic-\/\+Tac-\/\+Toe game board. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classObstaclesUI}{Obstacles\+UI}}
+\begin{DoxyCompactList}\small\item\em User Interface class for the Obstacles Tic-\/\+Tac-\/\+Toe game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines the Obstacles Tic-\/\+Tac-\/\+Toe game classes. 
+
+This file provides\+:
+\begin{DoxyItemize}
+\item {\ttfamily \doxylink{classObstaclesBoard}{Obstacles\+Board}}\+: A specialized board class for the Obstacles game.
+\item {\ttfamily \doxylink{classObstaclesUI}{Obstacles\+UI}}\+: A user interface class tailored to Obstacles game setup and player interaction.
+\end{DoxyItemize}
+
+Game Rules\+:
+\begin{DoxyItemize}
+\item A 6x6 grid
+\item After every round (one turn for each player), two new obstacle cells are randomly added
+\item Obstacles (\#) cannot be used by either player
+\item First player to align four marks in a row (horizontally, vertically, or diagonally) wins
+\item The game is a draw if the board fills without a winner 
+\end{DoxyItemize}
+
+Definition in file \mbox{\hyperlink{ObstaclesTicTacToe_8h_source}{Obstacles\+Tic\+Tac\+Toe.\+h}}.
+

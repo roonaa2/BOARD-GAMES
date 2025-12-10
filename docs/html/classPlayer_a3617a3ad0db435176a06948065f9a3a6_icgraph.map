@@ -1,0 +1,14 @@
+<map id="Player::set_board_ptr" name="Player::set_board_ptr">
+<area shape="rect" id="Node000001" title="Assign the board pointer for the player." alt="" coords="727,79,887,104"/>
+<area shape="rect" id="Node000002" href="$classPyramidAIPlayer.html#a78d43910ae2d1663c6b3484370769141" title=" " alt="" coords="470,29,665,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="731,78,629,57,630,52,732,73"/>
+<area shape="rect" id="Node000005" href="$classGameManager.html#addaf3682d9783bdc432a8e3273b5b92c" title="Construct a game manager with board, players, and UI." alt="" coords="456,79,679,104"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="713,94,679,94,679,89,713,89"/>
+<area shape="rect" id="Node000006" href="$classDiamond__UI.html#aff9b6acc0c3cc49a4877d33139d1776a" title="Ask the user (or AI) to make a move." alt="" coords="480,128,655,153"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="732,109,630,131,629,125,731,104"/>
+<area shape="rect" id="Node000003" href="$classPyramidAIPlayer.html#a92535729d0250473980d92a4acf2ef09" title=" " alt="" coords="212,29,408,55"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="456,45,408,45,408,39,456,39"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="350,20,340,11,310,8,286,10,273,15,271,20,278,27,273,31,266,21,270,11,285,5,310,3,342,7,354,16"/>
+<area shape="rect" id="Node000004" href="$classPyramidAIPlayer.html#a54c4eb5f673c6adab4ed31dddc36b58d" title=" " alt="" coords="5,22,164,62"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,45,164,45,164,39,198,39"/>
+</map>

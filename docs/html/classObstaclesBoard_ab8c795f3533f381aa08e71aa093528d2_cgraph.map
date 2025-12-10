@@ -1,0 +1,9 @@
+<map id="ObstaclesBoard::update_board" name="ObstaclesBoard::update_board">
+<area shape="rect" id="Node000001" title="Updates the board with a player&#39;s move." alt="" coords="5,35,183,75"/>
+<area shape="rect" id="Node000002" href="$classObstaclesBoard.html#a7bfed731855a8d1f7e570af311960b02" title="Adds two random obstacles to the board." alt="" coords="231,5,387,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="182,40,217,35,218,40,183,45"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="235,70,382,95"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="183,64,222,69,221,74,182,69"/>
+<area shape="rect" id="Node000003" href="$classObstaclesBoard.html#a221ef59b3c78a950d481a85d45e12555" title="Updates the list of empty cells." alt="" coords="435,5,612,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="387,23,421,23,421,28,387,28"/>
+</map>

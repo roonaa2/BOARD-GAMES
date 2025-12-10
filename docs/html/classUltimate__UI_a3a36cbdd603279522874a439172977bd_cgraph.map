@@ -1,0 +1,9 @@
+<map id="Ultimate_UI::get_move" name="Ultimate_UI::get_move">
+<area shape="rect" id="Node000001" title="Ask the user (or AI) to make a move." alt="" coords="5,55,179,80"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="227,5,388,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="147,52,237,31,239,36,149,57"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="234,55,381,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,65,220,65,220,70,179,70"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="243,104,371,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,77,239,98,237,104,147,83"/>
+</map>

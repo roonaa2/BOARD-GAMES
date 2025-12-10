@@ -1,0 +1,11 @@
+<map id="PyramidAIPlayer::get_opponent_symbol" name="PyramidAIPlayer::get_opponent_symbol">
+<area shape="rect" id="Node000001" title=" " alt="" coords="699,23,857,63"/>
+<area shape="rect" id="Node000002" href="$classPyramidAIPlayer.html#a78d43910ae2d1663c6b3484370769141" title=" " alt="" coords="456,5,651,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="685,36,651,32,651,26,685,30"/>
+<area shape="rect" id="Node000003" href="$classPyramidAIPlayer.html#a92535729d0250473980d92a4acf2ef09" title=" " alt="" coords="212,31,408,56"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="685,46,408,46,408,41,685,41"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="443,32,408,36,408,30,442,27"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="350,21,340,13,310,9,286,11,273,16,271,22,278,29,273,32,266,22,270,12,285,6,310,4,342,8,354,17"/>
+<area shape="rect" id="Node000004" href="$classPyramidAIPlayer.html#a54c4eb5f673c6adab4ed31dddc36b58d" title=" " alt="" coords="5,23,164,63"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="198,46,164,46,164,41,198,41"/>
+</map>
