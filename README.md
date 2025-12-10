@@ -48,13 +48,15 @@ Follow game-specific instructions
 
 Return to main menu after each game 
 ## 👥 Team Members
+
 Asmaa Farouq
+
+Arwa Bshier
 
 Mariam Sherif
 
 Mariam Ahmed
 
-Arwa Bshier
 
 
  
