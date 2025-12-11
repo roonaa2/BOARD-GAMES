@@ -49,13 +49,6 @@ private:
      */
     void update_empty_cells();
 
-    /**
-     * @brief Checks if there are four in a row for a specific symbol.
-     * @param symbol The symbol to check for.
-     * @return true if four in a row found, false otherwise.
-     */
-    bool check_four_in_row(char symbol);
-
 public:
     /**
      * @brief Default constructor that initializes a 6x6 Obstacles board.
@@ -68,6 +61,13 @@ public:
      * @return true if the move is valid and successfully applied, false otherwise.
      */
     bool update_board(Move<char>* move);
+
+    /**
+     * @brief Checks if there are four in a row for a specific symbol.
+     * @param symbol The symbol to check for.
+     * @return true if four in a row found, false otherwise.
+     */
+    bool check_four_in_row(char symbol);
 
     /**
      * @brief Checks if the given player has won the game (four in a row).
