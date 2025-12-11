@@ -5,8 +5,6 @@
 #include "InfinityTic-Tac-Toe.h"
 using namespace std;
 
-// ========== InfinityBoard Implementation ==========
-
 InfinityBoard::InfinityBoard() : Board(3, 3) {
     for (auto& row : board)
         for (auto& cell : row)
@@ -47,14 +45,12 @@ bool InfinityBoard::is_win(Player<char>* player) {
         return a == b && b == c && a != blank_symbol;
     };
 
-    // Check rows and columns
     for (int i = 0; i < rows; ++i) {
         if ((all_equal(board[i][0], board[i][1], board[i][2]) && board[i][0] == sym) ||
             (all_equal(board[0][i], board[1][i], board[2][i]) && board[0][i] == sym))
             return true;
     }
 
-    // Check diagonals
     if ((all_equal(board[0][0], board[1][1], board[2][2]) && board[1][1] == sym) ||
         (all_equal(board[0][2], board[1][1], board[2][0]) && board[1][1] == sym))
         return true;
@@ -70,7 +66,6 @@ bool InfinityBoard::game_is_over(Player<char>* player) {
     return is_win(player) || is_draw(player);
 }
 
-// ========== InfinityTicTacToe_AI Implementation ==========
 
 InfinityTicTacToe_AI::InfinityTicTacToe_AI(string name, char symbol) 
     : Player<char>(name, symbol, PlayerType::COMPUTER) {}
@@ -283,7 +278,6 @@ int InfinityTicTacToe_AI::count_in_line(int x1, int y1, int x2, int y2, int x3, 
     return count;
 }
 
-// ========== InfinityTicTacToe_UI Implementation ==========
 
 InfinityTicTacToe_UI::InfinityTicTacToe_UI() : UI<char>("Welcome to Infinity TIC TAC TOE", 3) {
     cout << "\nGame Rules:\n";
