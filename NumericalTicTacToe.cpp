@@ -132,6 +132,62 @@ char NumericalBoard::get_cell(int x, int y) const {
     return board[x][y];
 }
 
+void NumericalBoard::set_cell_temp(int x, int y, char value) {
+    if (x >= 0 && x < rows && y >= 0 && y < columns) {
+        board[x][y] = value;
+    }
+}
+
+int NumericalBoard::evaluate_line(char cells[3]) {
+    int sum = 0;
+    int count = 0;
+    
+    for (int i = 0; i < 3; i++) {
+        if (cells[i] != blank_symbol) {
+            sum += (cells[i] - '0');
+            count++;
+        }
+    }
+    
+    // If line is complete and sums to 15, it's a win
+    if (count == 3 && sum == 15) {
+        return 1000; // Winning line
+    }
+    
+    // If line has potential to reach 15
+    if (count < 3) {
+        int remaining = 15 - sum;
+        // Check if remaining sum is achievable
+        if (remaining > 0 && remaining <= 9) {
+            return 100 - abs(15 - sum); // Closer to 15 is better
+        }
+    }
+    
+    return 0;
+}
+
+vector<int> NumericalBoard::get_available_numbers(bool is_odd) {
+    vector<int> available;
+    
+    if (is_odd) {
+        // Odd numbers: 1, 3, 5, 7, 9
+        for (int n = 1; n <= 9; n += 2) {
+            if (!is_number_used(n)) {
+                available.push_back(n);
+            }
+        }
+    } else {
+        // Even numbers: 2, 4, 6, 8
+        for (int n = 2; n <= 8; n += 2) {
+            if (!is_number_used(n)) {
+                available.push_back(n);
+            }
+        }
+    }
+    
+    return available;
+}
+
 //--------------------------------------- NumericalUI Implementation
 
 NumericalUI::NumericalUI() : UI<char>("Welcome to FCAI Numerical Tic-Tac-Toe Game", 3) {

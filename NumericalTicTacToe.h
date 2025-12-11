@@ -87,6 +87,28 @@ public:
      * @return Character at the position.
      */
     char get_cell(int x, int y) const;
+    
+    /**
+     * @brief Sets a cell temporarily (for AI simulation).
+     * @param x Row index.
+     * @param y Column index.
+     * @param value Character to set.
+     */
+    void set_cell_temp(int x, int y, char value);
+    
+    /**
+     * @brief Evaluates how close a line is to summing to 15.
+     * @param cells Array of 3 cells to evaluate.
+     * @return Score indicating how promising this line is.
+     */
+    int evaluate_line(char cells[3]);
+    
+    /**
+     * @brief Gets available numbers for a player.
+     * @param is_odd true for odd numbers, false for even numbers.
+     * @return Vector of available numbers.
+     */
+    vector<int> get_available_numbers(bool is_odd);
 };
 
 /**
