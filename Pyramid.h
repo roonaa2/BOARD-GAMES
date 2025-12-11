@@ -53,7 +53,7 @@ private:
     char get_opponent_symbol() const;
 
 public:
-    // Constructor matches base Player class signature
+    // This constructor matches base Player class signature
     PyramidAIPlayer(string name, char symbol);
     
     // Virtual destructor
