@@ -14,8 +14,6 @@
 #include "Ultimate.h"
 #include "WordTic-tac-toe.h"
 #include "Memory.h"
-#include "FourInARow.h"
-
 using namespace std;
 
 void displayMenu() {
@@ -54,11 +52,7 @@ void runGame(int choice) {
         }
         case 2: {
             cout << "\n>_< Starting Four-in-a-Row >_<\n";
-            game_ui = new FourInARow_UI();
-            game_board = new FourInARowBoard();
-          
-            break;
-        } 
+                  } 
         case 3: {
             cout << "\n>_< Starting 5x5 Tic-Tac-Toe >_<\n";
             game_ui=new FiveFiveTicTacToe_UI();
