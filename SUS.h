@@ -100,6 +100,23 @@ public:
      * @return Player's score.
      */
     int get_score(Player<char>* player) const;
+    
+    /**
+     * @brief Sets a cell temporarily (for AI simulation).
+     * @param x Row index.
+     * @param y Column index.
+     * @param value Character to set.
+     */
+    void set_cell_temp(int x, int y, char value);
+    
+    /**
+     * @brief Counts potential SUS sequences if a letter is placed at position.
+     * @param x Row index.
+     * @param y Column index.
+     * @param letter Letter to evaluate ('S' or 'U').
+     * @return Number of potential SUS sequences.
+     */
+    int evaluate_position(int x, int y, char letter);
 };
 
 /**

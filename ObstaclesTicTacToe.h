@@ -110,6 +110,14 @@ public:
      * @return Number of empty cells.
      */
     int get_empty_count() const;
+    
+    /**
+     * @brief Sets a cell temporarily (for AI simulation).
+     * @param x Row index.
+     * @param y Column index.
+     * @param value Character to set.
+     */
+    void set_cell_temp(int x, int y, char value);
 };
 
 /**

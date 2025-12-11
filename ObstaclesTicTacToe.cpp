@@ -181,6 +181,12 @@ int ObstaclesBoard::get_empty_count() const {
     return count;
 }
 
+void ObstaclesBoard::set_cell_temp(int x, int y, char value) {
+    if (x >= 0 && x < rows && y >= 0 && y < columns) {
+        board[x][y] = value;
+    }
+}
+
 //--------------------------------------- ObstaclesUI Implementation
 
 ObstaclesUI::ObstaclesUI() : UI<char>("Welcome to FCAI Obstacles Tic-Tac-Toe Game", 6) {
@@ -236,22 +242,105 @@ Move<char>* ObstaclesUI::get_move(Player<char>* player) {
             valid_input = true;
         }
     } else {
-        // Computer player logic - random valid placement
-        bool found = false;
-        int attempts = 0;
+        // AI player - Smart logic
+        cout << "\n" << player->get_name() << " (AI) is thinking...\n";
         
-        while (!found && attempts < 100) {
-            x = rand() % 6;
-            y = rand() % 6;
-            attempts++;
-            
-            if (obs_board->get_cell(x, y) == '.') {
-                found = true;
+        char ai_symbol = player->get_symbol();
+        char opponent_symbol = (ai_symbol == 'X') ? 'O' : 'X';
+        
+        int best_x = -1, best_y = -1;
+        int best_score = -1000;
+        
+        // Priority 1: Check if AI can win in this move (make 4 in a row)
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (obs_board->get_cell(i, j) == '.') {
+                    // Try this move
+                    obs_board->set_cell_temp(i, j, ai_symbol);
+                    if (obs_board->check_four_in_row(ai_symbol)) {
+                        best_x = i;
+                        best_y = j;
+                        obs_board->set_cell_temp(i, j, '.');
+                        x = best_x;
+                        y = best_y;
+                        cout << player->get_name() << " (AI) winning move at (" 
+                             << (x+1) << ", " << (y+1) << ")!\n";
+                        return new Move<char>(x, y, player->get_symbol());
+                    }
+                    obs_board->set_cell_temp(i, j, '.');
+                }
             }
         }
         
-        if (!found) {
+        // Priority 2: Block opponent from winning (if they have 3 in a row)
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (obs_board->get_cell(i, j) == '.') {
+                    // Try opponent's move
+                    obs_board->set_cell_temp(i, j, opponent_symbol);
+                    if (obs_board->check_four_in_row(opponent_symbol)) {
+                        best_x = i;
+                        best_y = j;
+                        obs_board->set_cell_temp(i, j, '.');
+                        x = best_x;
+                        y = best_y;
+                        cout << player->get_name() << " (AI) blocking opponent at (" 
+                             << (x+1) << ", " << (y+1) << ")!\n";
+                        return new Move<char>(x, y, player->get_symbol());
+                    }
+                    obs_board->set_cell_temp(i, j, '.');
+                }
+            }
+        }
+        
+        // Priority 3: Look for opportunities to create 3 in a row
+        for (int i = 0; i < 6; i++) {
+            for (int j = 0; j < 6; j++) {
+                if (obs_board->get_cell(i, j) == '.') {
+                    int score = 0;
+                    
+                    // Count AI symbols in surrounding positions
+                    // Horizontal check
+                    int left = max(0, j-3), right = min(5, j+3);
+                    for (int k = left; k <= right; k++) {
+                        if (obs_board->get_cell(i, k) == ai_symbol) score += 2;
+                    }
+                    
+                    // Vertical check
+                    int top = max(0, i-3), bottom = min(5, i+3);
+                    for (int k = top; k <= bottom; k++) {
+                        if (obs_board->get_cell(k, j) == ai_symbol) score += 2;
+                    }
+                    
+                    // Diagonal checks
+                    for (int d = -3; d <= 3; d++) {
+                        if (i+d >= 0 && i+d < 6 && j+d >= 0 && j+d < 6) {
+                            if (obs_board->get_cell(i+d, j+d) == ai_symbol) score += 2;
+                        }
+                        if (i+d >= 0 && i+d < 6 && j-d >= 0 && j-d < 6) {
+                            if (obs_board->get_cell(i+d, j-d) == ai_symbol) score += 2;
+                        }
+                    }
+                    
+                    // Prefer center positions
+                    if (i >= 2 && i <= 3 && j >= 2 && j <= 3) score += 3;
+                    
+                    if (score > best_score) {
+                        best_score = score;
+                        best_x = i;
+                        best_y = j;
+                    }
+                }
+            }
+        }
+        
+        // If we found a good move, use it
+        if (best_x != -1 && best_y != -1) {
+            x = best_x;
+            y = best_y;
+        } else {
             // Fallback: find first empty cell
+            bool found = false;
             for (int i = 0; i < 6 && !found; i++) {
                 for (int j = 0; j < 6 && !found; j++) {
                     if (obs_board->get_cell(i, j) == '.') {
@@ -263,8 +352,8 @@ Move<char>* ObstaclesUI::get_move(Player<char>* player) {
             }
         }
         
-        cout << player->get_name() << " (Computer) placed at position (" 
-             << (x+1) << ", " << (y+1) << ")\n";
+        cout << player->get_name() << " (AI) placed at position (" 
+             << (x+1) << ", " << (y+1) << ")!\n";
     }
     
     return new Move<char>(x, y, player->get_symbol());

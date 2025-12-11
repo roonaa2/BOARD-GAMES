@@ -138,6 +138,39 @@ int SUSBoard::get_score(Player<char>* player) const {
     }
 }
 
+void SUSBoard::set_cell_temp(int x, int y, char value) {
+    if (x >= 0 && x < rows && y >= 0 && y < columns) {
+        board[x][y] = value;
+    }
+}
+
+int SUSBoard::evaluate_position(int x, int y, char letter) {
+    // Temporarily place the letter
+    char original = board[x][y];
+    board[x][y] = letter;
+    
+    int score = 0;
+    
+    // Check horizontal SUS patterns
+    if (board[0][0] == 'S' && board[0][1] == 'U' && board[0][2] == 'S') score++;
+    if (board[1][0] == 'S' && board[1][1] == 'U' && board[1][2] == 'S') score++;
+    if (board[2][0] == 'S' && board[2][1] == 'U' && board[2][2] == 'S') score++;
+    
+    // Check vertical SUS patterns
+    if (board[0][0] == 'S' && board[1][0] == 'U' && board[2][0] == 'S') score++;
+    if (board[0][1] == 'S' && board[1][1] == 'U' && board[2][1] == 'S') score++;
+    if (board[0][2] == 'S' && board[1][2] == 'U' && board[2][2] == 'S') score++;
+    
+    // Check diagonal SUS patterns
+    if (board[0][0] == 'S' && board[1][1] == 'U' && board[2][2] == 'S') score++;
+    if (board[0][2] == 'S' && board[1][1] == 'U' && board[2][0] == 'S') score++;
+    
+    // Restore original value
+    board[x][y] = original;
+    
+    return score;
+}
+
 //--------------------------------------- SUS_UI Implementation
 
 SUS_UI::SUS_UI() : UI<char>("Welcome to FCAI SUS Tic-Tac-Toe Game", 3) {
@@ -200,21 +233,93 @@ Move<char>* SUS_UI::get_move(Player<char>* player) {
             valid_input = true;
         }
     } else {
-        // Computer player logic - random placement
-        bool found = false;
-        while (!found) {
-            x = rand() % 3;
-            y = rand() % 3;
-            
-            if (sus_board->get_cell(x, y) == '.') {
-                // Randomly choose S or U
-                letter = (rand() % 2 == 0) ? 'S' : 'U';
-                found = true;
+        // AI player - Smart strategy
+        cout << "\n" << player->get_name() << " (AI) is analyzing...";
+        cout << " (Current Score: " << sus_board->get_score(player) << ")\n";
+        
+        int best_x = -1, best_y = -1;
+        char best_letter = 'S';
+        int best_score = -1;
+        
+        // Try all possible moves (position + letter choice)
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (sus_board->get_cell(i, j) == '.') {
+                    
+                    // Try placing 'S'
+                    int current_total = sus_board->get_score(player);
+                    int score_with_S = sus_board->evaluate_position(i, j, 'S');
+                    int gain_S = score_with_S - current_total;
+                    
+                    // Additional heuristic: favor 'S' for corners and edges
+                    if ((i == 0 || i == 2) && (j == 0 || j == 2)) {
+                        gain_S += 2; // Corners can form multiple SUS
+                    }
+                    if (i == 1 && j == 1) {
+                        gain_S += 1; // Center is strategic
+                    }
+                    
+                    // Try placing 'U'
+                    int score_with_U = sus_board->evaluate_position(i, j, 'U');
+                    int gain_U = score_with_U - current_total;
+                    
+                    // Additional heuristic: favor 'U' for center position
+                    if (i == 1 && j == 1) {
+                        gain_U += 3; // Center U can complete multiple SUS
+                    }
+                    // Favor 'U' if there are 'S' symbols nearby
+                    int s_count = 0;
+                    if (i > 0 && sus_board->get_cell(i-1, j) == 'S') s_count++;
+                    if (i < 2 && sus_board->get_cell(i+1, j) == 'S') s_count++;
+                    if (j > 0 && sus_board->get_cell(i, j-1) == 'S') s_count++;
+                    if (j < 2 && sus_board->get_cell(i, j+1) == 'S') s_count++;
+                    gain_U += s_count;
+                    
+                    // Choose the better letter for this position
+                    if (gain_S > best_score) {
+                        best_score = gain_S;
+                        best_x = i;
+                        best_y = j;
+                        best_letter = 'S';
+                    }
+                    
+                    if (gain_U > best_score) {
+                        best_score = gain_U;
+                        best_x = i;
+                        best_y = j;
+                        best_letter = 'U';
+                    }
+                }
             }
         }
         
-        cout << player->get_name() << " (Computer) placed '" << letter 
-             << "' at position (" << (x+1) << ", " << (y+1) << ")\n";
+        // If no good move found, use fallback strategy
+        if (best_x == -1 || best_y == -1) {
+            // Find first empty cell
+            for (int i = 0; i < 3; i++) {
+                for (int j = 0; j < 3; j++) {
+                    if (sus_board->get_cell(i, j) == '.') {
+                        best_x = i;
+                        best_y = j;
+                        // Start with corners and 'S'
+                        best_letter = ((i == 0 || i == 2) && (j == 0 || j == 2)) ? 'S' : 'U';
+                        break;
+                    }
+                }
+                if (best_x != -1) break;
+            }
+        }
+        
+        x = best_x;
+        y = best_y;
+        letter = best_letter;
+        
+        cout << player->get_name() << " (AI) placed '" << letter 
+             << "' at position (" << (x+1) << ", " << (y+1) << ")";
+        if (best_score > 0) {
+            cout << " - Strategic move!";
+        }
+        cout << "\n";
     }
     
     return new Move<char>(x, y, letter);
