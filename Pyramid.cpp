@@ -150,18 +150,15 @@ Player<char>** PyramidUI::setup_players()
 {
     Player<char>** players = new Player<char>*[2];
     string name;
-    int choice;
+    string choice;
 
     cout << "=== PYRAMID TIC-TAC-TOE ===\n\n";
     
     // Player 1 (X)
-    cout << "Player 1 (X) - Choose type:\n";
-    cout << "1. Human\n";
-    cout << "2. AI\n";
-    cout << "Enter choice: ";
+    cout << "Player 1 (X) - Human or Computer? ";
     cin >> choice;
-    
-    if(choice == 2) {
+
+    if(choice == "Computer" || choice == "computer") {
         players[0] = create_player(name = "AI-X", 'X', PlayerType::AI);
     } else {
         cout << "Enter name: ";
@@ -171,13 +168,10 @@ Player<char>** PyramidUI::setup_players()
     }
 
     // Player 2 (O)
-    cout << "\nPlayer 2 (O) - Choose type:\n";
-    cout << "1. Human\n";
-    cout << "2. AI\n";
-    cout << "Enter choice: ";
+    cout << "\nPlayer 2 (O) - Human or Computer? ";
     cin >> choice;
-    
-    if(choice == 2) {
+
+    if(choice == "Computer" || choice == "computer") {
         players[1] = create_player(name = "AI-O", 'O', PlayerType::AI);
     } else {
         cout << "Enter name: ";
@@ -189,6 +183,7 @@ Player<char>** PyramidUI::setup_players()
     cout << "\n";
     return players;
 }
+
 
 Player<char>* PyramidUI::create_player(string& name, char symbol, PlayerType type)
 {
