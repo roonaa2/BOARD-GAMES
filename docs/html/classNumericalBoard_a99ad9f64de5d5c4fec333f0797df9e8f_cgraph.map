@@ -1,0 +1,8 @@
+<map id="NumericalBoard::game_is_over" name="NumericalBoard::game_is_over">
+<area shape="rect" id="Node000001" title="Determines if the game is over (win or draw)." alt="" coords="5,23,177,63"/>
+<area shape="rect" id="Node000002" href="$classNumericalBoard.html#af6515c859ef29e9b999143271fceaf32" title="Checks if the game has ended in a draw." alt="" coords="225,5,411,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="177,31,211,27,212,33,178,36"/>
+<area shape="rect" id="Node000003" href="$classNumericalBoard.html#a5cc516dd4b6d4bb46ba3e57ebe223495" title="Checks if the given player has won the game (made a line sum to 15)." alt="" coords="459,31,635,56"/>
+<area shape="poly" id="edge3_Node000001_Node000003" title=" " alt="" coords="178,41,445,41,445,46,178,46"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,26,445,29,445,35,411,31"/>
+</map>

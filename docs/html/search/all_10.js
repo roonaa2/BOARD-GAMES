@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['ui_0',['ui',['../classUI.html',1,'UI&lt; T &gt;'],['../classUI.html#afb59b53f3c2ed750b1a9a0c7d6dc4a7a',1,'UI::UI(int cell_display_width=3)'],['../classUI.html#ae50eed41905ca2f8dc103d9bef427fe6',1,'UI::UI(string message, int cell_display_width)'],['../classGameManager.html#a2a3d79a969e0ff1ae529058779039ea9',1,'GameManager::ui']]],
+  ['ui_3c_20char_20_3e_1',['UI&lt; char &gt;',['../classUI.html',1,'']]],
+  ['ultimate_2ecpp_2',['Ultimate.cpp',['../Ultimate_8cpp.html',1,'']]],
+  ['ultimate_2eh_3',['Ultimate.h',['../Ultimate_8h.html',1,'']]],
+  ['ultimate_5fboard_4',['ultimate_board',['../classUltimate__Board.html',1,'Ultimate_Board'],['../classUltimate__Board.html#a7217969045637563ae6d47d492a31fa9',1,'Ultimate_Board::Ultimate_Board()']]],
+  ['ultimate_5fh_5',['ULTIMATE_H',['../Ultimate_8h.html#a7437c1d4ff8b97a29364cb74a35ede0b',1,'Ultimate.h']]],
+  ['ultimate_5fui_6',['ultimate_ui',['../classUltimate__UI.html#a9e3b3b9207e382ffc43d8e34bcb34ce0',1,'Ultimate_UI::Ultimate_UI()'],['../classUltimate__UI.html',1,'Ultimate_UI']]],
+  ['undo_5fmove_7',['undo_move',['../classX__O__4x4Board.html#a6461ea8430c09b22bc66e0badc67cb47',1,'X_O_4x4Board']]],
+  ['update_5fboard_8',['update_board',['../classDiamondBoard.html#ac99663918be4334b0d08e4a5838ba610',1,'DiamondBoard::update_board()'],['../classFiveFiveTicTacToe.html#ae666247e3fe94fd2220483a403ee00f7',1,'FiveFiveTicTacToe::update_board()'],['../classInfinityBoard.html#aa0816a7f3585c5751b8a8b45f553f5c7',1,'InfinityBoard::update_board()'],['../classMemoryBoard.html#adf461282feb8b09dfe9c1523ef0ff944',1,'MemoryBoard::update_board()'],['../classMisereBoard.html#a53da302e4b5f805d8ebcf47c19602b39',1,'MisereBoard::update_board()'],['../classNumericalBoard.html#ad300e8f113b3f5363f99c3cb90a103c7',1,'NumericalBoard::update_board()'],['../classObstaclesBoard.html#ab8c795f3533f381aa08e71aa093528d2',1,'ObstaclesBoard::update_board()'],['../classPyramidBoard.html#a64346ffd4e8645617e1067b3a07133b7',1,'PyramidBoard::update_board()'],['../classSUSBoard.html#a66526aef691ea9537c7712a86ef78fc9',1,'SUSBoard::update_board()'],['../classX__O__4x4Board.html#ad1e394f6f6b38ecd0761de46103dc057',1,'X_O_4x4Board::update_board()'],['../classUltimate__Board.html#ac979a8684c08c4a6ee9b613152ddab4e',1,'Ultimate_Board::update_board()'],['../classWORDTIC__TAC__TOE.html#ab1c85d8f899931900b596b9cd88a1376',1,'WORDTIC_TAC_TOE::update_board()'],['../classX__O__Board.html#aef2b0da670b2d5dc6333e0e0113f8b3d',1,'X_O_Board::update_board()'],['../classBoard.html#a93d9dec601dda58b7e206ccb47633e57',1,'Board::update_board()']]],
+  ['update_5fempty_5fcells_9',['update_empty_cells',['../classObstaclesBoard.html#a221ef59b3c78a950d481a85d45e12555',1,'ObstaclesBoard']]],
+  ['used_5fnumbers_10',['used_numbers',['../classNumericalBoard.html#ad6d3b7c8a28f3be58f03a296b45b2f0b',1,'NumericalBoard']]]
+];

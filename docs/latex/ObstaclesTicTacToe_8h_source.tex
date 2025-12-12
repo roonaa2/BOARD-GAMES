@@ -1,0 +1,59 @@
+\doxysection{Obstacles\+Tic\+Tac\+Toe.\+h}
+\hypertarget{ObstaclesTicTacToe_8h_source}{}\label{ObstaclesTicTacToe_8h_source}\mbox{\hyperlink{ObstaclesTicTacToe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00016}00016\ \textcolor{preprocessor}{\#ifndef\ OBSTACLES\_TIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00017}00017\ \textcolor{preprocessor}{\#define\ OBSTACLES\_TIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00018}00018\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00019}00019\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00020}00020\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00021}00021\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00022}00022\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00024}00024\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00025}00025\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00035}\mbox{\hyperlink{classObstaclesBoard}{00035}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObstaclesBoard}{ObstaclesBoard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00036}00036\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00037}\mbox{\hyperlink{classObstaclesBoard_a1b26a2509aeb866db8a90bf9f2d5fc6b}{00037}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classObstaclesBoard_a1b26a2509aeb866db8a90bf9f2d5fc6b}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00038}\mbox{\hyperlink{classObstaclesBoard_a80fa7b3adf426fefbb9b8e1e0fe9c0dc}{00038}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classObstaclesBoard_a80fa7b3adf426fefbb9b8e1e0fe9c0dc}{obstacle\_symbol}}\ =\ \textcolor{charliteral}{'\#'};\ \ \ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00039}\mbox{\hyperlink{classObstaclesBoard_a4d0d2223c3391a3206764ecc71ce1823}{00039}}\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classObstaclesBoard_a4d0d2223c3391a3206764ecc71ce1823}{round\_counter}}\ =\ 0;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00040}\mbox{\hyperlink{classObstaclesBoard_ace7901fe784af01de3adfaa46422b5f3}{00040}}\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classObstaclesBoard_ace7901fe784af01de3adfaa46422b5f3}{empty\_cells}};\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00045}00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObstaclesBoard_a7bfed731855a8d1f7e570af311960b02}{add\_random\_obstacles}}();}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00046}00046\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00050}00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classObstaclesBoard_a221ef59b3c78a950d481a85d45e12555}{update\_empty\_cells}}();}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00051}00051\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00057}00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_a941f51502c0ac155844ff20287c86f9d}{check\_four\_in\_row}}(\textcolor{keywordtype}{char}\ symbol);}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00058}00058\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00059}00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00063}00063\ \ \ \ \ \mbox{\hyperlink{classObstaclesBoard_a65f81b800ebde45a015fb3e4f7432f29}{ObstaclesBoard}}();}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00064}00064\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00070}00070\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_ab8c795f3533f381aa08e71aa093528d2}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00077}00077\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_aad8f39f780b5be9e022765de2aae9a16}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00084}\mbox{\hyperlink{classObstaclesBoard_a3b8b04b4ed5a045ce3c368903663eaf4}{00084}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_a3b8b04b4ed5a045ce3c368903663eaf4}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00091}00091\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_a7aadef79fdd811dbffabc97003b4c871}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00092}00092\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00098}00098\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classObstaclesBoard_ad6a3ef073e94f817c897b92ed7a9e7df}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00099}00099\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00106}00106\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classObstaclesBoard_a4b144b8f660776a94bfaf8615d246d28}{get\_cell}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00107}00107\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00112}00112\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classObstaclesBoard_ab58a6c363db114afbca9df8a5d4c2dbe}{get\_empty\_count}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00113}00113\ \};}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00114}00114\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00124}\mbox{\hyperlink{classObstaclesUI}{00124}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classObstaclesUI}{ObstaclesUI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00125}00125\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00131}00131\ \ \ \ \ \mbox{\hyperlink{classObstaclesUI_ad646ac408f23f068b93d5b1c9202cbbc}{ObstaclesUI}}();}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00132}00132\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00136}\mbox{\hyperlink{classObstaclesUI_a84863ff051678f4e7c525d75159df32a}{00136}}\ \ \ \ \ \mbox{\hyperlink{classObstaclesUI_a84863ff051678f4e7c525d75159df32a}{\string~ObstaclesUI}}()\ \{\}}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00137}00137\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00145}00145\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classObstaclesUI_a221c872630a5b9cd3b80b53746e303e6}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type);}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00146}00146\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00152}00152\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classObstaclesUI_a3801d542181ce03179e6f49d165761ee}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00153}00153\ \};}
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{ObstaclesTicTacToe_8h_source_l00155}00155\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ OBSTACLES\_TIC\_TAC\_TOE\_H}}
+
+\end{DoxyCode}

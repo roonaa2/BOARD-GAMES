@@ -1,0 +1,31 @@
+<map id="Player::get_name" name="Player::get_name">
+<area shape="rect" id="Node000001" title="Get the player&#39;s name." alt="" coords="751,279,887,305"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe__UI.html#abbef1135760abe1f7008578791d7114a" title="Ask the user (or AI) to make a move." alt="" coords="524,5,683,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="809,267,796,222,775,166,744,109,724,82,701,59,681,46,684,42,704,55,728,79,748,106,780,164,802,220,814,265"/>
+<area shape="rect" id="Node000003" href="$classNumericalUI.html#a28d2c55ab2481d72b7b58899efed3e59" title="Retrieves the next move from a player." alt="" coords="515,70,691,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="806,267,791,231,769,188,739,145,701,109,681,98,683,93,704,105,743,141,774,185,796,229,811,265"/>
+<area shape="rect" id="Node000004" href="$classObstaclesUI.html#a3801d542181ce03179e6f49d165761ee" title="Retrieves the next move from a player." alt="" coords="517,119,690,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="801,269,761,212,733,183,701,158,678,147,680,142,704,154,737,179,765,209,806,266"/>
+<area shape="rect" id="Node000005" href="$classSUS__UI.html#a621a4bfadf8d79f2b2b66f2241c310c3" title="Retrieves the next move from a player." alt="" coords="532,169,675,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="792,272,751,239,702,209,668,197,670,192,704,204,754,235,795,268"/>
+<area shape="rect" id="Node000006" href="$classWORDTIC__TAC__TOE__UI.html#af678453c1749f35e1404bb698d08e912" title="Ask the user (or AI) to make a move." alt="" coords="518,243,689,283"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="737,284,688,277,689,272,737,278"/>
+<area shape="rect" id="Node000007" href="$classPyramidUI.html#aaf7bb6a3587283faff28b018d4d5068d" title="Ask the user (or AI) to make a move." alt="" coords="522,307,685,333"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="738,305,685,312,685,307,737,300"/>
+<area shape="rect" id="Node000008" href="$classX__O__4x4__UI.html#ac09b1ff731307ae44bced0b3ac6942f5" title="Ask the user (or AI) to make a move." alt="" coords="517,357,690,382"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="781,313,704,347,661,359,660,354,702,341,779,308"/>
+<area shape="rect" id="Node000009" href="$classFiveFiveTicTacToe.html#a3a85bdf72642bed3d8ee00f03c6d84ae" title="Check if a player has won." alt="" coords="530,407,677,447"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="799,317,757,357,704,396,676,409,674,404,701,391,754,352,795,313"/>
+<area shape="rect" id="Node000011" href="$classWORDTIC__TAC__TOE.html#a2b8d91720d2e12d7808bd4485d8e68c4" title="Check if a player has won." alt="" coords="504,471,703,497"/>
+<area shape="poly" id="edge11_Node000001_Node000011" title=" " alt="" coords="809,318,793,351,770,390,741,428,704,461,680,474,677,469,701,456,737,425,766,387,789,348,805,316"/>
+<area shape="rect" id="Node000014" href="$classGameManager.html#a71f46d5189dac5c773f608cea1b5a203" title="Run the main game loop until someone wins or the game ends." alt="" coords="530,521,677,546"/>
+<area shape="poly" id="edge15_Node000001_Node000014" title=" " alt="" coords="813,319,800,361,778,413,747,465,727,489,704,510,678,524,676,520,701,506,723,486,742,462,773,410,795,359,808,317"/>
+<area shape="poly" id="edge6_Node000006_Node000006" title=" " alt="" coords="639,231,627,224,603,221,583,223,571,228,566,234,568,242,563,243,561,233,567,224,582,218,603,216,628,219,642,226"/>
+<area shape="rect" id="Node000010" href="$classFiveFiveTicTacToe.html#acbf8318cba0b4eacadd67d95c870e999" title="Check if the game is over." alt="" coords="279,407,425,447"/>
+<area shape="poly" id="edge10_Node000009_Node000010" title=" " alt="" coords="516,429,425,429,425,424,516,424"/>
+<area shape="rect" id="Node000012" href="$classWORDTIC__TAC__TOE.html#ae1ac4e0b2ce133dcf661544d0f401d61" title="Check if the game is over." alt="" coords="5,489,200,529"/>
+<area shape="poly" id="edge12_Node000011_Node000012" title=" " alt="" coords="490,492,200,507,200,502,490,487"/>
+<area shape="rect" id="Node000013" href="$classWORDTIC__TAC__TOE.html#a56fe5d14c10500ae248b8989d1f56f01" title="Check if the game ended in a draw." alt="" coords="248,522,456,547"/>
+<area shape="poly" id="edge13_Node000011_Node000013" title=" " alt="" coords="527,502,416,525,415,519,525,497"/>
+<area shape="poly" id="edge14_Node000013_Node000012" title=" " alt="" coords="234,525,200,522,201,517,235,520"/>
+</map>

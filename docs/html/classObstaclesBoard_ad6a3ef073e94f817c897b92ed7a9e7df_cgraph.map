@@ -1,0 +1,12 @@
+<map id="ObstaclesBoard::game_is_over" name="ObstaclesBoard::game_is_over">
+<area shape="rect" id="Node000001" title="Determines if the game is over." alt="" coords="5,35,175,75"/>
+<area shape="rect" id="Node000002" href="$classObstaclesBoard.html#a7aadef79fdd811dbffabc97003b4c871" title="Checks if the game has ended in a draw." alt="" coords="223,17,405,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="175,42,209,39,210,44,175,48"/>
+<area shape="rect" id="Node000003" href="$classObstaclesBoard.html#aad8f39f780b5be9e022765de2aae9a16" title="Checks if the given player has won the game (four in a row)." alt="" coords="453,42,627,67"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="175,52,440,52,440,57,175,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="406,37,440,41,440,46,405,42"/>
+<area shape="rect" id="Node000004" href="$classObstaclesBoard.html#a941f51502c0ac155844ff20287c86f9d" title="Checks if there are four in a row for a specific symbol." alt="" coords="675,5,845,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="627,40,661,36,661,41,628,46"/>
+<area shape="rect" id="Node000005" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="687,70,833,95"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="628,63,673,69,672,74,627,68"/>
+</map>

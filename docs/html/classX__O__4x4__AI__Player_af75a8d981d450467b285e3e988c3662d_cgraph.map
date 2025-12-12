@@ -1,0 +1,34 @@
+<map id="X_O_4x4_AI_Player::get_move" name="X_O_4x4_AI_Player::get_move">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,380,160,420"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4__AI__Player.html#aa954c7769e767a0a623e7850707e7d44" title=" " alt="" coords="208,272,363,312"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,378,234,316,236,321,122,382"/>
+<area shape="rect" id="Node000010" href="$classPlayer.html#adb4e803a7ac0356b111b8ca79d766976" title="Construct a player with name, symbol, and type." alt="" coords="468,494,580,519"/>
+<area shape="poly" id="edge19_Node000001_Node000010" title=" " alt="" coords="161,417,411,479,455,489,454,494,410,484,160,422"/>
+<area shape="poly" id="edge13_Node000002_Node000002" title=" " alt="" coords="247,272,245,262,251,253,265,247,285,245,309,248,322,256,319,260,307,253,285,251,266,253,254,257,250,263,252,271"/>
+<area shape="rect" id="Node000003" href="$classX__O__4x4Board.html#aa2bb740b2ea9cb11d7dcccad69aa785d" title=" " alt="" coords="443,100,605,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="297,270,342,210,373,178,409,150,429,139,431,144,412,154,377,182,346,214,301,273"/>
+<area shape="rect" id="Node000004" href="$classX__O__4x4__AI__Player.html#a5e42c24befa4c48eeae672c98bddb814" title=" " alt="" coords="447,164,601,204"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="318,270,410,220,444,206,446,211,412,225,320,274"/>
+<area shape="rect" id="Node000005" href="$classX__O__4x4Board.html#af8fd5ade41fa695981acd1faa624cc2f" title=" " alt="" coords="685,92,875,132"/>
+<area shape="poly" id="edge8_Node000002_Node000005" title=" " alt="" coords="289,271,303,229,327,177,362,126,384,104,409,86,447,69,487,59,528,55,569,56,648,67,715,85,714,90,647,72,569,61,528,61,488,65,449,74,412,90,387,108,366,129,331,180,308,231,294,272"/>
+<area shape="rect" id="Node000006" href="$classBoard.html#a117f2e61fdb7deccca333bbbc9c62d3a" title="Return a copy of the current board as a 2D vector." alt="" coords="689,214,871,239"/>
+<area shape="poly" id="edge9_Node000002_Node000006" title=" " alt="" coords="363,276,410,268,675,235,675,240,411,273,364,281"/>
+<area shape="rect" id="Node000007" href="$classBoard.html#ac665e1ed1f49125fab248e2c9ddfd608" title="Get number of columns." alt="" coords="705,271,855,297"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="363,288,691,283,691,288,363,293"/>
+<area shape="rect" id="Node000008" href="$classBoard.html#a93b130eff67bd4476fab27be8341cb78" title="Get number of rows." alt="" coords="717,14,843,39"/>
+<area shape="poly" id="edge11_Node000002_Node000008" title=" " alt="" coords="288,271,300,224,322,164,338,132,358,102,382,75,409,52,444,33,481,20,520,11,560,5,636,4,703,10,703,15,636,9,560,11,521,16,483,25,446,38,412,57,385,79,362,105,343,135,327,166,305,226,293,272"/>
+<area shape="rect" id="Node000009" href="$classX__O__4x4Board.html#a975837d07624bf77726807a4bfd96f5b" title=" " alt="" coords="431,429,617,469"/>
+<area shape="poly" id="edge12_Node000002_Node000009" title=" " alt="" coords="304,311,349,362,379,390,412,414,427,422,425,426,409,418,375,394,345,366,300,314"/>
+<area shape="poly" id="edge14_Node000002_Node000010" title=" " alt="" coords="302,311,412,479,433,490,455,497,454,503,431,495,409,483,297,314"/>
+<area shape="rect" id="Node000011" href="$classX__O__4x4Board.html#a61a83ab711801c7a61792b469ba21940" title=" " alt="" coords="411,330,637,355"/>
+<area shape="poly" id="edge15_Node000002_Node000011" title=" " alt="" coords="364,306,451,325,450,330,363,311"/>
+<area shape="rect" id="Node000013" href="$classX__O__4x4Board.html#a6461ea8430c09b22bc66e0badc67cb47" title=" " alt="" coords="423,379,625,405"/>
+<area shape="poly" id="edge17_Node000002_Node000013" title=" " alt="" coords="316,310,360,338,412,364,438,373,436,378,410,369,357,343,313,315"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="595,161,694,133,696,138,597,167"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="602,194,690,209,689,214,601,199"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="573,202,686,248,730,264,728,269,684,253,571,207"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="600,168,636,150,652,133,660,116,668,98,683,78,709,59,735,43,738,48,712,63,687,82,673,101,665,118,656,136,639,154,603,173"/>
+<area shape="rect" id="Node000012" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="707,354,853,379"/>
+<area shape="poly" id="edge16_Node000011_Node000012" title=" " alt="" coords="638,351,693,356,693,361,637,356"/>
+<area shape="poly" id="edge18_Node000013_Node000012" title=" " alt="" coords="624,379,693,373,693,378,625,385"/>
+</map>

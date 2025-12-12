@@ -1,0 +1,561 @@
+\doxysection{SUSBoard Class Reference}
+\hypertarget{classSUSBoard}{}\label{classSUSBoard}\index{SUSBoard@{SUSBoard}}
+
+
+Represents the SUS Tic-\/\+Tac-\/\+Toe game board.  
+
+
+
+
+{\ttfamily \#include $<$SUS.\+h$>$}
+
+
+
+Inheritance diagram for SUSBoard\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classSUSBoard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for SUSBoard\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classSUSBoard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSUSBoard_a042d5c18837a192f869a493b064ce359}{SUSBoard}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that initializes a 3x3 SUS board. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classSUSBoard_a66526aef691ea9537c7712a86ef78fc9}{update\+\_\+board}} (\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{move}})
+\begin{DoxyCompactList}\small\item\em Updates the board with a player\textquotesingle{}s move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classSUSBoard_ad5519441746bec9a5cec1a2e8fbdf699}{is\+\_\+win}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Checks if the given player has won the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classSUSBoard_a073b373313ee005271d19cf5bd45bc9a}{is\+\_\+lose}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*})
+\begin{DoxyCompactList}\small\item\em Checks if the given player has lost the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classSUSBoard_a6660d03609658d9981b7069791fccb41}{is\+\_\+draw}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Checks if the game has ended in a draw. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classSUSBoard_a52fb4df41bb17f270cdc5fe55bb4afb9}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}})
+\begin{DoxyCompactList}\small\item\em Determines if the game is over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classSUSBoard_a72276f48c88fb62e8bfcbb9bd8a1b410}{get\+\_\+cell}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y) \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the character at a specific board position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classSUSBoard_a70e81d5d6bdf78110e0d6331bd1166f6}{get\+\_\+score}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Gets the score for a specific player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classBoard_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a512d0bd8c282985c410d677c82eb3b78}{get\+\_\+n\+\_\+moves}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of moves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classBoard_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classSUSBoard_a6b9fd2643640f4388e6340f989039171}{count\+\_\+new\+\_\+sus\+\_\+sequences}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y)
+\begin{DoxyCompactList}\small\item\em Counts new "{}\+S-\/\+U-\/\+S"{} sequences formed by the last move. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classSUSBoard_af53e0cc7ed68f6edbe3b302565c62910}{blank\+\_\+symbol}} = \textquotesingle{}.\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Character used to represent an empty cell. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\+\_\+score}} = 0
+\begin{DoxyCompactList}\small\item\em Score for \doxylink{classPlayer}{Player} 1 (X) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\+\_\+score}} = 0
+\begin{DoxyCompactList}\small\item\em Score for \doxylink{classPlayer}{Player} 2 (O) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the SUS Tic-\/\+Tac-\/\+Toe game board. 
+
+This class inherits from the generic {\ttfamily \doxylink{classBoard}{Board}\texorpdfstring{$<$}{<}char\texorpdfstring{$>$}{>}} class and implements the specific logic required for the SUS game where players form "{}\+S-\/\+U-\/\+S"{} sequences.
+
+\begin{DoxySeeAlso}{See also}
+\doxylink{classBoard}{Board} 
+\end{DoxySeeAlso}
+
+
+Definition at line \mbox{\hyperlink{SUS_8h_source_l00034}{34}} of file \mbox{\hyperlink{SUS_8h_source}{SUS.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classSUSBoard_a042d5c18837a192f869a493b064ce359}\label{classSUSBoard_a042d5c18837a192f869a493b064ce359} 
+\index{SUSBoard@{SUSBoard}!SUSBoard@{SUSBoard}}
+\index{SUSBoard@{SUSBoard}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{SUSBoard()}{SUSBoard()}}
+{\footnotesize\ttfamily SUSBoard\+::\+SUSBoard (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor that initializes a 3x3 SUS board. 
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classBoard}{Board}}(3,\ 3)\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{comment}{//\ Initialize\ all\ cells\ with\ blank\_symbol}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{row}}\ :\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}})}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{for}}\ (\mbox{\hyperlink{classPlayer}{auto}}\&\ \mbox{\hyperlink{classPlayer}{cell}}\ :\ \mbox{\hyperlink{classPlayer}{row}})}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cell}}\ =\ \mbox{\hyperlink{classSUSBoard_af53e0cc7ed68f6edbe3b302565c62910}{blank\_symbol}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}}\ =\ 0;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}}\ =\ 0;}
+\DoxyCodeLine{00020\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classSUSBoard_a6b9fd2643640f4388e6340f989039171}\label{classSUSBoard_a6b9fd2643640f4388e6340f989039171} 
+\index{SUSBoard@{SUSBoard}!count\_new\_sus\_sequences@{count\_new\_sus\_sequences}}
+\index{count\_new\_sus\_sequences@{count\_new\_sus\_sequences}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{count\_new\_sus\_sequences()}{count\_new\_sus\_sequences()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{int}} SUSBoard\+::count\+\_\+new\+\_\+sus\+\_\+sequences (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{x,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Counts new "{}\+S-\/\+U-\/\+S"{} sequences formed by the last move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row of the last move. \\
+\hline
+{\em y} & Column of the last move. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of new "{}\+S-\/\+U-\/\+S"{} sequences formed. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{new\_sequences}}\ =\ 0;}
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{current}}\ =\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y];}
+\DoxyCodeLine{00029\ \ \ \ \ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{comment}{//\ Only\ check\ if\ the\ placed\ letter\ is\ 'S'\ or\ 'U'}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{current}}\ !=\ \textcolor{charliteral}{'S'}\ \&\&\ \mbox{\hyperlink{classPlayer}{current}}\ !=\ \textcolor{charliteral}{'U'})\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{comment}{//\ Check\ all\ possible\ "{}S-\/U-\/S"{}\ patterns\ that\ include\ position\ (x,\ y)}}
+\DoxyCodeLine{00036\ \ \ \ \ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{comment}{//\ Horizontal\ patterns}}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Pattern:\ S\ at\ x,\ U\ at\ x+1,\ S\ at\ x+2\ (current\ can\ be\ any\ of\ these)}}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{if}\ (y\ >=\ 0\ \&\&\ y\ <=\ 2)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][0]\ ==\ \textcolor{charliteral}{'S'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][1]\ ==\ \textcolor{charliteral}{'U'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][2]\ ==\ \textcolor{charliteral}{'S'})\ \{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{new\_sequences}}++;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00043\ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{comment}{//\ Vertical\ patterns}}
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ >=\ 0\ \&\&\ x\ <=\ 2)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][y]\ ==\ \textcolor{charliteral}{'S'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][y]\ ==\ \textcolor{charliteral}{'U'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][y]\ ==\ \textcolor{charliteral}{'S'})\ \{}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{new\_sequences}}++;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \}}
+\DoxyCodeLine{00051\ \ \ \ \ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{comment}{//\ Main\ diagonal\ (top-\/left\ to\ bottom-\/right)}}
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ ==\ y)\ \{}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][0]\ ==\ \textcolor{charliteral}{'S'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]\ ==\ \textcolor{charliteral}{'U'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]\ ==\ \textcolor{charliteral}{'S'})\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{new\_sequences}}++;}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00057\ \ \ \ \ \}}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{comment}{//\ Anti-\/diagonal\ (top-\/right\ to\ bottom-\/left)}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}\ (x\ +\ y\ ==\ 2)\ \{}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]\ ==\ \textcolor{charliteral}{'S'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]\ ==\ \textcolor{charliteral}{'U'}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][0]\ ==\ \textcolor{charliteral}{'S'})\ \{}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{new\_sequences}}++;}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \}}
+\DoxyCodeLine{00065\ \ \ \ \ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{new\_sequences}};}
+\DoxyCodeLine{00067\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSUSBoard_a6b9fd2643640f4388e6340f989039171_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSUSBoard_a52fb4df41bb17f270cdc5fe55bb4afb9}\label{classSUSBoard_a52fb4df41bb17f270cdc5fe55bb4afb9} 
+\index{SUSBoard@{SUSBoard}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} SUSBoard\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Determines if the game is over. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player to evaluate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the board is full, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00129}{129}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00129\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 9;}
+\DoxyCodeLine{00131\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSUSBoard_a72276f48c88fb62e8bfcbb9bd8a1b410}\label{classSUSBoard_a72276f48c88fb62e8bfcbb9bd8a1b410} 
+\index{SUSBoard@{SUSBoard}!get\_cell@{get\_cell}}
+\index{get\_cell@{get\_cell}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{get\_cell()}{get\_cell()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} SUSBoard\+::get\+\_\+cell (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{x,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{y }\end{DoxyParamCaption}) const}
+
+
+
+Gets the character at a specific board position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row index. \\
+\hline
+{\em y} & Column index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Character at the position. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y];}
+\DoxyCodeLine{00024\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSUSBoard_a70e81d5d6bdf78110e0d6331bd1166f6}\label{classSUSBoard_a70e81d5d6bdf78110e0d6331bd1166f6} 
+\index{SUSBoard@{SUSBoard}!get\_score@{get\_score}}
+\index{get\_score@{get\_score}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{get\_score()}{get\_score()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{int}} SUSBoard\+::get\+\_\+score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption}) const}
+
+
+
+Gets the score for a specific player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{classPlayer}{Player}\textquotesingle{}s score. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00133}{133}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00134\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}()\ ==\ \textcolor{charliteral}{'X'})\ \{}
+\DoxyCodeLine{00135\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}};}
+\DoxyCodeLine{00136\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}};}
+\DoxyCodeLine{00138\ \ \ \ \ \}}
+\DoxyCodeLine{00139\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=344pt]{classSUSBoard_a70e81d5d6bdf78110e0d6331bd1166f6_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSUSBoard_a6660d03609658d9981b7069791fccb41}\label{classSUSBoard_a6660d03609658d9981b7069791fccb41} 
+\index{SUSBoard@{SUSBoard}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} SUSBoard\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the game has ended in a draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player being checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board is full and scores are equal, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00124}{124}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00125\ \ \ \ \ \textcolor{comment}{//\ Draw\ if\ board\ is\ full\ and\ scores\ are\ equal}}
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{keywordflow}{return}\ (\mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 9\ \&\&\ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}}\ ==\ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}});}
+\DoxyCodeLine{00127\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSUSBoard_a073b373313ee005271d19cf5bd45bc9a}\label{classSUSBoard_a073b373313ee005271d19cf5bd45bc9a} 
+\index{SUSBoard@{SUSBoard}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} SUSBoard\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the given player has lost the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player being checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false (not used in SUS logic). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8h_source_l00073}{73}} of file \mbox{\hyperlink{SUS_8h_source}{SUS.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00073\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classSUSBoard_ad5519441746bec9a5cec1a2e8fbdf699}\label{classSUSBoard_ad5519441746bec9a5cec1a2e8fbdf699} 
+\index{SUSBoard@{SUSBoard}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} SUSBoard\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the given player has won the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player being checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player has more "{}\+S-\/\+U-\/\+S"{} sequences than opponent, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{comment}{//\ Only\ check\ for\ win\ if\ game\ is\ over\ (board\ is\ full)}}
+\DoxyCodeLine{00112\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ <\ 9)\ \{}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00114\ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{comment}{//\ Player\ wins\ if\ they\ have\ more\ SUS\ sequences\ than\ opponent}}
+\DoxyCodeLine{00117\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}()\ ==\ \textcolor{charliteral}{'X'})\ \{}
+\DoxyCodeLine{00118\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}}\ >\ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}};}
+\DoxyCodeLine{00119\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00120\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}}\ >\ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}};}
+\DoxyCodeLine{00121\ \ \ \ \ \}}
+\DoxyCodeLine{00122\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{classSUSBoard_ad5519441746bec9a5cec1a2e8fbdf699_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classSUSBoard_a66526aef691ea9537c7712a86ef78fc9}\label{classSUSBoard_a66526aef691ea9537c7712a86ef78fc9} 
+\index{SUSBoard@{SUSBoard}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} SUSBoard\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the board with a player\textquotesingle{}s move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Pointer to a Move$<$char$>$ object containing move coordinates and symbol (S or U). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid and successfully applied, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{SUS_8cpp_source}{SUS.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keywordtype}{int}\ x\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_x();}
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordtype}{int}\ y\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_y();}
+\DoxyCodeLine{00072\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{mark}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00073\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{comment}{//\ Validate\ move\ coordinates}}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{x\ <\ 0\ ||\ x\ >}}=\ \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}\ ||\ \mbox{\hyperlink{classPlayer}{y\ <\ 0\ ||\ y\ >}}=\ \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ \ \ \ \ }
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ cell\ is\ already\ occupied}}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ !=\ \mbox{\hyperlink{classSUSBoard_af53e0cc7ed68f6edbe3b302565c62910}{blank\_symbol}})\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00082\ \ \ \ \ \}}
+\DoxyCodeLine{00083\ \ \ \ \ }
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{comment}{//\ Count\ sequences\ before\ placing}}
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{total\_before}}\ =\ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}}\ +\ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}};}
+\DoxyCodeLine{00086\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{comment}{//\ Apply\ move}}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{00089\ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[x][y]\ =\ \mbox{\hyperlink{classPlayer}{mark}};}
+\DoxyCodeLine{00090\ \ \ \ \ }
+\DoxyCodeLine{00091\ \ \ \ \ \textcolor{comment}{//\ Count\ new\ sequences\ formed}}
+\DoxyCodeLine{00092\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{new\_sus}}\ =\ \mbox{\hyperlink{classSUSBoard_a6b9fd2643640f4388e6340f989039171}{count\_new\_sus\_sequences}}(x,\ y);}
+\DoxyCodeLine{00093\ \ \ \ \ }
+\DoxyCodeLine{00094\ \ \ \ \ \textcolor{comment}{//\ Update\ score\ for\ the\ current\ player}}
+\DoxyCodeLine{00095\ \ \ \ \ \textcolor{comment}{//\ Mark\ is\ either\ 'S'\ or\ 'U',\ we\ need\ to\ determine\ which\ player}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{comment}{//\ Player\ 1\ uses\ symbol\ 'X',\ Player\ 2\ uses\ symbol\ 'O'}}
+\DoxyCodeLine{00097\ \ \ \ \ \textcolor{comment}{//\ But\ in\ this\ game,\ both\ players\ can\ place\ S\ or\ U}}
+\DoxyCodeLine{00098\ \ \ \ \ \textcolor{comment}{//\ We'll\ track\ by\ alternating\ turns}}
+\DoxyCodeLine{00099\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ \%\ 2\ ==\ 1)\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Player\ 1's\ turn\ (odd\ moves)}}
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}{player1\_score}}\ +=\ \mbox{\hyperlink{classPlayer}{new\_sus}};}
+\DoxyCodeLine{00102\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Player\ 2's\ turn\ (even\ moves)}}
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}{player2\_score}}\ +=\ \mbox{\hyperlink{classPlayer}{new\_sus}};}
+\DoxyCodeLine{00105\ \ \ \ \ \}}
+\DoxyCodeLine{00106\ \ \ \ \ }
+\DoxyCodeLine{00107\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00108\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSUSBoard_a66526aef691ea9537c7712a86ef78fc9_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classSUSBoard_af53e0cc7ed68f6edbe3b302565c62910}\label{classSUSBoard_af53e0cc7ed68f6edbe3b302565c62910} 
+\index{SUSBoard@{SUSBoard}!blank\_symbol@{blank\_symbol}}
+\index{blank\_symbol@{blank\_symbol}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{blank\_symbol}{blank\_symbol}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} SUSBoard\+::blank\+\_\+symbol = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Character used to represent an empty cell. 
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8h_source_l00036}{36}} of file \mbox{\hyperlink{SUS_8h_source}{SUS.\+h}}.
+
+\Hypertarget{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7}\label{classSUSBoard_a5f7eba481d6ffa6ae7344d523347f8a7} 
+\index{SUSBoard@{SUSBoard}!player1\_score@{player1\_score}}
+\index{player1\_score@{player1\_score}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{player1\_score}{player1\_score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{int}} SUSBoard\+::player1\+\_\+score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Score for \doxylink{classPlayer}{Player} 1 (X) 
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8h_source_l00037}{37}} of file \mbox{\hyperlink{SUS_8h_source}{SUS.\+h}}.
+
+\Hypertarget{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0}\label{classSUSBoard_ad6ab129361d9111e0d3876cc321966f0} 
+\index{SUSBoard@{SUSBoard}!player2\_score@{player2\_score}}
+\index{player2\_score@{player2\_score}!SUSBoard@{SUSBoard}}
+\doxysubsubsection{\texorpdfstring{player2\_score}{player2\_score}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{int}} SUSBoard\+::player2\+\_\+score = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Score for \doxylink{classPlayer}{Player} 2 (O) 
+
+
+
+Definition at line \mbox{\hyperlink{SUS_8h_source_l00038}{38}} of file \mbox{\hyperlink{SUS_8h_source}{SUS.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{SUS_8h}{SUS.\+h}}\item 
+\mbox{\hyperlink{SUS_8cpp}{SUS.\+cpp}}\end{DoxyCompactItemize}

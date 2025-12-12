@@ -1,0 +1,260 @@
+\doxysection{menu.\+cpp File Reference}
+\hypertarget{menu_8cpp}{}\label{menu_8cpp}\index{menu.cpp@{menu.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include "{}Board\+Game\+\_\+\+Classes.\+h"{}}\newline
+{\ttfamily \#include "{}XO\+\_\+\+Classes.\+h"{}}\newline
+{\ttfamily \#include "{}Infinity\+Tic-\/\+Tac-\/\+Toe.\+h"{}}\newline
+{\ttfamily \#include "{}Misere.\+h"{}}\newline
+{\ttfamily \#include "{}Tic-\/\+Tac-\/\+Toe\+\_\+4x4.\+h"{}}\newline
+{\ttfamily \#include "{}Numerical\+Tic\+Tac\+Toe.\+h"{}}\newline
+{\ttfamily \#include "{}SUS.\+h"{}}\newline
+{\ttfamily \#include "{}Obstacles\+Tic\+Tac\+Toe.\+h"{}}\newline
+{\ttfamily \#include "{}Diamond.\+h"{}}\newline
+Include dependency graph for menu.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}{display\+Menu}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}{run\+Game}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{choice}})
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}\label{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422} 
+\index{menu.cpp@{menu.cpp}!displayMenu@{displayMenu}}
+\index{displayMenu@{displayMenu}!menu.cpp@{menu.cpp}}
+\doxysubsubsection{\texorpdfstring{displayMenu()}{displayMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} display\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{menu_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{menu_8cpp_source}{menu.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ \ \ \ \ \ TIC\ TAC\ TOE\ GAME\ MENU\(\backslash\)n"{}};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ \ SUS\ game\(\backslash\)n"{}};}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ \ Four-\/in-\/a-\/Row\(\backslash\)n"{}};}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}3.\ \ 5x5\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}4.\ \ Word\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}5.\ \ Misère\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00024\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}6.\ \ Diamond\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}7.\ \ 4x4\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}8.\ \ Pyramid\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}9.\ \ Numerical\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}10.\ Obstacles\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00029\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}11.\ Infinity\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}12.\ Ultimate\ Tic\ Tac\ Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}13.\ Memory\ Tic-\/Tac-\/Toe\(\backslash\)n"{}};}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}0.\ \ Exit\(\backslash\)n"{}};}
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00034\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ your\ choice\ (0-\/13):\ "{}};}
+\DoxyCodeLine{00035\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{menu.cpp@{menu.cpp}!main@{main}}
+\index{main@{main}!menu.cpp@{menu.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{int}} main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{menu_8cpp_source_l00138}{138}} of file \mbox{\hyperlink{menu_8cpp_source}{menu.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00138\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00139\ \ \ \ \ \textcolor{comment}{//\ Seed\ random\ number\ generator}}
+\DoxyCodeLine{00140\ \ \ \ \ \mbox{\hyperlink{classPlayer}{srand}}(\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{unsigned}\ \textcolor{keywordtype}{int}\textcolor{keyword}{>}(\mbox{\hyperlink{classPlayer}{time}}(\textcolor{keyword}{nullptr})));}
+\DoxyCodeLine{00141\ \ \ \ \ }
+\DoxyCodeLine{00142\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{00143\ \ \ \ \ }
+\DoxyCodeLine{00144\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00145\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00146\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ WELCOME\ TO\ TIC\ TAC\ TOE\ COLLECTION\(\backslash\)n"{}};}
+\DoxyCodeLine{00147\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00148\ \ \ \ \ }
+\DoxyCodeLine{00149\ \ \ \ \ \textcolor{keywordflow}{do}\ \{}
+\DoxyCodeLine{00150\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{menu_8cpp_a59c2926dd9b0968badf463aaf4f91422}{displayMenu}}();}
+\DoxyCodeLine{00151\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00152\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Input\ validation}}
+\DoxyCodeLine{00153\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!(\mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}}))\ \{}
+\DoxyCodeLine{00154\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.clear();}
+\DoxyCodeLine{00155\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore(\mbox{\hyperlink{classPlayer}{numeric\_limits<streamsize>::max}}(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00156\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ input!\ Please\ enter\ a\ number.\(\backslash\)n"{}};}
+\DoxyCodeLine{00157\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00158\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00159\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00160\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{choice\ <\ 0\ ||\ choice\ >}}\ 13)\ \{}
+\DoxyCodeLine{00161\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice!\ Please\ enter\ a\ number\ between\ 0\ and\ 13.\(\backslash\)n"{}};}
+\DoxyCodeLine{00162\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00163\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00164\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00165\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{classPlayer}{choice}}\ !=\ 0)\ \{}
+\DoxyCodeLine{00166\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}{runGame}}(\mbox{\hyperlink{classPlayer}{choice}});}
+\DoxyCodeLine{00167\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00168\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Pause\ before\ returning\ to\ menu}}
+\DoxyCodeLine{00169\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPress\ Enter\ to\ return\ to\ the\ menu..."{}};}
+\DoxyCodeLine{00170\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore(\mbox{\hyperlink{classPlayer}{numeric\_limits<streamsize>::max}}(),\ \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{00171\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.get();}
+\DoxyCodeLine{00172\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00173\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00174\ \ \ \ \ \}\ \textcolor{keywordflow}{while}\ (\mbox{\hyperlink{classPlayer}{choice}}\ !=\ 0);}
+\DoxyCodeLine{00175\ \ \ \ \ }
+\DoxyCodeLine{00176\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n========================================\(\backslash\)n"{}};}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\ \ \ Thanks\ for\ playing!\ Goodbye!\(\backslash\)n"{}};}
+\DoxyCodeLine{00178\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}========================================\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{00179\ \ \ \ \ }
+\DoxyCodeLine{00180\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00181\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{menu_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32}\label{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32} 
+\index{menu.cpp@{menu.cpp}!runGame@{runGame}}
+\index{runGame@{runGame}!menu.cpp@{menu.cpp}}
+\doxysubsubsection{\texorpdfstring{runGame()}{runGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} run\+Game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{choice }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{menu_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{menu_8cpp_source}{menu.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{comment}{//\ Base\ class\ pointers\ for\ polymorphism}}
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classPlayer}{UI<char>}}*\ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00040\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Board<char>}}*\ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{00041\ \ \ \ \ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{classPlayer}{choice}})\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 1:\ \{}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ SUS\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSUS__UI}{SUS\_UI}}();}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classSUSBoard}{SUSBoard}}();}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 2:\ \{}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Four-\/in-\/a-\/Row\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}\ }
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 3:\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ 5x5\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 4:\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Word\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 5:\ \{}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Misère\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ }
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMisereUI}{MisereUI}}();}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classMisereBoard}{MisereBoard}}();}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 6:\ \{}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Diamond\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}=\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classDiamond__UI}{Diamond\_UI}}();}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classDiamondBoard}{DiamondBoard}}();}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 7:\ \{}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ 4x4\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ \ \ \ \ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classX__O__4x4__UI}{X\_O\_4x4\_UI}}();}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classX__O__4x4Board}{X\_O\_4x4Board}}();}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00081\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00082\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 8:\ \{}
+\DoxyCodeLine{00083\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Pyramid\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00084\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \}\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 9:\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Numerical\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00089\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classNumericalUI}{NumericalUI}}();}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classNumericalBoard}{NumericalBoard}}();}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 10:\ \{}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Obstacles\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00095\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classObstaclesUI}{ObstaclesUI}}();}
+\DoxyCodeLine{00096\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classObstaclesBoard}{ObstaclesBoard}}();}
+\DoxyCodeLine{00097\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00098\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 11:\ \{}
+\DoxyCodeLine{00100\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Infinity\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};\ \ \ }
+\DoxyCodeLine{00101\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_ui}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classInfinityTicTacToe__UI}{InfinityTicTacToe\_UI}}();}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_board}}\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classInfinityBoard}{InfinityBoard}}();}
+\DoxyCodeLine{00103\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00104\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00105\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 12:\ \{}
+\DoxyCodeLine{00106\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Ultimate\ Tic\ Tac\ Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00107\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00108\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \ \ \ \ \ }
+\DoxyCodeLine{00109\ \ \ \ \ \ \ \ \ \}\ \ \ }
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ 13:\ \{\ \ \ \ \ \ }
+\DoxyCodeLine{00111\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n>\_<\ Starting\ Memory\ Tic-\/Tac-\/Toe\ >\_<\(\backslash\)n"{}};}
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}This\ game\ is\ not\ yet\ implemented.\(\backslash\)n"{}};}
+\DoxyCodeLine{00113\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};\ \ \ \ \ \ }
+\DoxyCodeLine{00114\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00115\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{00116\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Invalid\ choice!\(\backslash\)n"{}};}
+\DoxyCodeLine{00117\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00118\ \ \ \ \ \}}
+\DoxyCodeLine{00119\ \ \ \ \ }
+\DoxyCodeLine{00120\ \ \ \ \ \textcolor{comment}{//\ Setup\ players\ using\ polymorphism}}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}**\ players\ =\ \mbox{\hyperlink{classPlayer}{game\_ui}}-\/>setup\_players();}
+\DoxyCodeLine{00122\ \ \ \ \ }
+\DoxyCodeLine{00123\ \ \ \ \ \textcolor{comment}{//\ Create\ game\ manager\ with\ polymorphic\ objects}}
+\DoxyCodeLine{00124\ \ \ \ \ \mbox{\hyperlink{classPlayer}{GameManager<char>}}\ \mbox{\hyperlink{classPlayer}{game\_manager}}(\mbox{\hyperlink{classPlayer}{game\_board}},\ players,\ \mbox{\hyperlink{classPlayer}{game\_ui}});}
+\DoxyCodeLine{00125\ \ \ \ \ }
+\DoxyCodeLine{00126\ \ \ \ \ \textcolor{comment}{//\ Run\ the\ game\ using\ virtual\ methods}}
+\DoxyCodeLine{00127\ \ \ \ \ \mbox{\hyperlink{classPlayer}{game\_manager}}.run();}
+\DoxyCodeLine{00128\ \ \ \ \ }
+\DoxyCodeLine{00129\ \ \ \ \ \textcolor{comment}{//\ Cleanup\ dynamically\ allocated\ memory}}
+\DoxyCodeLine{00130\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classPlayer}{game\_board}};}
+\DoxyCodeLine{00131\ \ \ \ \ \textcolor{keyword}{delete}\ \mbox{\hyperlink{classPlayer}{game\_ui}};}
+\DoxyCodeLine{00132\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 2;\ ++\mbox{\hyperlink{classPlayer}{i}})\ \{}
+\DoxyCodeLine{00133\ \ \ \ \ \ \ \ \ \textcolor{keyword}{delete}\ players[\mbox{\hyperlink{classPlayer}{i}}];}
+\DoxyCodeLine{00134\ \ \ \ \ \}}
+\DoxyCodeLine{00135\ \ \ \ \ \textcolor{keyword}{delete}[]\ players;}
+\DoxyCodeLine{00136\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{menu_8cpp_aacd14940dd7937086b36a1c6324a5f32_icgraph}
+\end{center}
+\end{figure}

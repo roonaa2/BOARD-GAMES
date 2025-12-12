@@ -1,0 +1,19 @@
+<map id="PyramidAIPlayer::get_best_move" name="PyramidAIPlayer::get_best_move">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,164,128"/>
+<area shape="rect" id="Node000002" href="$classPyramidBoard.html#a4311e927534fd2efd6edcbb472656da7" title=" " alt="" coords="459,5,647,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="128,85,168,69,211,56,332,35,445,26,446,31,333,41,213,61,170,74,130,90"/>
+<area shape="rect" id="Node000003" href="$classPyramidAIPlayer.html#a92535729d0250473980d92a4acf2ef09" title=" " alt="" coords="212,95,408,121"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,105,198,105,198,111,165,111"/>
+<area shape="rect" id="Node000007" href="$classPlayer.html#adb4e803a7ac0356b111b8ca79d766976" title="Construct a player with name, symbol, and type." alt="" coords="497,170,609,195"/>
+<area shape="poly" id="edge10_Node000001_Node000007" title=" " alt="" coords="165,122,212,131,484,171,483,176,212,136,164,127"/>
+<area shape="poly" id="edge7_Node000003_Node000002" title=" " alt="" coords="348,93,479,47,481,53,349,98"/>
+<area shape="poly" id="edge8_Node000003_Node000003" title=" " alt="" coords="273,97,266,87,270,77,285,71,310,69,342,73,354,82,350,86,340,77,310,74,286,76,273,81,271,86,278,93"/>
+<area shape="rect" id="Node000004" href="$classPyramidAIPlayer.html#a78d43910ae2d1663c6b3484370769141" title=" " alt="" coords="456,121,651,146"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="408,116,443,119,442,124,408,121"/>
+<area shape="rect" id="Node000005" href="$classPyramidAIPlayer.html#a397f537baf6b6555accdcc3d9e10da5f" title=" " alt="" coords="699,63,858,103"/>
+<area shape="poly" id="edge6_Node000003_Node000005" title=" " alt="" coords="408,100,686,85,686,90,409,105"/>
+<area shape="poly" id="edge9_Node000003_Node000007" title=" " alt="" coords="346,118,457,156,485,164,484,169,455,161,344,123"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="610,118,686,101,687,106,611,123"/>
+<area shape="rect" id="Node000006" href="$classPlayer.html#a3617a3ad0db435176a06948065f9a3a6" title="Assign the board pointer for the player." alt="" coords="699,127,859,153"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="651,134,685,135,685,140,651,139"/>
+</map>

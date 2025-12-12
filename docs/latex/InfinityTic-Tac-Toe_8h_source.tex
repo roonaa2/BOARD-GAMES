@@ -1,0 +1,39 @@
+\doxysection{Infinity\+Tic-\/\+Tac-\/\+Toe.h}
+\hypertarget{InfinityTic-Tac-Toe_8h_source}{}\label{InfinityTic-Tac-Toe_8h_source}\mbox{\hyperlink{InfinityTic-Tac-Toe_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ INFINITYTIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ INFINITYTIC\_TAC\_TOE\_H}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <utility>}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00008}00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00010}\mbox{\hyperlink{classInfinityBoard}{00010}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInfinityBoard}{InfinityBoard}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00011}00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00012}\mbox{\hyperlink{classInfinityBoard_ae50b8f863e6fe2123a6ae14181169144}{00012}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classInfinityBoard_ae50b8f863e6fe2123a6ae14181169144}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00013}\mbox{\hyperlink{classInfinityBoard_ac4f5159585374dd43bd1f7ed45e95aa6}{00013}}\ \ \ \ \ \mbox{\hyperlink{classPlayer}{queue<pair<int,\ int>}}>\ \mbox{\hyperlink{classInfinityBoard_ac4f5159585374dd43bd1f7ed45e95aa6}{moves\_history}};\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00014}00014\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00015}00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classInfinityBoard_aa3b665c141cec06362bfceb65252f5e5}{InfinityBoard}}();}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00017}00017\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInfinityBoard_aa0816a7f3585c5751b8a8b45f553f5c7}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00018}00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInfinityBoard_ad2482747c6256e6ea8323dbaa38d57e2}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00019}\mbox{\hyperlink{classInfinityBoard_ae4660420b8fa9db56922b35dc9b6c100}{00019}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInfinityBoard_ae4660420b8fa9db56922b35dc9b6c100}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInfinityBoard_aab6c22ff9b75cf12e07132b1f6f9b67e}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00021}00021\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classInfinityBoard_a39e37781147bfe29015b8d80f88e5103}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classInfinityBoard_a98b31a46538a2d9dbf424c845c18710e}{remove\_oldest\_move}}();\ \ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00023}00023\ \};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00024}00024\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00025}\mbox{\hyperlink{classInfinityTicTacToe__UI}{00025}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classInfinityTicTacToe__UI}{InfinityTicTacToe\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00026}00026\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{classInfinityTicTacToe__UI_ad2a80ccdf954ac2d6e3d86e42e86bc64}{InfinityTicTacToe\_UI}}();}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00028}\mbox{\hyperlink{classInfinityTicTacToe__UI_ac921481265932ef33be6af26ecd5c58a}{00028}}\ \ \ \ \ \mbox{\hyperlink{classInfinityTicTacToe__UI_ac921481265932ef33be6af26ecd5c58a}{\string~InfinityTicTacToe\_UI}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00029}00029\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00030}00030\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classInfinityTicTacToe__UI_aa54dd3a424e681a37fdcd456a9d38ece}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00031}00031\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classInfinityTicTacToe__UI_ac1622dd5168349b03ee7bbcd728ecfa4}{create\_player}}(std::string\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00032}00032\ \};}
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00033}00033\ }
+\DoxyCodeLine{\Hypertarget{InfinityTic-Tac-Toe_8h_source_l00034}00034\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

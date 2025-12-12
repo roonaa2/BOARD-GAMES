@@ -1,0 +1,43 @@
+\doxysection{XO\+\_\+\+Classes.\+h}
+\hypertarget{XO__Classes_8h_source}{}\label{XO__Classes_8h_source}\mbox{\hyperlink{XO__Classes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00001}00001\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00010}00010\ \textcolor{preprocessor}{\#ifndef\ XO\_CLASSES\_H}}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00011}00011\ \textcolor{preprocessor}{\#define\ XO\_CLASSES\_H}}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00013}00013\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00014}00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00026}\mbox{\hyperlink{classX__O__Board}{00026}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classX__O__Board}{X\_O\_Board}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00027}00027\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00028}\mbox{\hyperlink{classX__O__Board_a19e3cb15bf1c8b6c24b7021b1ef7bc19}{00028}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classX__O__Board_a19e3cb15bf1c8b6c24b7021b1ef7bc19}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00029}00029\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00030}00030\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00034}00034\ \ \ \ \ \mbox{\hyperlink{classX__O__Board_aff75cefd426f1e8db38555ed9b59fee8}{X\_O\_Board}}();}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00035}00035\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00041}00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__Board_aef2b0da670b2d5dc6333e0e0113f8b3d}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00042}00042\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00048}00048\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__Board_aafb56a8db5bf8352157326a52c06e2e6}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00049}00049\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00055}\mbox{\hyperlink{classX__O__Board_aec0358cc4f109084267b953832478e94}{00055}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__Board_aec0358cc4f109084267b953832478e94}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \};}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00056}00056\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00062}00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__Board_a2be5f37643e21edbdea2361853a6e953}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00069}00069\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__Board_aaee6e3efcbd685d9792d6d81356bba45}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00070}00070\ \};}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00071}00071\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00072}00072\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00082}\mbox{\hyperlink{classXO__UI}{00082}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classXO__UI}{XO\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00083}00083\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00089}00089\ \ \ \ \ \mbox{\hyperlink{classXO__UI_a3777235b2b66dc912258a4ee20501ebb}{XO\_UI}}();}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00090}00090\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00094}\mbox{\hyperlink{classXO__UI_a6c58a77a2fa80f73e7076ca4a94fcc8a}{00094}}\ \ \ \ \ \mbox{\hyperlink{classXO__UI_a6c58a77a2fa80f73e7076ca4a94fcc8a}{\string~XO\_UI}}()\ \{\};}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00103}00103\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classXO__UI_abd2ec8bc2c0ad1e60499c84e45ad6776}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type);}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00104}00104\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00110}00110\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classXO__UI_a4814913b14a2666667a2a90ab8205356}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00111}00111\ \};}
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00112}00112\ }
+\DoxyCodeLine{\Hypertarget{XO__Classes_8h_source_l00113}00113\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ XO\_CLASSES\_H}}
+
+\end{DoxyCode}

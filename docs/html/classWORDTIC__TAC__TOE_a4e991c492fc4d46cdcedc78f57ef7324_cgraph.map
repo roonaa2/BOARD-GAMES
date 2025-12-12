@@ -1,0 +1,7 @@
+<map id="WORDTIC_TAC_TOE::check_board_words" name="WORDTIC_TAC_TOE::check_board_words">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,201,75"/>
+<area shape="rect" id="Node000002" href="$classWORDTIC__TAC__TOE.html#a56d4a274f10d686305531733fa78356f" title=" " alt="" coords="249,5,419,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="201,40,236,35,236,40,202,45"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#adb4e803a7ac0356b111b8ca79d766976" title="Construct a player with name, symbol, and type." alt="" coords="278,70,390,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,64,264,72,264,77,201,69"/>
+</map>

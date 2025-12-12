@@ -1,0 +1,5 @@
+<map id="FiveFiveTicTacToe::is_win" name="FiveFiveTicTacToe::is_win">
+<area shape="rect" id="Node000001" title="Check if a player has won." alt="" coords="200,5,347,45"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe.html#acbf8318cba0b4eacadd67d95c870e999" title="Check if the game is over." alt="" coords="5,5,152,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,28,152,28,152,23,186,23"/>
+</map>

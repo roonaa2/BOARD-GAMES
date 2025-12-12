@@ -1,0 +1,12 @@
+<map id="WORDTIC_TAC_TOE::is_valid_word" name="WORDTIC_TAC_TOE::is_valid_word">
+<area shape="rect" id="Node000001" title=" " alt="" coords="995,5,1164,45"/>
+<area shape="rect" id="Node000002" href="$classWORDTIC__TAC__TOE.html#a4e991c492fc4d46cdcedc78f57ef7324" title=" " alt="" coords="751,5,947,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="981,28,947,28,947,23,981,23"/>
+<area shape="rect" id="Node000003" href="$classWORDTIC__TAC__TOE.html#a2b8d91720d2e12d7808bd4485d8e68c4" title="Check if a player has won." alt="" coords="504,13,703,38"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="737,28,703,28,703,23,737,23"/>
+<area shape="rect" id="Node000004" href="$classWORDTIC__TAC__TOE.html#ae1ac4e0b2ce133dcf661544d0f401d61" title="Check if the game is over." alt="" coords="5,5,200,45"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="490,28,200,28,200,23,490,23"/>
+<area shape="rect" id="Node000005" href="$classWORDTIC__TAC__TOE.html#a56fe5d14c10500ae248b8989d1f56f01" title="Check if the game ended in a draw." alt="" coords="248,38,456,63"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="491,39,456,43,456,38,490,34"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="234,41,200,38,201,33,235,36"/>
+</map>

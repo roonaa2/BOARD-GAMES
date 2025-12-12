@@ -1,0 +1,9 @@
+<map id="X_O_4x4_UI::get_move" name="X_O_4x4_UI::get_move">
+<area shape="rect" id="Node000001" title="Ask the user (or AI) to make a move." alt="" coords="5,55,179,80"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="232,5,368,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="146,52,232,31,233,37,147,57"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="227,55,373,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="179,65,213,65,213,70,179,70"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="236,104,364,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="147,77,233,98,232,103,146,83"/>
+</map>

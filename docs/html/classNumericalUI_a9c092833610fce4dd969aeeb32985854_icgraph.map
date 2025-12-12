@@ -1,0 +1,5 @@
+<map id="NumericalUI::is_valid_number" name="NumericalUI::is_valid_number">
+<area shape="rect" id="Node000001" title="Validates if a number choice is valid for the given player." alt="" coords="229,5,391,45"/>
+<area shape="rect" id="Node000002" href="$classNumericalUI.html#a28d2c55ab2481d72b7b58899efed3e59" title="Retrieves the next move from a player." alt="" coords="5,13,181,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="215,28,182,28,182,23,215,23"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="PyramidAIPlayer::minimax" name="PyramidAIPlayer::minimax">
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,29,408,55"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="350,20,340,11,310,8,286,10,273,15,271,20,278,27,273,31,266,21,270,11,285,5,310,3,342,7,354,16"/>
+<area shape="rect" id="Node000002" href="$classPyramidAIPlayer.html#a54c4eb5f673c6adab4ed31dddc36b58d" title=" " alt="" coords="5,22,164,62"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,45,164,45,164,39,198,39"/>
+</map>

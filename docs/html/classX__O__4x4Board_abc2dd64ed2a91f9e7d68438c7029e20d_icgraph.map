@@ -1,0 +1,5 @@
+<map id="X_O_4x4Board::is_draw" name="X_O_4x4Board::is_draw">
+<area shape="rect" id="Node000001" title="Check if the game ended in a draw." alt="" coords="216,13,391,38"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4Board.html#a49cc1d06d6a93a3216406cbe3c56ad61" title="Check if the game is over." alt="" coords="5,5,168,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="202,28,168,28,168,23,202,23"/>
+</map>

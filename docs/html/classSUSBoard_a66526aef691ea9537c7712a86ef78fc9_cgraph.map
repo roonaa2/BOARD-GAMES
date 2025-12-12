@@ -1,0 +1,7 @@
+<map id="SUSBoard::update_board" name="SUSBoard::update_board">
+<area shape="rect" id="Node000001" title="Updates the board with a player&#39;s move." alt="" coords="5,42,188,67"/>
+<area shape="rect" id="Node000002" href="$classSUSBoard.html#a6b9fd2643640f4388e6340f989039171" title="Counts new &quot;S&#45;U&#45;S&quot; sequences formed by the last move." alt="" coords="236,5,400,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="188,40,222,35,223,41,189,45"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="245,70,391,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="189,64,231,69,231,74,188,69"/>
+</map>

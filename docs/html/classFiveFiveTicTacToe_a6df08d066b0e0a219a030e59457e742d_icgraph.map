@@ -1,0 +1,17 @@
+<map id="FiveFiveTicTacToe::count_three_in_rows" name="FiveFiveTicTacToe::count_three_in_rows">
+<area shape="rect" id="Node000001" title=" " alt="" coords="589,93,745,133"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe.html#aa275a1f7c3a11f5f6407fc58add7ac35" title=" " alt="" coords="395,29,541,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="591,92,530,72,532,67,592,87"/>
+<area shape="rect" id="Node000005" href="$classFiveFiveTicTacToe.html#aa226191f87b7b847b9d324dd644616b9" title="Check if the game ended in a draw." alt="" coords="395,93,541,133"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="575,116,542,116,542,111,575,111"/>
+<area shape="rect" id="Node000007" href="$classFiveFiveTicTacToe.html#a3a85bdf72642bed3d8ee00f03c6d84ae" title="Check if a player has won." alt="" coords="395,157,541,197"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="592,140,532,160,530,155,591,135"/>
+<area shape="rect" id="Node000003" href="$classFiveFiveTicTacToe.html#aebd012cc2dc0a89e4ab9527c70a6f7f1" title=" " alt="" coords="200,29,347,69"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="381,52,347,52,347,47,381,47"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="306,17,295,11,273,8,255,10,244,15,240,21,242,28,237,30,234,20,240,11,253,5,273,3,296,6,309,13"/>
+<area shape="rect" id="Node000004" href="$classFiveFiveTicTacToe.html#a2576fbf66d83766eef38b509d1495f1d" title=" " alt="" coords="5,29,152,69"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="186,52,152,52,152,47,186,47"/>
+<area shape="rect" id="Node000006" href="$classFiveFiveTicTacToe.html#acbf8318cba0b4eacadd67d95c870e999" title="Check if the game is over." alt="" coords="200,125,347,165"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="382,130,348,136,347,131,381,125"/>
+<area shape="poly" id="edge8_Node000007_Node000006" title=" " alt="" coords="381,166,347,160,348,155,382,160"/>
+</map>

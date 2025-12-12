@@ -1,0 +1,7 @@
+<map id="PyramidBoard::is_cell_empty" name="PyramidBoard::is_cell_empty">
+<area shape="rect" id="Node000001" title=" " alt="" coords="264,37,427,77"/>
+<area shape="rect" id="Node000002" href="$classPyramidBoard.html#a05e9e519d8fefd845fc50fafdc16189b" title=" " alt="" coords="5,5,216,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="250,47,216,42,216,37,250,42"/>
+<area shape="rect" id="Node000003" href="$classPyramidBoard.html#a64346ffd4e8645617e1067b3a07133b7" title="Update the board with a new move." alt="" coords="27,69,194,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,73,195,81,194,75,250,68"/>
+</map>

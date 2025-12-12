@@ -1,0 +1,11 @@
+<map id="Board::get_rows" name="Board::get_rows">
+<area shape="rect" id="Node000001" title="Get number of rows." alt="" coords="613,42,740,67"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4__AI__Player.html#a5e42c24befa4c48eeae672c98bddb814" title=" " alt="" coords="411,5,565,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="599,45,565,40,566,35,600,40"/>
+<area shape="rect" id="Node000003" href="$classX__O__4x4__AI__Player.html#aa954c7769e767a0a623e7850707e7d44" title=" " alt="" coords="208,35,363,75"/>
+<area shape="poly" id="edge5_Node000001_Node000003" title=" " alt="" coords="600,59,565,60,411,60,363,59,363,54,411,55,565,55,600,54"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="398,41,364,46,363,41,397,36"/>
+<area shape="poly" id="edge4_Node000003_Node000003" title=" " alt="" coords="319,23,307,16,285,13,266,15,254,20,250,26,252,34,247,35,245,25,251,16,265,10,285,8,309,11,322,18"/>
+<area shape="rect" id="Node000004" href="$classX__O__4x4__AI__Player.html#af75a8d981d450467b285e3e988c3662d" title=" " alt="" coords="5,35,160,75"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="194,57,161,57,161,52,194,52"/>
+</map>

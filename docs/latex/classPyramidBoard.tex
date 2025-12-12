@@ -1,0 +1,536 @@
+\doxysection{Pyramid\+Board Class Reference}
+\hypertarget{classPyramidBoard}{}\label{classPyramidBoard}\index{PyramidBoard@{PyramidBoard}}
+
+
+{\ttfamily \#include $<$Pyramid.\+h$>$}
+
+
+
+Inheritance diagram for Pyramid\+Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classPyramidBoard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pyramid\+Board\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classPyramidBoard__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPyramidBoard_a703b5d515432e7a0fc9c5c5ebfb586a5}{Pyramid\+Board}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7}{update\+\_\+board}} (\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{move}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Update the board with a new move. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}{is\+\_\+win}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Check if a player has won. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a9c0f6661b32e65ee700bfc151c49e4e3}{is\+\_\+lose}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Check if a player has lost. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}{is\+\_\+draw}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Check if the game ended in a draw. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_aad8192b57bda267b765396626300fe78}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{classPlayer}{player}}) \mbox{\hyperlink{classPlayer}{override}}
+\begin{DoxyCompactList}\small\item\em Check if the game is over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\+\_\+valid\+\_\+position}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{r}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{c}}) \mbox{\hyperlink{classPlayer}{const}}
+\item 
+\mbox{\hyperlink{classPlayer}{bool}} \mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{is\+\_\+cell\+\_\+empty}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{r}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{c}}) \mbox{\hyperlink{classPlayer}{const}}
+\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{pair}}$<$ \mbox{\hyperlink{classPlayer}{int}}, \mbox{\hyperlink{classPlayer}{int}} $>$ $>$ \mbox{\hyperlink{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b}{get\+\_\+available\+\_\+moves}} () \mbox{\hyperlink{classPlayer}{const}}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7}{get\+\_\+cell\+\_\+value}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{r}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{c}}) \mbox{\hyperlink{classPlayer}{const}}
+\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3}{set\+\_\+cell\+\_\+value}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{r}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classPlayer}{c}}, \mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classPlayer}{value}})
+\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}{increment\+\_\+moves}} ()
+\item 
+\mbox{\hyperlink{classPlayer}{void}} \mbox{\hyperlink{classPyramidBoard_abbada70375a97e998c7d00b0712352f6}{decrement\+\_\+moves}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoard_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}, \mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{virtual}} \mbox{\hyperlink{classBoard_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a512d0bd8c282985c410d677c82eb3b78}{get\+\_\+n\+\_\+moves}} () \mbox{\hyperlink{classPlayer}{const}}
+\begin{DoxyCompactList}\small\item\em Get number of moves. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classBoard_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (\mbox{\hyperlink{classPlayer}{int}} x, \mbox{\hyperlink{classPlayer}{int}} y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{char}} \mbox{\hyperlink{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}{blank}} = \textquotesingle{}.\textquotesingle{}
+\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{bool}} $>$ $>$ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classBoard}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ $>$ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlayer}{int}} \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8h_source_l00008}{8}} of file \mbox{\hyperlink{Pyramid_8h_source}{Pyramid.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classPyramidBoard_a703b5d515432e7a0fc9c5c5ebfb586a5}\label{classPyramidBoard_a703b5d515432e7a0fc9c5c5ebfb586a5} 
+\index{PyramidBoard@{PyramidBoard}!PyramidBoard@{PyramidBoard}}
+\index{PyramidBoard@{PyramidBoard}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{PyramidBoard()}{PyramidBoard()}}
+{\footnotesize\ttfamily Pyramid\+Board\+::\+Pyramid\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{classBoard}{Board}}(3,5)}
+\DoxyCodeLine{00009\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}\ =\ \mbox{\hyperlink{classPlayer}{vector<vector<bool>}}>(3,\ \mbox{\hyperlink{classPlayer}{vector<bool>}}(5,\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{comment}{//\ top}}
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[0][2]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{comment}{//\ middle}}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][1]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][2]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][3]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{comment}{//\ bottom}}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}=0;\mbox{\hyperlink{classPlayer}{i}}<5;\mbox{\hyperlink{classPlayer}{i}}++)}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[2][\mbox{\hyperlink{classPlayer}{i}}]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}=0;\mbox{\hyperlink{classPlayer}{i}}<3;\mbox{\hyperlink{classPlayer}{i}}++)}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}=0;\mbox{\hyperlink{classPlayer}{j}}<5;\mbox{\hyperlink{classPlayer}{j}}++)}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ =\ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ ?\ \mbox{\hyperlink{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}{blank}}\ :\ \textcolor{stringliteral}{'\ '};}
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPyramidBoard_abbada70375a97e998c7d00b0712352f6}\label{classPyramidBoard_abbada70375a97e998c7d00b0712352f6} 
+\index{PyramidBoard@{PyramidBoard}!decrement\_moves@{decrement\_moves}}
+\index{decrement\_moves@{decrement\_moves}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{decrement\_moves()}{decrement\_moves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} Pyramid\+Board\+::decrement\+\_\+moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00119}{119}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00120\ \{}
+\DoxyCodeLine{00121\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}-\/-\/;}
+\DoxyCodeLine{00122\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classPyramidBoard_aad8192b57bda267b765396626300fe78}\label{classPyramidBoard_aad8192b57bda267b765396626300fe78} 
+\index{PyramidBoard@{PyramidBoard}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the game is over. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00080\ \{}
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}})\ ||\ \mbox{\hyperlink{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}{is\_draw}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{00082\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_aad8192b57bda267b765396626300fe78_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b}\label{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b} 
+\index{PyramidBoard@{PyramidBoard}!get\_available\_moves@{get\_available\_moves}}
+\index{get\_available\_moves@{get\_available\_moves}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{get\_available\_moves()}{get\_available\_moves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{vector}}$<$ \mbox{\hyperlink{classPlayer}{pair}}$<$ \mbox{\hyperlink{classPlayer}{int}}, \mbox{\hyperlink{classPlayer}{int}} $>$ $>$ Pyramid\+Board\+::get\+\_\+available\+\_\+moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00086}{86}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00087\ \{}
+\DoxyCodeLine{00088\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPlayer}{moves}};}
+\DoxyCodeLine{00089\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 5;\ \mbox{\hyperlink{classPlayer}{j}}++)\ \{}
+\DoxyCodeLine{00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{is\_cell\_empty}}(\mbox{\hyperlink{classPlayer}{i}},\ \mbox{\hyperlink{classPlayer}{j}}))\ \{}
+\DoxyCodeLine{00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{moves}}.push\_back(\{\mbox{\hyperlink{classPlayer}{i}},\ \mbox{\hyperlink{classPlayer}{j}}\});}
+\DoxyCodeLine{00093\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00095\ \ \ \ \ \}}
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{moves}};}
+\DoxyCodeLine{00097\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7}\label{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7} 
+\index{PyramidBoard@{PyramidBoard}!get\_cell\_value@{get\_cell\_value}}
+\index{get\_cell\_value@{get\_cell\_value}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{get\_cell\_value()}{get\_cell\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} Pyramid\+Board\+::get\+\_\+cell\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{r,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100\ \{}
+\DoxyCodeLine{00101\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}}))\ \{}
+\DoxyCodeLine{00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}];}
+\DoxyCodeLine{00103\ \ \ \ \ \}}
+\DoxyCodeLine{00104\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{00105\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}\label{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7} 
+\index{PyramidBoard@{PyramidBoard}!increment\_moves@{increment\_moves}}
+\index{increment\_moves@{increment\_moves}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{increment\_moves()}{increment\_moves()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} Pyramid\+Board\+::increment\+\_\+moves (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00115\ \{}
+\DoxyCodeLine{00116\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{00117\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}\label{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235} 
+\index{PyramidBoard@{PyramidBoard}!is\_cell\_empty@{is\_cell\_empty}}
+\index{is\_cell\_empty@{is\_cell\_empty}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{is\_cell\_empty()}{is\_cell\_empty()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::is\+\_\+cell\+\_\+empty (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{r,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00036\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\mbox{\hyperlink{classPlayer}{c}})\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ ==\ \mbox{\hyperlink{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}{blank}};}
+\DoxyCodeLine{00038\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}\label{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf} 
+\index{PyramidBoard@{PyramidBoard}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if the game ended in a draw. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00075\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 9;}
+\DoxyCodeLine{00077\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a9c0f6661b32e65ee700bfc151c49e4e3}\label{classPyramidBoard_a9c0f6661b32e65ee700bfc151c49e4e3} 
+\index{PyramidBoard@{PyramidBoard}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a player has lost. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8h_source_l00019}{19}} of file \mbox{\hyperlink{Pyramid_8h_source}{Pyramid.\+h}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019\ \{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+
+\end{DoxyCode}
+\Hypertarget{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}\label{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e} 
+\index{PyramidBoard@{PyramidBoard}!is\_valid\_position@{is\_valid\_position}}
+\index{is\_valid\_position@{is\_valid\_position}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_position()}{is\_valid\_position()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::is\+\_\+valid\+\_\+position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{r,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{c }\end{DoxyParamCaption}) const}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00030\ \{}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{r<0||r>}}=3||\mbox{\hyperlink{classPlayer}{c<0||c>}}=5)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}];}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}\label{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64} 
+\index{PyramidBoard@{PyramidBoard}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{Player}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if a player has won. 
+
+
+
+Implements \mbox{\hyperlink{classBoard_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00054}{54}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00055\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{s}}\ =\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{comment}{//\ Horizontal\ lines}}
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][3]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Middle\ row}}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][0]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ left}}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][3]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ middle}}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][3]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][4]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ right}}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \textcolor{comment}{//\ Vertical\ lines\ (straight\ down\ only)}}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Center\ vertical}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \textcolor{comment}{//\ Diagonal\ lines}}
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][0]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Top\ to\ bottom-\/left}}
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][3]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][4]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Top\ to\ bottom-\/right}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00072\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64_icgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3}\label{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3} 
+\index{PyramidBoard@{PyramidBoard}!set\_cell\_value@{set\_cell\_value}}
+\index{set\_cell\_value@{set\_cell\_value}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{set\_cell\_value()}{set\_cell\_value()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{void}} Pyramid\+Board\+::set\+\_\+cell\+\_\+value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPlayer}{int}}}]{r,  }\item[{\mbox{\hyperlink{classPlayer}{int}}}]{c,  }\item[{\mbox{\hyperlink{classPlayer}{char}}}]{value }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00107}{107}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00108\ \{}
+\DoxyCodeLine{00109\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}}))\ \{}
+\DoxyCodeLine{00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ =\ \mbox{\hyperlink{classPlayer}{value}};}
+\DoxyCodeLine{00111\ \ \ \ \ \}}
+\DoxyCodeLine{00112\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3_cgraph}
+\end{center}
+\end{figure}
+\Hypertarget{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7}\label{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7} 
+\index{PyramidBoard@{PyramidBoard}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{bool}} Pyramid\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMove}{Move}}$<$ \mbox{\hyperlink{classPlayer}{char}} $>$ \texorpdfstring{$\ast$}{*}}]{move }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the board with a new move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move object containing position and symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is valid and applied, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBoard_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8cpp_source_l00040}{40}} of file \mbox{\hyperlink{Pyramid_8cpp_source}{Pyramid.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_x();}
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_y();}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{s}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{is\_cell\_empty}}(\mbox{\hyperlink{classPlayer}{r}},\mbox{\hyperlink{classPlayer}{c}}))\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ =\ \mbox{\hyperlink{classPlayer}{s}};}
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00051\ \}}
+
+\end{DoxyCode}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}\label{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c} 
+\index{PyramidBoard@{PyramidBoard}!blank@{blank}}
+\index{blank@{blank}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{blank}{blank}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{char}} Pyramid\+Board\+::blank = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8h_source_l00011}{11}} of file \mbox{\hyperlink{Pyramid_8h_source}{Pyramid.\+h}}.
+
+\Hypertarget{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}\label{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5} 
+\index{PyramidBoard@{PyramidBoard}!valid@{valid}}
+\index{valid@{valid}!PyramidBoard@{PyramidBoard}}
+\doxysubsubsection{\texorpdfstring{valid}{valid}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classPlayer}{vector}}$<$\mbox{\hyperlink{classPlayer}{vector}}$<$\mbox{\hyperlink{classPlayer}{bool}}$>$ $>$ Pyramid\+Board\+::valid\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line \mbox{\hyperlink{Pyramid_8h_source_l00012}{12}} of file \mbox{\hyperlink{Pyramid_8h_source}{Pyramid.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Pyramid_8h}{Pyramid.\+h}}\item 
+\mbox{\hyperlink{Pyramid_8cpp}{Pyramid.\+cpp}}\end{DoxyCompactItemize}

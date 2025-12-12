@@ -1,0 +1,9 @@
+<map id="PyramidBoard::update_board" name="PyramidBoard::update_board">
+<area shape="rect" id="Node000001" title="Update the board with a new move." alt="" coords="5,27,172,67"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="228,5,375,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="172,33,214,27,214,33,173,38"/>
+<area shape="rect" id="Node000003" href="$classPyramidBoard.html#a54778a0e173c3d01da84d6eb039c5235" title=" " alt="" coords="220,55,383,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="173,56,207,60,206,66,172,61"/>
+<area shape="rect" id="Node000004" href="$classPyramidBoard.html#a2ddce8a5a39e6dcb144ea2cf536ee32e" title=" " alt="" coords="431,55,603,95"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="383,73,417,73,417,78,383,78"/>
+</map>

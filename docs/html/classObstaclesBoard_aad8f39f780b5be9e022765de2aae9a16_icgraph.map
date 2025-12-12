@@ -1,0 +1,8 @@
+<map id="ObstaclesBoard::is_win" name="ObstaclesBoard::is_win">
+<area shape="rect" id="Node000001" title="Checks if the given player has won the game (four in a row)." alt="" coords="453,13,627,38"/>
+<area shape="rect" id="Node000002" href="$classObstaclesBoard.html#ad6a3ef073e94f817c897b92ed7a9e7df" title="Determines if the game is over." alt="" coords="5,5,175,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="439,28,175,28,175,23,439,23"/>
+<area shape="rect" id="Node000003" href="$classObstaclesBoard.html#a7aadef79fdd811dbffabc97003b4c871" title="Checks if the game has ended in a draw." alt="" coords="223,38,405,63"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="440,39,406,43,405,38,439,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="209,41,175,38,175,32,210,36"/>
+</map>

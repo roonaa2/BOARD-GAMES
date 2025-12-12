@@ -1,0 +1,5 @@
+<map id="InfinityBoard::remove_oldest_move" name="InfinityBoard::remove_oldest_move">
+<area shape="rect" id="Node000001" title=" " alt="" coords="212,5,375,45"/>
+<area shape="rect" id="Node000002" href="$classInfinityBoard.html#aa0816a7f3585c5751b8a8b45f553f5c7" title="Update the board with a new move." alt="" coords="5,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,28,164,28,164,23,198,23"/>
+</map>

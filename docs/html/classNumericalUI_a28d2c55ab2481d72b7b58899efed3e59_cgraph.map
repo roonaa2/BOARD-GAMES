@@ -1,0 +1,16 @@
+<map id="NumericalUI::get_move" name="NumericalUI::get_move">
+<area shape="rect" id="Node000001" title="Retrieves the next move from a player." alt="" coords="5,105,181,131"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="229,5,391,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="113,103,164,72,228,40,247,32,249,37,230,44,166,77,115,108"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="242,55,378,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,103,241,81,242,86,149,108"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="439,131,585,156"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="182,121,425,135,425,141,181,126"/>
+<area shape="rect" id="Node000005" href="$classPlayer.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="246,156,374,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="149,128,242,150,241,155,148,133"/>
+<area shape="rect" id="Node000006" href="$classNumericalUI.html#a9c092833610fce4dd969aeeb32985854" title="Validates if a number choice is valid for the given player." alt="" coords="229,206,391,246"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="117,128,231,192,245,198,243,203,228,196,114,133"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="360,204,390,192,467,159,469,164,392,196,362,208"/>
+<area shape="rect" id="Node000007" href="$classNumericalBoard.html#ac8b09d88b7e4b4e3a8ba726daba21635" title="Checks if a number has already been used." alt="" coords="439,206,585,246"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="391,223,425,223,425,229,391,229"/>
+</map>

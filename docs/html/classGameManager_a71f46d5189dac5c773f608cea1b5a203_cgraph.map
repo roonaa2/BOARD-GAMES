@@ -1,0 +1,5 @@
+<map id="GameManager::run" name="GameManager::run">
+<area shape="rect" id="Node000001" title="Run the main game loop until someone wins or the game ends." alt="" coords="5,5,152,31"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#aed2af19790ba73190e3ebeea589518e1" title="Get the player&#39;s name." alt="" coords="200,5,336,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,15,186,15,186,21,152,21"/>
+</map>

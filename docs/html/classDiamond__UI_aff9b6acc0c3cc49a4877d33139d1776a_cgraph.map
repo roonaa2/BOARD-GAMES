@@ -1,0 +1,13 @@
+<map id="Diamond_UI::get_move" name="Diamond_UI::get_move">
+<area shape="rect" id="Node000001" title="Ask the user (or AI) to make a move." alt="" coords="5,104,180,129"/>
+<area shape="rect" id="Node000002" href="$classPlayer.html#a508617eddfae8915d098102d480fc888" title="Get a pointer to the game board." alt="" coords="228,5,389,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,102,163,71,227,40,245,32,247,37,229,44,166,76,115,106"/>
+<area shape="rect" id="Node000003" href="$classBoard.html#a93558c58e60ca4291c6044828afd260b" title="Return content of cell x, y in current board." alt="" coords="249,55,368,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="148,101,239,80,240,86,150,107"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="235,104,382,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="180,114,222,114,222,119,180,119"/>
+<area shape="rect" id="Node000005" href="$classPlayer.html#a2df3bd299bf7aecfa2275ec6902a60f8" title="Get player type (e.g., &#39;H&#39; or &#39;C&#39;)." alt="" coords="245,153,373,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="150,127,240,148,239,153,148,132"/>
+<area shape="rect" id="Node000006" href="$classPlayer.html#a3617a3ad0db435176a06948065f9a3a6" title="Assign the board pointer for the player." alt="" coords="229,203,389,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="116,127,166,156,229,188,250,196,248,201,227,192,164,161,113,132"/>
+</map>

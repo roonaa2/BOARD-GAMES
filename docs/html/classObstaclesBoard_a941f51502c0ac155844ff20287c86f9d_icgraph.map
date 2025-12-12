@@ -1,0 +1,10 @@
+<map id="ObstaclesBoard::check_four_in_row" name="ObstaclesBoard::check_four_in_row">
+<area shape="rect" id="Node000001" title="Checks if there are four in a row for a specific symbol." alt="" coords="675,5,845,45"/>
+<area shape="rect" id="Node000002" href="$classObstaclesBoard.html#aad8f39f780b5be9e022765de2aae9a16" title="Checks if the given player has won the game (four in a row)." alt="" coords="453,13,627,38"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="661,28,627,28,627,23,661,23"/>
+<area shape="rect" id="Node000003" href="$classObstaclesBoard.html#ad6a3ef073e94f817c897b92ed7a9e7df" title="Determines if the game is over." alt="" coords="5,5,175,45"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="439,28,175,28,175,23,439,23"/>
+<area shape="rect" id="Node000004" href="$classObstaclesBoard.html#a7aadef79fdd811dbffabc97003b4c871" title="Checks if the game has ended in a draw." alt="" coords="223,38,405,63"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="440,39,406,43,405,38,439,34"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="209,41,175,38,175,32,210,36"/>
+</map>

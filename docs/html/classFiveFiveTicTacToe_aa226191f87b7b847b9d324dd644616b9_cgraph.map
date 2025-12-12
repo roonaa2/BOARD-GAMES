@@ -1,0 +1,7 @@
+<map id="FiveFiveTicTacToe::is_draw" name="FiveFiveTicTacToe::is_draw">
+<area shape="rect" id="Node000001" title="Check if the game ended in a draw." alt="" coords="5,35,152,75"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe.html#a6df08d066b0e0a219a030e59457e742d" title=" " alt="" coords="200,5,356,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="152,41,186,36,187,41,153,47"/>
+<area shape="rect" id="Node000003" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="205,70,351,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,62,192,68,191,73,152,68"/>
+</map>

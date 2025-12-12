@@ -1,0 +1,8 @@
+<map id="DiamondBoard::is_win" name="DiamondBoard::is_win">
+<area shape="rect" id="Node000001" title="Check if a player has won." alt="" coords="443,13,611,38"/>
+<area shape="rect" id="Node000002" href="$classDiamondBoard.html#a479d121a2204e2a909f5f9eca7375ac3" title="Check if the game is over." alt="" coords="5,5,169,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="429,28,170,28,170,23,429,23"/>
+<area shape="rect" id="Node000003" href="$classDiamondBoard.html#a8702608200e198ae97c898109635cacf" title="Check if the game ended in a draw." alt="" coords="217,38,395,63"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="429,39,395,43,395,38,428,34"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="203,41,169,37,170,32,204,36"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="FiveFiveTicTacToe::minimax" name="FiveFiveTicTacToe::minimax">
+<area shape="rect" id="Node000001" title=" " alt="" coords="200,29,347,69"/>
+<area shape="poly" id="edge2_Node000001_Node000001" title=" " alt="" coords="306,17,295,11,273,8,255,10,244,15,240,21,242,28,237,30,234,20,240,11,253,5,273,3,296,6,309,13"/>
+<area shape="rect" id="Node000002" href="$classFiveFiveTicTacToe.html#a2576fbf66d83766eef38b509d1495f1d" title=" " alt="" coords="5,29,152,69"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,52,152,52,152,47,186,47"/>
+</map>

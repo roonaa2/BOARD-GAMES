@@ -1,0 +1,17 @@
+<map id="MisereBoard::game_is_over" name="MisereBoard::game_is_over">
+<area shape="rect" id="Node000001" title="Check if the game is over." alt="" coords="5,29,208,55"/>
+<area shape="rect" id="Node000002" href="$classMisereBoard.html#ad1ed002f543c54723dcfa21766eaf993" title="Check if the game ended in a draw." alt="" coords="256,29,419,55"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="208,39,242,39,242,45,208,45"/>
+<area shape="rect" id="Node000003" href="$classMisereBoard.html#af87934016b5310283194c776c98cc81c" title="Check if a player has lost." alt="" coords="467,5,624,31"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="168,27,256,14,337,12,419,14,453,14,453,20,419,19,337,17,256,19,169,32"/>
+<area shape="rect" id="Node000006" href="$classMisereBoard.html#a47770ec919b9c4564e34a14f5125f7da" title="Check if a player has won." alt="" coords="469,55,622,80"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="173,52,256,63,359,68,455,68,455,73,359,73,256,69,172,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,30,453,26,453,31,420,35"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="420,49,455,54,455,59,419,55"/>
+<area shape="rect" id="Node000004" href="$classPlayer.html#af56f0bf98c0423a3a75b0848607d03a4" title="Get the player&#39;s symbol." alt="" coords="687,5,833,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="624,15,673,15,673,21,624,21"/>
+<area shape="rect" id="Node000005" href="$classMisereBoard.html#aac42387ce2ef7991dd058e044ba89dc8" title=" " alt="" coords="672,55,848,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="602,28,691,49,690,54,601,33"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="601,52,690,31,691,36,602,57"/>
+<area shape="poly" id="edge7_Node000006_Node000005" title=" " alt="" coords="622,65,658,65,658,70,622,70"/>
+</map>

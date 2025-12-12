@@ -1,0 +1,361 @@
+\doxysection{Pyramid.\+cpp}
+\hypertarget{Pyramid_8cpp_source}{}\label{Pyramid_8cpp_source}\mbox{\hyperlink{Pyramid_8cpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00001}00001\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{Pyramid_8h}{Pyramid.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00002}00002\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00003}00003\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00004}00004\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00006}00006\ \textcolor{comment}{//\ ====================\ BOARD\ ====================}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00008}\mbox{\hyperlink{classPyramidBoard_a703b5d515432e7a0fc9c5c5ebfb586a5}{00008}}\ \mbox{\hyperlink{classPyramidBoard_a703b5d515432e7a0fc9c5c5ebfb586a5}{PyramidBoard::PyramidBoard}}()\ :\ \mbox{\hyperlink{classBoard}{Board}}(3,5)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00009}00009\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00010}00010\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}\ =\ \mbox{\hyperlink{classPlayer}{vector<vector<bool>}}>(3,\ \mbox{\hyperlink{classPlayer}{vector<bool>}}(5,\ \textcolor{keyword}{false}));}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00011}00011\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00012}00012\ \ \ \ \ \textcolor{comment}{//\ top}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00013}00013\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[0][2]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00014}00014\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00015}00015\ \ \ \ \ \textcolor{comment}{//\ middle}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00016}00016\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][1]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00017}00017\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][2]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[1][3]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00019}00019\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00020}00020\ \ \ \ \ \textcolor{comment}{//\ bottom}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00021}00021\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}=0;\mbox{\hyperlink{classPlayer}{i}}<5;\mbox{\hyperlink{classPlayer}{i}}++)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00022}00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[2][\mbox{\hyperlink{classPlayer}{i}}]\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00024}00024\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}=0;\mbox{\hyperlink{classPlayer}{i}}<3;\mbox{\hyperlink{classPlayer}{i}}++)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00025}00025\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}=0;\mbox{\hyperlink{classPlayer}{j}}<5;\mbox{\hyperlink{classPlayer}{j}}++)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00026}00026\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ =\ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[\mbox{\hyperlink{classPlayer}{i}}][\mbox{\hyperlink{classPlayer}{j}}]\ ?\ \mbox{\hyperlink{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}{blank}}\ :\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00027}00027\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00028}00028\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00029}\mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{00029}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{PyramidBoard::is\_valid\_position}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00030}00030\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00031}00031\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{r<0||r>}}=3||\mbox{\hyperlink{classPlayer}{c<0||c>}}=5)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00032}00032\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_ac64e3ef95da478541faaf91252b13fb5}{valid}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}];}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00033}00033\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00034}00034\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00035}\mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{00035}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{PyramidBoard::is\_cell\_empty}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00036}00036\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00037}00037\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\mbox{\hyperlink{classPlayer}{c}})\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ ==\ \mbox{\hyperlink{classPyramidBoard_af20b619407447bdadfdba5daebb21b6c}{blank}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00038}00038\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00039}00039\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00040}\mbox{\hyperlink{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7}{00040}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_a64346ffd4e8645617e1067b3a07133b7}{PyramidBoard::update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00041}00041\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00042}00042\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_x();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00043}00043\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>get\_y();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00044}00044\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{s}}\ =\ \mbox{\hyperlink{classPlayer}{move}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00045}00045\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00046}00046\ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{is\_cell\_empty}}(\mbox{\hyperlink{classPlayer}{r}},\mbox{\hyperlink{classPlayer}{c}}))\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00047}00047\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00048}00048\ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ =\ \mbox{\hyperlink{classPlayer}{s}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00049}00049\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00050}00050\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00051}00051\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00053}00053\ \textcolor{comment}{//\ Winning\ condition:\ 3\ in\ a\ line\ (straight\ lines\ only)}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00054}\mbox{\hyperlink{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}{00054}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}{PyramidBoard::is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00055}00055\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00056}00056\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{s}}\ =\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00058}00058\ \ \ \ \ \textcolor{comment}{//\ Horizontal\ lines}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00059}00059\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][3]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Middle\ row}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00060}00060\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][0]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ left}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00061}00061\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][3]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ middle}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00062}00062\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][3]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][4]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Bottom\ right}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00063}00063\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00064}00064\ \ \ \ \ \textcolor{comment}{//\ Vertical\ lines\ (straight\ down\ only)}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00065}00065\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][2]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Center\ vertical}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00066}00066\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00067}00067\ \ \ \ \ \textcolor{comment}{//\ Diagonal\ lines}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00068}00068\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][1]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][0]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Top\ to\ bottom-\/left}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00069}00069\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[0][2]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[1][3]==\mbox{\hyperlink{classPlayer}{s}}\ \&\&\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[2][4]==\mbox{\hyperlink{classPlayer}{s}})\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{true};\ \textcolor{comment}{//\ Top\ to\ bottom-\/right}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00070}00070\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00071}00071\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00072}00072\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00074}\mbox{\hyperlink{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}{00074}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}{PyramidBoard::is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00075}00075\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00076}00076\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}\ ==\ 9;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00077}00077\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00078}00078\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00079}\mbox{\hyperlink{classPyramidBoard_aad8192b57bda267b765396626300fe78}{00079}}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPyramidBoard_aad8192b57bda267b765396626300fe78}{PyramidBoard::game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00080}00080\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00081}00081\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPyramidBoard_a565780abfdb0afbfb81332afbc8e6b64}{is\_win}}(\mbox{\hyperlink{classPlayer}{player}})\ ||\ \mbox{\hyperlink{classPyramidBoard_a9612db6196560d868d4f66c440ba1acf}{is\_draw}}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00082}00082\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00083}00083\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00084}00084\ \textcolor{comment}{//\ ====================\ HELPER\ METHODS\ FOR\ AI\ ====================}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00085}00085\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00086}\mbox{\hyperlink{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b}{00086}}\ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPyramidBoard_a05e9e519d8fefd845fc50fafdc16189b}{PyramidBoard::get\_available\_moves}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00087}00087\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00088}00088\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPlayer}{moves}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00089}00089\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{i}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{i}}\ <\ 3;\ \mbox{\hyperlink{classPlayer}{i}}++)\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00090}00090\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{j}}\ =\ 0;\ \mbox{\hyperlink{classPlayer}{j}}\ <\ 5;\ \mbox{\hyperlink{classPlayer}{j}}++)\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a54778a0e173c3d01da84d6eb039c5235}{is\_cell\_empty}}(\mbox{\hyperlink{classPlayer}{i}},\ \mbox{\hyperlink{classPlayer}{j}}))\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{moves}}.push\_back(\{\mbox{\hyperlink{classPlayer}{i}},\ \mbox{\hyperlink{classPlayer}{j}}\});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00094}00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00095}00095\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00096}00096\ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{moves}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00097}00097\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00098}00098\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00099}\mbox{\hyperlink{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7}{00099}}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPyramidBoard_a2864fc2b0376e9b3c2ce8307be04e5a7}{PyramidBoard::get\_cell\_value}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}})\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00100}00100\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00101}00101\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}}))\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00102}00102\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}];}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00103}00103\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00104}00104\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{charliteral}{'\ '};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00105}00105\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00106}00106\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00107}\mbox{\hyperlink{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3}{00107}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPyramidBoard_ab66714074d44a25fc082dc0370cc0ed3}{PyramidBoard::set\_cell\_value}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{value}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00108}00108\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00109}00109\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPyramidBoard_a2ddce8a5a39e6dcb144ea2cf536ee32e}{is\_valid\_position}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}}))\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00110}00110\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBoard_af00c1fc363eb640ca276b8a572040040}{board}}[\mbox{\hyperlink{classPlayer}{r}}][\mbox{\hyperlink{classPlayer}{c}}]\ =\ \mbox{\hyperlink{classPlayer}{value}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00111}00111\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00112}00112\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00113}00113\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00114}\mbox{\hyperlink{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}{00114}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}{PyramidBoard::increment\_moves}}()}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00115}00115\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00116}00116\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}++;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00117}00117\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00118}00118\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00119}\mbox{\hyperlink{classPyramidBoard_abbada70375a97e998c7d00b0712352f6}{00119}}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classPyramidBoard_abbada70375a97e998c7d00b0712352f6}{PyramidBoard::decrement\_moves}}()}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00120}00120\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00121}00121\ \ \ \ \ \mbox{\hyperlink{classBoard_a5952baefabced65fecec333de638408d}{n\_moves}}-\/-\/;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00122}00122\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00123}00123\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00124}00124\ \textcolor{comment}{//\ ====================\ UI\ ====================}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00125}00125\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00126}\mbox{\hyperlink{classPyramidUI_ad97a5afd300e4b34f1d4b09402d9a212}{00126}}\ \mbox{\hyperlink{classPyramidUI_ad97a5afd300e4b34f1d4b09402d9a212}{PyramidUI::PyramidUI}}()\ :\ \mbox{\hyperlink{classUI}{UI}}(3)\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00127}00127\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Welcome\ to\ Pyramid\ Tic-\/Tac-\/Toe!\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00128}00128\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Players\ take\ turns\ placing\ their\ symbols\ on\ a\ pyramid-\/shaped\ board.\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00129}00129\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}First\ to\ align\ 3\ symbols\ in\ a\ straight\ line\ wins!\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00130}00130\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00132}\mbox{\hyperlink{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d}{00132}}\ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPyramidUI_aaf7bb6a3587283faff28b018d4d5068d}{PyramidUI::get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00133}00133\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00134}00134\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ it's\ an\ AI\ player}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00135}00135\ \ \ \ \ \mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}*\ \mbox{\hyperlink{classPlayer}{ai}}\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}*\textcolor{keyword}{>}(\mbox{\hyperlink{classPlayer}{player}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00136}00136\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{ai}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00137}00137\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{ai}}-\/>get\_best\_move();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00138}00138\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00139}00139\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00140}00140\ \ \ \ \ \textcolor{comment}{//\ Human\ player}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00141}00141\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00142}00142\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_aed2af19790ba73190e3ebeea589518e1}{get\_name}}()\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00143}00143\ \ \ \ \ \ \ \ \ \ <<\ \textcolor{stringliteral}{"{}\ ("{}}\ <<\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}()\ <<\ \textcolor{stringliteral}{"{})\ -\/\ Enter\ row\ and\ col:\ "{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00144}00144\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{r}}\ >>\ \mbox{\hyperlink{classPlayer}{c}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00146}00146\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Move<char>}}(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPlayer}{player}}-\/>\mbox{\hyperlink{classPlayer_af56f0bf98c0423a3a75b0848607d03a4}{get\_symbol}}());}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00147}00147\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00148}00148\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00149}\mbox{\hyperlink{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c}{00149}}\ \mbox{\hyperlink{classPlayer}{Player<char>}}**\ \mbox{\hyperlink{classPyramidUI_aca69ae8761b9076cc6ece0171ff9bf5c}{PyramidUI::setup\_players}}()}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00150}00150\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00151}00151\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}**\ players\ =\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Player<char>}}*[2];}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00152}00152\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00153}00153\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00154}00154\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00155}00155\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}===\ PYRAMID\ TIC-\/TAC-\/TOE\ ===\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00156}00156\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00157}00157\ \ \ \ \ \textcolor{comment}{//\ Player\ 1\ (X)}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00158}00158\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Player\ 1\ (X)\ -\/\ Choose\ type:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00159}00159\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ Human\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00160}00160\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ AI\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00161}00161\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ choice:\ "{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00162}00162\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00163}00163\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00164}00164\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{choice}}\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00165}00165\ \ \ \ \ \ \ \ \ players[0]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name\ =\ \textcolor{stringliteral}{"{}AI-\/X"{}},\ \textcolor{charliteral}{'X'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00166}00166\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00167}00167\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ name:\ "{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00168}00168\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00169}00169\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{getline}}(\mbox{\hyperlink{classPlayer}{cin}},\ name);}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00170}00170\ \ \ \ \ \ \ \ \ players[0]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name,\ \textcolor{charliteral}{'X'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00171}00171\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00172}00172\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00173}00173\ \ \ \ \ \textcolor{comment}{//\ Player\ 2\ (O)}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00174}00174\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)nPlayer\ 2\ (O)\ -\/\ Choose\ type:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00175}00175\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}1.\ Human\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00176}00176\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}2.\ AI\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00177}00177\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ choice:\ "{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00178}00178\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}\ >>\ \mbox{\hyperlink{classPlayer}{choice}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00179}00179\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00180}00180\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{choice}}\ ==\ 2)\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00181}00181\ \ \ \ \ \ \ \ \ players[1]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name\ =\ \textcolor{stringliteral}{"{}AI-\/O"{}},\ \textcolor{charliteral}{'O'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00182}00182\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00183}00183\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}Enter\ name:\ "{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00184}00184\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{cin}}.ignore();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00185}00185\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{getline}}(\mbox{\hyperlink{classPlayer}{cin}},\ name);}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00186}00186\ \ \ \ \ \ \ \ \ players[1]\ =\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{create\_player}}(name,\ \textcolor{charliteral}{'O'},\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00187}00187\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00188}00188\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00189}00189\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00190}00190\ \ \ \ \ \textcolor{keywordflow}{return}\ players;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00191}00191\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00192}00192\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00193}\mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{00193}}\ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPyramidUI_a6295f5664515c05e1d7052aa83937a05}{PyramidUI::create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00194}00194\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00195}00195\ \ \ \ \ \textcolor{keywordflow}{if}(type\ ==\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{PlayerType::AI}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00196}00196\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPyramidAIPlayer}{PyramidAIPlayer}}(name,\ symbol);}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00197}00197\ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00198}00198\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Player<char>}}(name,\ symbol,\ type);}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00199}00199\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00200}00200\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00202}00202\ \textcolor{comment}{//\ ====================\ AI\ PLAYER\ ====================}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00203}00203\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00204}\mbox{\hyperlink{classPyramidAIPlayer_aa26474abc90870985490611847d200ee}{00204}}\ \mbox{\hyperlink{classPyramidAIPlayer_aa26474abc90870985490611847d200ee}{PyramidAIPlayer::PyramidAIPlayer}}(\textcolor{keywordtype}{string}\ name,\ \textcolor{keywordtype}{char}\ symbol)\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00205}00205\ \ \ \ \ :\ \mbox{\hyperlink{classPlayer}{Player}}<\mbox{\hyperlink{classPlayer}{char}}>(name,\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}::\mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfa0a40e3c91a3a55c9a37428c6d194d0e5}{AI}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00206}00206\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00207}00207\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00208}00208\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00209}\mbox{\hyperlink{classPyramidAIPlayer_a397f537baf6b6555accdcc3d9e10da5f}{00209}}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPyramidAIPlayer_a397f537baf6b6555accdcc3d9e10da5f}{PyramidAIPlayer::get\_opponent\_symbol}}()\textcolor{keyword}{\ const}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00210}00210\ \textcolor{keyword}{}\{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00211}00211\ \ \ \ \ \textcolor{keywordflow}{return}\ (this-\/>\mbox{\hyperlink{classPlayer_a272d6c4dab769930d4f8074918e7708a}{symbol}}\ ==\ \textcolor{charliteral}{'X'})\ ?\ \textcolor{charliteral}{'O'}\ :\ \textcolor{charliteral}{'X'};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00212}00212\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00213}00213\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00215}00215\ \textcolor{comment}{//\ AI\ evaluate\ every\ board\ state\ to\ take\ the\ best\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00216}\mbox{\hyperlink{classPyramidAIPlayer_a78d43910ae2d1663c6b3484370769141}{00216}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPyramidAIPlayer_a78d43910ae2d1663c6b3484370769141}{PyramidAIPlayer::evaluate}}()}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00217}00217\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00218}00218\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\ \mbox{\hyperlink{classPlayer}{pb}}\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\textcolor{keyword}{>}(this-\/>\mbox{\hyperlink{classPlayer_a26249e756f850b6585267bfbc928ac79}{boardPtr}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00219}00219\ \ \ \ \ \textcolor{keywordflow}{if}(!pb)\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00220}00220\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00221}00221\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ AI\ wins}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00222}00222\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{pb}}-\/>is\_win(\textcolor{keyword}{this}))\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00223}00223\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 10;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00224}00224\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00225}00225\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00226}00226\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ opponent\ wins}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00227}00227\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}\ \mbox{\hyperlink{classPlayer}{opponent}}(\textcolor{stringliteral}{"{}temp"{}},\ \mbox{\hyperlink{classPyramidAIPlayer_a397f537baf6b6555accdcc3d9e10da5f}{get\_opponent\_symbol}}(),\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccfaa36c6719f4d3207d858cf956ef1e93b6}{PlayerType::HUMAN}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00228}00228\ \ \ \ \ \mbox{\hyperlink{classPlayer}{opponent}}.\mbox{\hyperlink{classPlayer_a3617a3ad0db435176a06948065f9a3a6}{set\_board\_ptr}}(\mbox{\hyperlink{classPlayer}{pb}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00229}00229\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{pb}}-\/>is\_win(\&\mbox{\hyperlink{classPlayer}{opponent}}))\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00230}00230\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ -\/10;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00231}00231\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00232}00232\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00233}00233\ \ \ \ \ \textcolor{comment}{//\ Game\ not\ over\ or\ draw}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00234}00234\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00235}00235\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00236}00236\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00237}00237\ \textcolor{comment}{//\ Minimax\ algorithm\ with\ alpha-\/beta\ pruning\ to\ find\ best\ move\ using\ recursion\ and\ backtracking\ ,\ }}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00238}00238\ \textcolor{comment}{//after\ evaluating\ each\ possible\ move\ it\ recursively\ explores\ further\ moves\ until\ terminal\ states\ are\ reached.}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00239}\mbox{\hyperlink{classPyramidAIPlayer_a92535729d0250473980d92a4acf2ef09}{00239}}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPyramidAIPlayer_a92535729d0250473980d92a4acf2ef09}{PyramidAIPlayer::minimax}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPlayer}{isMaximizing}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{depth}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{alpha}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{beta}})}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00240}00240\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00241}00241\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\ \mbox{\hyperlink{classPlayer}{pb}}\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\textcolor{keyword}{>}(this-\/>\mbox{\hyperlink{classPlayer_a26249e756f850b6585267bfbc928ac79}{boardPtr}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00242}00242\ \ \ \ \ \textcolor{keywordflow}{if}(!pb)\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00243}00243\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00244}00244\ \ \ \ \ \textcolor{comment}{//\ Evaluate\ current\ state}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00245}00245\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{score}}\ =\ \mbox{\hyperlink{classPyramidAIPlayer_a78d43910ae2d1663c6b3484370769141}{evaluate}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00246}00246\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00247}00247\ \ \ \ \ \textcolor{comment}{//\ Terminal\ states\ (game\ over)}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00248}00248\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{score}}\ ==\ 10)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{score}}\ -\/\ \mbox{\hyperlink{classPlayer}{depth}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00249}00249\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{score}}\ ==\ -\/10)\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{score}}\ +\ \mbox{\hyperlink{classPlayer}{depth}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00250}00250\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{pb}}-\/>is\_draw(\textcolor{keyword}{this}))\ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00251}00251\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00252}00252\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{isMaximizing}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00253}00253\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ AI's\ turn\ -\/\ maximize\ score}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00254}00254\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{maxEval}}\ =\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{numeric\_limits<int>::min}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00255}00255\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPlayer}{moves}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_available\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00256}00256\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00257}00257\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{move}}\ :\ \mbox{\hyperlink{classPlayer}{moves}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00258}00258\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.first;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00259}00259\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.second;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00260}00260\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00261}00261\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Save\ old\ value\ and\ make\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00262}00262\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{oldVal}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00263}00263\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ this-\/>\mbox{\hyperlink{classPlayer_a272d6c4dab769930d4f8074918e7708a}{symbol}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00264}00264\ \ \ \ \ \ \ \ \ \ \ \ \ pb-\/>\mbox{\hyperlink{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}{increment\_moves}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00265}00265\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00266}00266\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Recursive\ call}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00267}00267\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{eval}}\ =\ \mbox{\hyperlink{classPyramidAIPlayer_a92535729d0250473980d92a4acf2ef09}{minimax}}(\textcolor{keyword}{false},\ \mbox{\hyperlink{classPlayer}{depth}}\ +\ 1,\ \mbox{\hyperlink{classPlayer}{alpha}},\ \mbox{\hyperlink{classPlayer}{beta}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00268}00268\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00269}00269\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Undo\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00270}00270\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPlayer}{oldVal}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00271}00271\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>decrement\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00272}00272\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00273}00273\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{maxEval}}\ =\ \mbox{\hyperlink{classPlayer}{max}}(\mbox{\hyperlink{classPlayer}{maxEval}},\ \mbox{\hyperlink{classPlayer}{eval}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00274}00274\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{alpha}}\ =\ \mbox{\hyperlink{classPlayer}{max}}(\mbox{\hyperlink{classPlayer}{alpha}},\ \mbox{\hyperlink{classPlayer}{eval}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00275}00275\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00276}00276\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Alpha-\/beta\ pruning}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00277}00277\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{beta}}\ <=\ \mbox{\hyperlink{classPlayer}{alpha}})\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00278}00278\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00279}00279\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{maxEval}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00280}00280\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00281}00281\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00282}00282\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Opponent's\ turn\ -\/\ minimize\ score}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00283}00283\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{minEval}}\ =\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{numeric\_limits<int>::max}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00284}00284\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPlayer}{moves}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_available\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00285}00285\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00286}00286\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{move}}\ :\ \mbox{\hyperlink{classPlayer}{moves}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00287}00287\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.first;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00288}00288\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.second;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00289}00289\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00290}00290\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Save\ old\ value\ and\ make\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00291}00291\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{oldVal}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00292}00292\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPyramidAIPlayer_a397f537baf6b6555accdcc3d9e10da5f}{get\_opponent\_symbol}}());}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00293}00293\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>increment\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00294}00294\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00295}00295\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Recursive\ call}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00296}00296\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{eval}}\ =\ \mbox{\hyperlink{classPyramidAIPlayer_a92535729d0250473980d92a4acf2ef09}{minimax}}(\textcolor{keyword}{true},\ \mbox{\hyperlink{classPlayer}{depth}}\ +\ 1,\ \mbox{\hyperlink{classPlayer}{alpha}},\ \mbox{\hyperlink{classPlayer}{beta}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00297}00297\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00298}00298\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Undo\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00299}00299\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPlayer}{oldVal}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00300}00300\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>decrement\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00301}00301\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00302}00302\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{minEval}}\ =\ \mbox{\hyperlink{classPlayer}{min}}(\mbox{\hyperlink{classPlayer}{minEval}},\ \mbox{\hyperlink{classPlayer}{eval}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00303}00303\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{beta}}\ =\ \mbox{\hyperlink{classPlayer}{min}}(\mbox{\hyperlink{classPlayer}{beta}},\ \mbox{\hyperlink{classPlayer}{eval}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00304}00304\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00305}00305\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Alpha-\/beta\ pruning}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00306}00306\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{beta}}\ <=\ \mbox{\hyperlink{classPlayer}{alpha}})\ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00307}00307\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00308}00308\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classPlayer}{minEval}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00309}00309\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00310}00310\ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00311}00311\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00312}00312\ \textcolor{comment}{//\ Get\ the\ best\ move\ for\ the\ AI\ player\ after\ evaluating\ all\ possible\ moves}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00313}\mbox{\hyperlink{classPyramidAIPlayer_a54c4eb5f673c6adab4ed31dddc36b58d}{00313}}\ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPyramidAIPlayer_a54c4eb5f673c6adab4ed31dddc36b58d}{PyramidAIPlayer::get\_best\_move}}()}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00314}00314\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00315}00315\ \ \ \ \ \mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\ \mbox{\hyperlink{classPlayer}{pb}}\ =\ \textcolor{keyword}{dynamic\_cast<}\mbox{\hyperlink{classPyramidBoard}{PyramidBoard}}*\textcolor{keyword}{>}(this-\/>\mbox{\hyperlink{classPlayer_a26249e756f850b6585267bfbc928ac79}{boardPtr}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00316}00316\ \ \ \ \ \textcolor{keywordflow}{if}(!pb)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00317}00317\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00318}00318\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{bestScore}}\ =\ \mbox{\hyperlink{classPlayer_adb4e803a7ac0356b111b8ca79d766976}{numeric\_limits<int>::min}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00319}00319\ \ \ \ \ \mbox{\hyperlink{classPlayer}{pair<int,\ int>}}\ \mbox{\hyperlink{classPlayer}{bestMove}}\ =\ \{-\/1,\ -\/1\};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00320}00320\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00321}00321\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<pair<int,\ int>}}>\ \mbox{\hyperlink{classPlayer}{moves}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_available\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00322}00322\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00323}00323\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ this-\/>\mbox{\hyperlink{classPlayer_af0ad0d4ca8584d23a98c723cd703a4f6}{name}}\ <<\ \textcolor{stringliteral}{"{}\ is\ thinking..."{}}\ <<\ \mbox{\hyperlink{classPlayer}{endl}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00324}00324\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00325}00325\ \ \ \ \ \textcolor{comment}{//\ Try\ each\ possible\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00326}00326\ \ \ \ \ \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\&\ \mbox{\hyperlink{classPlayer}{move}}\ :\ \mbox{\hyperlink{classPlayer}{moves}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00327}00327\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{r}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.first;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00328}00328\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{c}}\ =\ \mbox{\hyperlink{classPlayer}{move}}.second;}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00329}00329\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00330}00330\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Save\ old\ value\ and\ make\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00331}00331\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{oldVal}}\ =\ \mbox{\hyperlink{classPlayer}{pb}}-\/>get\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00332}00332\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ this-\/>\mbox{\hyperlink{classPlayer_a272d6c4dab769930d4f8074918e7708a}{symbol}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00333}00333\ \ \ \ \ \ \ \ \ pb-\/>\mbox{\hyperlink{classPyramidBoard_a4311e927534fd2efd6edcbb472656da7}{increment\_moves}}();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00334}00334\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00335}00335\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Evaluate\ this\ move\ using\ minimax}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00336}00336\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{score}}\ =\ \mbox{\hyperlink{classPyramidAIPlayer_a92535729d0250473980d92a4acf2ef09}{minimax}}(\textcolor{keyword}{false},\ 0,\ \mbox{\hyperlink{classPlayer}{numeric\_limits<int>::min}}(),\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00337}00337\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{numeric\_limits<int>::max}}());}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00338}00338\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00339}00339\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Undo\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00340}00340\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>set\_cell\_value(\mbox{\hyperlink{classPlayer}{r}},\ \mbox{\hyperlink{classPlayer}{c}},\ \mbox{\hyperlink{classPlayer}{oldVal}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00341}00341\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{pb}}-\/>decrement\_moves();}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00342}00342\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00343}00343\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Update\ best\ move}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00344}00344\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{score}}\ >\ \mbox{\hyperlink{classPlayer}{bestScore}})\ \{}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00345}00345\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{bestScore}}\ =\ \mbox{\hyperlink{classPlayer}{score}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00346}00346\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classPlayer}{bestMove}}\ =\ \mbox{\hyperlink{classPlayer}{move}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00347}00347\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00348}00348\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00349}00349\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00350}00350\ \ \ \ \ \textcolor{keywordflow}{if}(\mbox{\hyperlink{classPlayer}{bestMove}}.first\ ==\ -\/1)\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00351}00351\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00352}00352\ \ \ \ \ \mbox{\hyperlink{classPlayer}{cout}}\ <<\ this-\/>\mbox{\hyperlink{classPlayer_af0ad0d4ca8584d23a98c723cd703a4f6}{name}}\ <<\ \textcolor{stringliteral}{"{}\ chose\ position\ ("{}}\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00353}00353\ \ \ \ \ \ \ \ \ \ <<\ bestMove.first\ <<\ \textcolor{stringliteral}{"{},\ "{}}\ <<\ \mbox{\hyperlink{classPlayer}{bestMove}}.second\ <<\ \textcolor{stringliteral}{"{})"{}}\ <<\ \mbox{\hyperlink{classPlayer}{endl}};}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00354}00354\ }
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00355}00355\ \ \ \ \ \textcolor{keywordflow}{return}\ \textcolor{keyword}{new}\ \mbox{\hyperlink{classPlayer}{Move<char>}}(\mbox{\hyperlink{classPlayer}{bestMove}}.first,\ \mbox{\hyperlink{classPlayer}{bestMove}}.second,\ \mbox{\hyperlink{classPlayer}{this}}-\/>\mbox{\hyperlink{classPlayer_a272d6c4dab769930d4f8074918e7708a}{symbol}});}
+\DoxyCodeLine{\Hypertarget{Pyramid_8cpp_source_l00356}00356\ \}}
+
+\end{DoxyCode}

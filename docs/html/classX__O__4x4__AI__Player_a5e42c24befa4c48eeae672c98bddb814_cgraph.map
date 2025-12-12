@@ -1,0 +1,11 @@
+<map id="X_O_4x4_AI_Player::evaluate_board" name="X_O_4x4_AI_Player::evaluate_board">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,88,160,128"/>
+<area shape="rect" id="Node000002" href="$classX__O__4x4Board.html#af8fd5ade41fa695981acd1faa624cc2f" title=" " alt="" coords="208,5,397,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,85,207,55,227,48,229,53,209,60,132,90"/>
+<area shape="rect" id="Node000003" href="$classBoard.html#a117f2e61fdb7deccca333bbbc9c62d3a" title="Return a copy of the current board as a 2D vector." alt="" coords="211,70,394,95"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,96,198,92,198,97,160,102"/>
+<area shape="rect" id="Node000004" href="$classBoard.html#ac665e1ed1f49125fab248e2c9ddfd608" title="Get number of columns." alt="" coords="227,119,378,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="160,114,214,120,213,125,160,119"/>
+<area shape="rect" id="Node000005" href="$classBoard.html#a93b130eff67bd4476fab27be8341cb78" title="Get number of rows." alt="" coords="239,169,366,194"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="133,126,209,153,238,162,237,168,207,159,132,131"/>
+</map>

@@ -1,0 +1,59 @@
+\doxysection{Tic-\/\+Tac-\/\+Toe\+\_\+4x4.h}
+\hypertarget{Tic-Tac-Toe__4x4_8h_source}{}\label{Tic-Tac-Toe__4x4_8h_source}\mbox{\hyperlink{Tic-Tac-Toe__4x4_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00001}00001\ \textcolor{preprocessor}{\#ifndef\ TIC\_TAC\_TOE\_4X4\_H}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00002}00002\ \textcolor{preprocessor}{\#define\ TIC\_TAC\_TOE\_4X4\_H}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00003}00003\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00004}00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{BoardGame__Classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00005}00005\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00006}00006\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00007}00007\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00008}00008\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00009}00009\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00010}00010\ \textcolor{comment}{//\ Forward\ declaration\ for\ AI\ player}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00011}00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classX__O__4x4__AI__Player}{X\_O\_4x4\_AI\_Player}};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00012}00012\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00013}\mbox{\hyperlink{classX__O__4x4Board}{00013}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classX__O__4x4Board}{X\_O\_4x4Board}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBoard}{Board}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00014}00014\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00015}\mbox{\hyperlink{classX__O__4x4Board_a43128c50e68fec82bb0e88a8d4b37107}{00015}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classX__O__4x4Board_a43128c50e68fec82bb0e88a8d4b37107}{blank\_symbol}}\ =\ \textcolor{charliteral}{'.'};\ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00016}00016\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00017}00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00018}00018\ \ \ \ \ \mbox{\hyperlink{classX__O__4x4Board_a8fd32d5132d95fbd71209a628f72fcf0}{X\_O\_4x4Board}}();}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00019}00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_ad1e394f6f6b38ecd0761de46103dc057}{update\_board}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00020}00020\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_a6e769db706cf9da11af019bfc7344490}{is\_win}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00021}\mbox{\hyperlink{classX__O__4x4Board_a696c8eee9a1c794bd1a54c1179363e53}{00021}}\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_a696c8eee9a1c794bd1a54c1179363e53}{is\_lose}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00022}00022\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_abc2dd64ed2a91f9e7d68438c7029e20d}{is\_draw}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00023}00023\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_a49cc1d06d6a93a3216406cbe3c56ad61}{game\_is\_over}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00024}00024\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00025}00025\ \ \ \ \ \textcolor{comment}{//\ Helper\ methods\ for\ AI}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00026}00026\ \ \ \ \ \mbox{\hyperlink{classPlayer}{vector<Move<char>}}*>\ \mbox{\hyperlink{classX__O__4x4Board_a975837d07624bf77726807a4bfd96f5b}{get\_valid\_moves}}(\textcolor{keywordtype}{char}\ symbol);}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00027}00027\ \ \ \ \ \mbox{\hyperlink{classPlayer}{pair<int,\ int>}}\ \mbox{\hyperlink{classX__O__4x4Board_a61a83ab711801c7a61792b469ba21940}{simulate\_move}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}});}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00028}00028\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classX__O__4x4Board_a6461ea8430c09b22bc66e0badc67cb47}{undo\_move}}(\mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classPlayer}{move}},\ \mbox{\hyperlink{classPlayer}{pair<int,\ int>}}\ \mbox{\hyperlink{classPlayer}{old\_pos}});}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00029}00029\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classX__O__4x4Board_aa2bb740b2ea9cb11d7dcccad69aa785d}{check\_win\_for\_symbol}}(\textcolor{keywordtype}{char}\ symbol);}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00030}\mbox{\hyperlink{classX__O__4x4Board_af8fd5ade41fa695981acd1faa624cc2f}{00030}}\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classX__O__4x4Board_af8fd5ade41fa695981acd1faa624cc2f}{get\_blank\_symbol}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classX__O__4x4Board_a43128c50e68fec82bb0e88a8d4b37107}{blank\_symbol}};\ \}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00031}00031\ \};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00032}00032\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00033}\mbox{\hyperlink{classX__O__4x4__UI}{00033}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classX__O__4x4__UI}{X\_O\_4x4\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classUI}{UI}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00034}00034\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00035}00035\ \ \ \ \ \mbox{\hyperlink{classX__O__4x4__UI_ab9294fc5dc483d012244b010d5230444}{X\_O\_4x4\_UI}}();}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00036}\mbox{\hyperlink{classX__O__4x4__UI_a65890a119651f3fccba12d264b210e17}{00036}}\ \ \ \ \ \mbox{\hyperlink{classX__O__4x4__UI_a65890a119651f3fccba12d264b210e17}{\string~X\_O\_4x4\_UI}}()\ \textcolor{keyword}{override}\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00037}00037\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00038}00038\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classX__O__4x4__UI_ac09b1ff731307ae44bced0b3ac6942f5}{get\_move}}(\mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classPlayer}{player}})\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00039}00039\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Player<char>}}*\ \mbox{\hyperlink{classX__O__4x4__UI_ac2d4b773a8adb985ad4d74f884e7c20a}{create\_player}}(std::string\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{BoardGame__Classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00040}00040\ \};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00041}00041\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00046}\mbox{\hyperlink{classX__O__4x4__AI__Player}{00046}}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classX__O__4x4__AI__Player}{X\_O\_4x4\_AI\_Player}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classPlayer}{Player}}<char>\ \{}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00047}00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00048}\mbox{\hyperlink{classX__O__4x4__AI__Player_a0b00f2959118ba092a41bfa82260eb7c}{00048}}\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classX__O__4x4__AI__Player_a0b00f2959118ba092a41bfa82260eb7c}{MAX\_DEPTH}}\ =\ 6;\ \textcolor{comment}{//\ Maximum\ search\ depth\ for\ minimax}}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00049}00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classX__O__4x4__AI__Player_aa954c7769e767a0a623e7850707e7d44}{minimax}}(\mbox{\hyperlink{classX__O__4x4Board}{X\_O\_4x4Board}}*\ board,\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{depth}},\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classPlayer}{is\_maximizing}},\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00050}00050\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{alpha}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classPlayer}{beta}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{maximizer\_symbol}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{minimizer\_symbol}});}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00051}00051\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classX__O__4x4__AI__Player_a5e42c24befa4c48eeae672c98bddb814}{evaluate\_board}}(\mbox{\hyperlink{classX__O__4x4Board}{X\_O\_4x4Board}}*\ board,\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{maximizer\_symbol}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer}{minimizer\_symbol}});}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00052}00052\ \ \ \ \ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00053}00053\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00054}00054\ \ \ \ \ \mbox{\hyperlink{classX__O__4x4__AI__Player}{X\_O\_4x4\_AI\_Player}}(\textcolor{keywordtype}{string}\ \mbox{\hyperlink{classPlayer_af0ad0d4ca8584d23a98c723cd703a4f6}{name}},\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{classPlayer_a272d6c4dab769930d4f8074918e7708a}{symbol}});}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00055}00055\ \ \ \ \ \mbox{\hyperlink{classPlayer}{Move<char>}}*\ \mbox{\hyperlink{classX__O__4x4__AI__Player_af75a8d981d450467b285e3e988c3662d}{get\_move}}();}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00056}00056\ \};}
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00057}00057\ }
+\DoxyCodeLine{\Hypertarget{Tic-Tac-Toe__4x4_8h_source_l00058}00058\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
