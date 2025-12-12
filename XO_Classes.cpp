@@ -1,4 +1,4 @@
-//--------------------------------------- IMPLEMENTATION
+/** //--------------------------------------- IMPLEMENTATION
 
 #include <iostream>
 #include <iomanip>
@@ -92,4 +92,4 @@ Move<char>* XO_UI::get_move(Player<char>* player) {
         y = rand() % player->get_board_ptr()->get_columns();
     }
     return new Move<char>(x, y, player->get_symbol());
-}
+} **/
