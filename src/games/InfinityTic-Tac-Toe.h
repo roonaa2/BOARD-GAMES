@@ -1,7 +1,7 @@
 #ifndef INFINITYTIC_TAC_TOE_H
 #define INFINITYTIC_TAC_TOE_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <queue>
 #include <utility>
 

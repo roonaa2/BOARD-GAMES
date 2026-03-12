@@ -2,7 +2,7 @@
 #define WORDTIC_TAC_TOE_H
 #include <vector>
 #include <string>
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <queue>
 #include <utility>
 

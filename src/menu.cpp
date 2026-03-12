@@ -1,20 +1,20 @@
 #include <iostream>
 #include <limits>
-#include "BoardGame_Classes.h"
-#include "XO_Classes.h"
-#include "InfinityTic-Tac-Toe.h"
-#include "Misere.h"
-#include "Tic-Tac-Toe_4x4.h"
-#include "NumericalTicTacToe.h"
-#include "SUS.h"
-#include "ObstaclesTicTacToe.h"
-#include "Diamond.h"
-#include "Pyramid.h"
-#include "FiveFiveTicTacToe.h"
-#include "Ultimate.h"
-#include "WordTic-tac-toe.h"
-#include "Memory.h"
-#include "Four-in-a-row.h"
+#include <BoardGame_Classes.h>
+#include "games/XO_Classes.h"
+#include "games/InfinityTic-Tac-Toe.h"
+#include "games/Misere.h"
+#include "games/Tic-Tac-Toe_4x4.h"
+#include "games/NumericalTicTacToe.h"
+#include "games/SUS.h"
+#include "games/ObstaclesTicTacToe.h"
+#include "games/Diamond.h"
+#include "games/Pyramid.h"
+#include "games/FiveFiveTicTacToe.h"
+#include "games/Ultimate.h"
+#include "games/WordTic-tac-toe.h"
+#include "games/Memory.h"
+#include "games/Four-in-a-row.h"
 using namespace std;
 
 void displayMenu() {

@@ -10,7 +10,7 @@
 #ifndef XO_CLASSES_H
 #define XO_CLASSES_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 using namespace std;
 
 /**

@@ -16,7 +16,7 @@
 #ifndef SUS_H
 #define SUS_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <vector>
 #include <iostream>
 

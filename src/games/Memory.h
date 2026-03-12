@@ -1,19 +1,22 @@
-#ifndef DIAMOND_H
-#define DIAMOND_H
+#ifndef MEMORY_H
+#define MEMORY_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <queue>
 #include <utility>
+#include <string>
+
+extern char hiddenBoard[3][3];
 
 using namespace std;
 
-class DiamondBoard : public Board<char> {
+class MemoryBoard : public Board<char> {
 private:
-    char blank_symbol = '.';
-
+    char blank_symbol = '.',hide_symbol = '?';
+   
+   
 public:
- 
-    DiamondBoard();
+    MemoryBoard();
     bool update_board(Move<char>* move) override;
     bool is_win(Player<char>* player) override;
     bool is_lose(Player<char>* player) override { return false; }
@@ -21,12 +24,11 @@ public:
     bool game_is_over(Player<char>* player) override;
 };
 
-class Diamond_UI : public UI<char> {
+class Memory_UI : public UI<char> {
 public:
-    Diamond_UI();
-    ~Diamond_UI() override = default;
+    Memory_UI();
+    ~Memory_UI() override = default;
     
-    void display_board_matrix(const vector<vector<char>>& matrix) const override;
     Move<char>* get_move(Player<char>* player) override;
     Player<char>* create_player(std::string& name, char symbol, PlayerType type) override;
 };

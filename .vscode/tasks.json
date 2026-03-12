@@ -4,10 +4,11 @@
         {
             "label": "build game",
             "type": "shell",
-            "command": "bash",
+            "command": "powershell",
             "args": [
-                "-c",
-                "g++ -std=c++17 $(find . -name \"*.cpp\") -o game.out"
+                "-NoProfile",
+                "-Command",
+                "$files = Get-ChildItem src/games -Filter *.cpp | ForEach-Object FullName; g++ -std=c++17 -Iinclude src/menu.cpp $files -o game.out"
             ],
             "group": {
                 "kind": "build",

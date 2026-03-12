@@ -1,7 +1,7 @@
 #ifndef TIC_TAC_TOE_4X4_H
 #define TIC_TAC_TOE_4X4_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <vector>
 #include <limits>
 

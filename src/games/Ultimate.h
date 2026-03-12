@@ -3,7 +3,7 @@
 #ifndef ULTIMATE_CLASSES_H
 #define ULTIMATE_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 using namespace std;
 
 class  Ultimate_Board : public Board<char> {
