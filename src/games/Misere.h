@@ -1,6 +1,6 @@
 #ifndef MISERE_H
 #define MISERE_H
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 using namespace std;
  
 class MisereBoard : public Board<char> {

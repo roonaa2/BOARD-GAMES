@@ -16,7 +16,7 @@
 #ifndef OBSTACLES_TIC_TAC_TOE_H
 #define OBSTACLES_TIC_TAC_TOE_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <vector>
 #include <iostream>
 #include <utility>

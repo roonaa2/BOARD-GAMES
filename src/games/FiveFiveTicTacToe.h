@@ -1,7 +1,7 @@
 #ifndef FIVEFIVE_TIC_TAC_TOE_H
 #define FIVEFIVE_TIC_TAC_TOE_H
 
-#include "BoardGame_Classes.h"
+#include <BoardGame_Classes.h>
 #include <vector>
 #include <utility>
 
